@@ -1,0 +1,226 @@
+.mid_header{
+    justify-content: center;
+}
+.go>div:nth-child(1){
+    width:100%;
+    max-width:1050px;
+    padding:10px;
+    font-size:14px;
+    margin:auto;
+    font-family:'Montserrat',sans-serif,arial ;
+}
+.innercontainer{
+    display:block;
+    width: 100%;
+    margin:5px auto;
+    max-width:1250px;
+    position: relative;
+    font-family:"Montserrat",sans-serif,Arial;
+    padding:10px;
+}
+.indivname{
+    width:fit-content;
+    max-width:200px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow:0 0 3px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin:0 0 20px 20px;
+    padding:10px 30px;
+}
+.indivname>h1{
+    margin:0;
+    font-size:20px;
+}
+
+.indiv{
+    width:fit-content;
+    max-width:1000px;
+    margin:0px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.1);
+    height:400px;
+    overflow:hidden;
+    justify-content: center;
+    align-content: center;
+    border-radius: 10px;
+}
+.inindiv{
+    display:flex;
+}
+.inindiv>div{
+    position:relative;
+    width:200px;
+    height:290px;
+    margin:0 10px 20px 10px;
+    margin-top:0;
+    padding:15px;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow:0 0 10px 0 rgba(0,0,0,0.05);
+    transition: 0.1s;
+}
+.inindiv>div:hover{
+    box-shadow:0 0 10px 0 rgba(122, 53, 53, 0.3);
+}
+.indiv>div:last-child{
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right:30px;
+    top:200px;
+    height:100px;
+    width:100px;
+    background:rgba(100 , 100 , 100 , 0.8);
+    border-radius:6px;
+    cursor: pointer;
+    box-shadow:0 0 6px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.indiv>div:last-child>a>div:nth-child(1){
+    width:30px;
+    height:30px;
+    background:rgba(0, 0, 0, 0.5);
+    padding:10px;
+    border-radius:50%;
+    margin:auto;
+}
+.indiv>div:last-child>a>div:nth-child(2)>h4{
+    margin:0;
+    margin-top:10px;
+    color:rgb(235, 235, 235);
+    letter-spacing: 1px;
+    font-size:13.33px;
+}
+
+.indiv>div:last-child:hover{
+    background:rgba(100 , 100 , 100 , 0.6);      
+}
+
+.indiv>div:last-child:hover>a>div:nth-child(2)>h4{
+    color:rgb(255, 255, 255);
+    text-decoration: underline;
+}
+
+
+.inimg{
+    width:100%;
+    height:200px;
+    overflow:hidden;
+}
+.inimg>img{
+    height:200px;
+    width:200px;
+    object-fit: contain;
+}
+.inimgdata{
+    position: relative;
+    width:calc(100% - 5px);
+    padding:5px;
+    padding-right:0;
+    height:auto;
+}
+.inimgdataname{
+    display:-webkit-box;
+    overflow: hidden;
+    max-height:40px;
+    color:#333;
+    line-height: 20px;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    white-space: normal;
+    -webkit-line-clamp: 2;
+}
+
+.inimgdataprice{
+    width:calc(100% -10px);
+    text-align:left;
+    padding:0px 5px;
+    display:flex;
+    height:40px;
+}
+
+.inimgdataprice>div>h3{
+    margin:0;
+    padding:15px 0 5px 0;
+    font-size: 18px;
+    line-height:20px;
+}
+.inimgdataprice>div:nth-child(1){
+    flex-basis:calc(100% - 80px);
+}
+
+.cart_order{
+    width:80px;
+    padding:5px 0;
+    height:30px;
+    display:flex;
+    position:absolute;
+    bottom:15px;
+    right:20px;
+}
+
+.cart_order>a{
+    position: relative;
+    width:40px;
+    height:30px;
+}
+
+.cart_order>a>div{
+    flex-basis:50%;
+    margin:0 5px;
+    height:30px;
+    border-radius: 50%;
+    background:rgba(252, 252, 252, 1);
+    transition: 0.2s;
+}
+.cart_order>a>div>svg{
+    padding:5px;
+}
+
+.cart_order>a>div:hover{
+    background:rgba(222, 222, 222, 1);
+}
+
+.cart_order>a>div::after{
+    visibility: hidden;
+    opacity:0;
+    font-size:10px;
+    position: relative;
+    top:-5px;
+    left:-20px;
+    text-align: center;
+    transition: 0.2s ease-in;
+    padding:4px 10px;
+    border-radius: 5px;
+    color:#fff;
+    background:#444;
+    white-space: pre;
+    text-decoration: none;
+}
+
+.cart_order>a:nth-child(2)>div::after{
+    content:"Add to Cart";
+}
+.cart_order>a:hover>div::after{
+    visibility: visible;
+    opacity:1;
+    top:5px;
+}
+.cart_order>a:nth-child(4):hover>div::after{
+    top:-3px;
+}
+.cart_order>a:nth-child(4)>div::after{
+    content:"Add to Favourites";
+    top:-13px;
+}
+
+
+.inimgdata>.inimgdataname>h4{
+    font-size: 15px;
+    margin:0;
+}

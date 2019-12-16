@@ -1,0 +1,315 @@
+Supplier Code,Product Code,Picture,Name,SubName,Description,Price USD,Delivery,Discount,Minimum Order,Sort
+jane t,P12,,"T-MOTORS 12*4 inches, PAIR, 2 blades",P SERIES (Polished Props),"BLADES : 2 blades
+Net Weight : 28g
+Gross Weight : 132.8g
+Size (L*W*H/mm) : 320*70*30
+",67.25,,,4,12
+jane t,P13,,"T-MOTORS 13*4.4 inches, PAIR, 2 blades",P SERIES (Polished Props),"BLADES : 2 blades
+Net Weight : 14.2g/pc
+Gross Weight : 178.2g
+Size (L*W*H/mm) : 390*75*35
+",72.25,,,4,13
+jane t,P14,,"T-MOTORS 14*4.8 inches, PAIR, 2 blades",P SERIES (Polished Props),"BLADES : 2 blades
+Net Weight : 19.2g/pc
+Gross Weight : 184.5g
+Size (L*W*H/mm) : 390*75*35
+",82.25,,,4,14
+jane t,P15,,"T-MOTORS 15*5 inches, PAIR, 2 blades",P SERIES (Polished Props),"BLADES : 2 blades
+Net Weight : 26.5g/pc
+Gross Weight : 200g
+Size (L*W*H/mm) : 390*75*35
+",94.75,,,4,15
+jane t,P16,,"T-MOTORS 16*5.4 inches, PAIR, 2 blades",P SERIES (Polished Props),"BLADES : 2 blades
+Net Weight : 28g/pc
+Gross Weight : 200g
+Size (L*W*H/mm) : 475*80*35
+",104.75,,,4,16
+jane t,P17,,"T-MOTORS 17*5.8 inches, PAIR, 2 blades",P SERIES (Polished Props),"BLADES : 2 blades
+Net Weight : 32.5g/pc
+Gross Weight : 238.3g
+Size (L*W*H/mm) : 475*80*36
+",119.75,,,4,17
+jane t,P18,,"T-MOTORS 18*6.1 inches, PAIR, 2 blades",P SERIES (Polished Props),"BLADES : 2 blades
+Net Weight : 37g/pc
+Gross Weight : 252g
+Size (L*W*H/mm) : 475*80*37
+",142.25,,,4,18
+jane t,P19,,"T-MOTORS 19*5.7 inches, PAIR, 2 blades",P SERIES (Polished Props),"BLADES : 2 blades
+Net Weight : 41g/pc
+Gross Weight : 300g
+Size (L*W*H/mm) : 570*80*35
+",162.25,,,4,19
+jane t,P20,,"T-MOTORS 20*6 inches, PAIR, 2 blades",P SERIES (Polished Props),"BLADES : 2 blades
+Net Weight : 47g/pc
+Gross Weight : 331g
+Size (L*W*H/mm) : 570*80*35
+",184.75,,,4,20
+jane t,P21,,"T-MOTORS 21*6.3 inches, PAIR, 2 blades",P SERIES (Polished Props),"BLADES : 2 blades
+Net Weight : 58g/pc
+Gross Weight : 350g
+Size (L*W*H/mm) : 570*80*35
+",207.25,,,4,21
+jane t,P22,,"T-MOTORS 22*6.6 inches, PAIR, 2 blades",P SERIES (Polished Props),"BLADES : 2 blades
+Net Weight : 56g/pc
+Gross Weight : 351.5g
+Size (L*W*H/mm) : 570*80*35
+",242.25,,,4,22
+jane t,P24,,"T-MOTORS 24*7.2 inches, PAIR, 2 blades",P SERIES (Polished Props),"BLADES : 2 blades
+Net Weight : 60g/pc
+Gross Weight : 400g
+Size (L*W*H/mm) : 650*90*40
+",289.75,,,4,24
+jane t,P26,,"T-MOTORS 26*7.8 inches, PAIR, 2 blades",P SERIES (Polished Props),"BLADES : 2 blades
+Net Weight : 69g/pc
+Gross Weight : 642g
+Size (L*W*H/mm) : 744*92*129
+",344.75,,,4,26
+jane t,P27,,"T-MOTORS 27*8.1 inches, PAIR, 2 blades",P SERIES (Polished Props),"BLADES : 2 blades
+Net Weight : 83g/pc
+Gross Weight : 693g
+Size (L*W*H/mm) : 744*92*129
+",379.75,,,4,27
+jane t,P28,,"T-MOTORS 28*8.4 inches, PAIR, 2 blades",P SERIES (Polished Props),"BLADES : 2 blades
+Net Weight : 77g/pc
+Gross Weight : 699g
+Size (L*W*H/mm) : 744*92*129
+",407.25,,,4,28
+jane t,P29,,"T-MOTORS 29*8.7 inches, PAIR, 2 blades",P SERIES (Polished Props),"BLADES : 2 blades
+Net Weight : 92g/pc
+Gross Weight : 715g
+Size (L*W*H/mm) : 744*92*129
+",427.25,,,4,29
+jane t,P30,,"T-MOTORS 30*10 inches, PAIR, 2 blades",P SERIES (Polished Props),"BLADES : 2 blades
+Net Weight : 93g/pc
+Gross Weight : 747g
+Size (L*W*H/mm) : 844*92*129
+",447.25,,,4,30
+jane t,G18,,"T-MOTORS 18*5.9 inches, PAIR, 2 blades",G SERIES  (Glossy Props),"BLADES : 2 blades
+Net Weight : 34g/pc
+Gross Weight : 250g
+Size (L*W*H/mm) : 475*80*37
+",214.75,,,4,18
+jane t,G20,,"T-MOTORS 20*6.5 inches, PAIR, 2 blades",G SERIES  (Glossy Props),"BLADES : 2 blades
+Net Weight : 44g/pc
+Gross Weight : 330g
+Size (L*W*H/mm) : 570*80*35
+",272.25,,,4,20
+jane t,G22,,"T-MOTORS 22*7.2 inches, PAIR, 2 blades",G SERIES  (Glossy Props),"BLADES : 2 blades
+Net Weight : 56g/pc
+Gross Weight : 360g
+Size (L*W*H/mm) : 570*80*35
+",362.25,,,4,22
+jane t,G24,,"T-MOTORS 24*7.8 inches, PAIR, 2 blades",G SERIES  (Glossy Props),"BLADES : 2 blades
+Net Weight : 71g/pc
+Gross Weight : 450g
+Size (L*W*H/mm) : 650*90*40
+",417.25,,,4,24
+jane t,G26,,"T-MOTORS 26*8.5 inches, PAIR, 2 blades",G SERIES  (Glossy Props),"BLADES : 2 blades
+Net Weight : 87g/pc
+Gross Weight : 650g
+Size (L*W*H/mm) : 780*83*110
+",499.75,,,4,26
+jane t,G27,,"T-MOTORS 27*8.8 inches, PAIR, 2blades",G SERIES  (Glossy Props),"BLADES : 2blades
+Net Weight : 92g/pc
+Gross Weight : 670g
+Size (L*W*H/mm) : 780*83*110
+",519.25,,,4,27
+jane t,G 28,,"T-MOTORS  28*9.2 inches, PAIR, 2 blades",G SERIES  (Glossy Props),"BLADES : 2 blades
+Net Weight : 98g/pc
+Gross Weight : 690g
+Size (L*W*H/mm) : 780*83*110
+",542.25,,,4,28
+jane t,G29,,"T-MOTORS 29*9.5 inches, PAIR, 2 blades",G SERIES  (Glossy Props),"BLADES : 2 blades
+Net Weight : 108g/pc
+Gross Weight : 700g
+Size (L*W*H/mm) : 780*83*110
+",562.25,,,4,29
+jane t,G30,,"T-MOTORS 30*10.5 inches, PAIR, 2 blades",G SERIES  (Glossy Props),"BLADES : 2 blades
+Net Weight : 132g/pc
+Gross Weight : 713g
+Size (L*W*H/mm) : 780*83*110
+",589.75,,,4,30
+jane t,G32,,"T-MOTORS 32*11 inches, PAIR, 2 blades 125g/pcs",G SERIES  (Glossy Props),"BLADES : 2 blades 125g/pcs
+Net Weight : 129g/pc
+Gross Weight : 713g
+Size (L*W*H/mm) : 780*83*110
+",626.25,,,4,32
+jane t,G34,,"T-MOTORS 34*11.5 inches, PAIR, 2 blades 175g/pcs",G SERIES  (Glossy Props),"BLADES : 2 blades 175g/pcs
+Net Weight : 160g/pc
+Gross Weight : 900g
+Size (L*W*H/mm) : 944*92*129
+",664.75,,,4,34
+jane t,G36,,"T-MOTORS 36*11.5 inches, PAIR, 2 blades 200g/pcs",G SERIES  (Glossy Props),"BLADES : 2 blades 200g/pcs
+Net Weight : 193g/pc
+Gross Weight : 1000g
+Size (L*W*H/mm) : 944*92*129
+",708.75,,,4,36
+jane t,G40,,"T-MOTORS 40*13.1 inches, PAIR, 2 blades",G SERIES  (Glossy Props),"BLADES : 2 blades
+Net Weight : 237g/pc
+Gross Weight : 1200g
+Size (L*W*H/mm) : 1060*150*100
+",776.25,,,4,40
+jane t,G26 4Blades,,"T-MOTORS 26*8.5 inches, PAIR, 4 blades",G SERIES  (Glossy Props),"BLADES : 4 blades
+Net Weight : 41g/pc
+Gross Weight : 344.3g
+Size (L*W*H/mm) : 385*85*45
+",429.75,,,4,26
+jane t,G27 4Blades,,"T-MOTORS 27*8.8 inches, PAIR, 4 blades",G SERIES  (Glossy Props),"BLADES : 4 blades
+Net Weight : 47g/pc
+Gross Weight : 381.4g
+Size (L*W*H/mm) : 385*85*46
+",447.25,,,4,27
+jane t,G28 4Blades,,"T-MOTORS 28*9.2 inches, PAIR, 4 blades",G SERIES  (Glossy Props),"BLADES : 4 blades
+Net Weight : 50g/pc
+Gross Weight : 402.5g
+Size (L*W*H/mm) : 385*85*47
+",464.75,,,4,28
+jane t,G29 4Blades,,"T-MOTORS 29*9.5 inches, PAIR, 4 blades",G SERIES  (Glossy Props),"BLADES : 4 blades
+Net Weight : 208.4g
+Gross Weight : 417.3g
+Size (L*W*H/mm) : 385*85*48
+",482.25,,,4,29
+jane t,G26 3Blades,,"T-MOTORS 26*8.5-3
+ inches, PAIR, triple- blades self-locking adapter",G SERIES  (Glossy Props),"BLADES : triple- blades self-locking adapter
+Net Weight : 229.2g
+Gross Weight : 702.5g
+Size (L*W*H/mm) : 470*85*60
+",617.25,,,4,26
+jane t,G27 3Blades,,"T-MOTORS 27*8.8-3
+ inches, PAIR, triple- blades self-locking adapter",G SERIES  (Glossy Props),"BLADES : triple- blades self-locking adapter
+Net Weight : 259.2g
+Gross Weight : 773.1g
+Size (L*W*H/mm) : 470*85*60
+",664.75,,,4,27
+jane t,G28 3Blades,,"T-MOTORS 28*9.2-3
+ inches, PAIR, triple- blades self-locking adapter",G SERIES  (Glossy Props),"BLADES : triple- blades self-locking adapter
+Net Weight : 291.3g
+Gross Weight : 785.2g
+Size (L*W*H/mm) : 470*85*60
+",677.25,,,4,28
+jane t,G29 3Blades,,"T-MOTORS 29*9.5-3
+ inches, PAIR, triple- blades self-locking adapter",G SERIES  (Glossy Props),"BLADES : triple- blades self-locking adapter
+Net Weight : 312.6g
+Gross Weight : 772.6g
+Size (L*W*H/mm) : 470*85*60
+",724.75,,,4,29
+jane t,FA15,,"T-MOTORS 15.2*5 inches, PAIR, 2 blades",FA SERIES (Carbon Fiber Folding Props),"BLADES : 2 blades
+Net Weight : 27.5g/pc
+Gross Weight : 158g
+Size (L*W*H/mm) : 258*104*57
+",167.25,,,4,15
+jane t,FA16,,"T-MOTORS 16.2*5.3 inches, PAIR, 2 blades",FA SERIES (Carbon Fiber Folding Props),"BLADES : 2 blades
+Net Weight : 30g/pc
+Gross Weight : 165g
+Size (L*W*H/mm) : 258*104*57
+",187.25,,,4,16
+jane t,FA18,,"T-MOTORS 18.2*5.9 inches, PAIR, 2 blades",FA SERIES (Carbon Fiber Folding Props),"BLADES : 2 blades
+Net Weight : 40g/pc
+Gross Weight : 178g
+Size (L*W*H/mm) : 258*104*57
+",244.75,,,4,18
+jane t,FA20,,"T-MOTORS 20.2*6.6 inches, PAIR, 2 blades",FA SERIES (Carbon Fiber Folding Props),"BLADES : 2 blades
+Net Weight : 57g/pc
+Gross Weight : 262g
+Size (L*W*H/mm) : 336*137*68
+",314.75,,,4,20
+jane t,FA22,,"T-MOTORS 22.2*7.2 inches, PAIR, 2 blades",FA SERIES (Carbon Fiber Folding Props),"BLADES : 2 blades
+Net Weight : 69g/pc
+Gross Weight : 299g
+Size (L*W*H/mm) : 336*137*68
+",392.25,,,4,22
+jane t,FA24,,"T-MOTORS 24.2*7.9 inches, PAIR, 2 blades",FA SERIES (Carbon Fiber Folding Props),"BLADES : 2 blades
+Net Weight : 87g/pc
+Gross Weight : 327g
+Size (L*W*H/mm) : 336*137*68
+",499.75,,,4,24
+jane t,FA26,,"T-MOTORS 26.2*8.5 inches, PAIR, 2 blades",FA SERIES (Carbon Fiber Folding Props),"BLADES : 2 blades
+Net Weight : 110g/pc
+Gross Weight : 489g
+Size (L*W*H/mm) : 423*171*77
+",567.25,,,4,26
+jane t,FA27,,"T-MOTORS 27.2*8.9 inches, PAIR, 2 blades",FA SERIES (Carbon Fiber Folding Props),"BLADES : 2 blades
+Net Weight : 120g/pc
+Gross Weight : 520g
+Size (L*W*H/mm) : 423*171*77
+",592.25,,,4,27
+jane t,FA28,,"T-MOTORS 28.2*9.2 inches, PAIR, 2 blades",FA SERIES (Carbon Fiber Folding Props),"BLADES : 2 blades
+Net Weight : 
+Gross Weight : 854g
+Size (L*W*H/mm) : 423*171*77
+",627.25,,,4,28
+jane t,FA29,,"T-MOTORS 29.2*9.5 inches, PAIR, 2 blades",FA SERIES (Carbon Fiber Folding Props),"BLADES : 2 blades
+Net Weight : 135g/pc
+Gross Weight : 537g
+Size (L*W*H/mm) : 423*171*77
+",652.25,,,4,29
+jane t,FA30,,"T-MOTORS 30.2*9.9 inches, PAIR, 2 blades",FA SERIES (Carbon Fiber Folding Props),"BLADES : 2 blades
+Net Weight : 153g/pc
+Gross Weight : 570g
+Size (L*W*H/mm) : 423*171*77
+",664.75,,,4,30
+jane t,FA31,,"T-MOTORS 31.2*10.2 inches, PAIR, 2 blades",FA SERIES (Carbon Fiber Folding Props),"BLADES : 2 blades
+Net Weight : 166g/pc
+Gross Weight : 626g
+Size (L*W*H/mm) : 423*171*77
+",677.25,,,4,31
+jane t,FA32,,"T-MOTORS 32.2*10.5 inches, PAIR, 2 blades",FA SERIES (Carbon Fiber Folding Props),"BLADES : 2 blades
+Net Weight : 175g/pc
+Gross Weight : 860g
+Size (L*W*H/mm) : 462*177*112
+",699.75,,,4,32
+jane t,FA34,,"T-MOTORS 34.2*9.11.2 inches, PAIR, 2 blades",FA SERIES (Carbon Fiber Folding Props),"BLADES : 2 blades
+Net Weight : 207g/pc
+Gross Weight : 930g
+Size (L*W*H/mm) : 462*177*112
+",739.75,,,4,34
+jane t,FA36,,"T-MOTORS 36.2*9.11.8 inches, PAIR, 2 blades",FA SERIES (Carbon Fiber Folding Props),"BLADES : 2 blades
+Net Weight : 230g/pc
+Gross Weight : 920g
+Size (L*W*H/mm) : 462*177*112
+",777.25,,,4,36
+jane t,MF 1604,,"T-MOTORS 1604 inches, PAIR, 2 blades",Polymer SERIES (Polymer Folding Props),"BLADES : 2 blades
+Net Weight : 30g/pc
+Gross Weight : 130g
+Size (L*W*H/mm) : 207*82*36
+",69.75,,,4,1604
+jane t,MF 1806,,"T-MOTORS 1806 inches, PAIR, 2 blades",Polymer SERIES (Polymer Folding Props),"BLADES : 2 blades
+Net Weight : 37g/pc
+Gross Weight : 152g
+Size (L*W*H/mm) : 230*85*38
+",78.75,,,4,1806
+jane t,MF 2009,,"T-MOTORS 2009 inches, PAIR, 2 blades",Polymer SERIES (Polymer Folding Props),"BLADES : 2 blades
+Net Weight : 59g/pc
+Gross Weight : 213g
+Size (L*W*H/mm) : 260*95*40
+",87.25,,,4,2009
+jane t,MF 2211,,"T-MOTORS 2211 inches, PAIR, 2 blades",Polymer SERIES (Polymer Folding Props),"BLADES : 2 blades
+Net Weight : 71g/pc
+Gross Weight : 247g
+Size (L*W*H/mm) : 285*100*42
+",96.25,,,4,2211
+jane t,MF 2412,,"T-MOTORS 2412 inches, PAIR, 2 blades",Polymer SERIES (Polymer Folding Props),"BLADES : 2 blades
+Net Weight : 96g/pc
+Gross Weight : 327g
+Size (L*W*H/mm) : 305*127*48
+",104.75,,,4,2412
+jane t,MF 2614,,"T-MOTORS 2614 inches, PAIR, 2 blades",Polymer SERIES (Polymer Folding Props),"BLADES : 2 blades
+Net Weight : 126g/pc
+Gross Weight : 415g
+Size (L*W*H/mm) : 330*130*55
+",122.25,,,4,2614
+jane t,MF 2815,,"T-MOTORS 2815 inches, PAIR, 2 blades",Polymer SERIES (Polymer Folding Props),"BLADES : 2 blades
+Net Weight : 164g/pc
+Gross Weight : 521g
+Size (L*W*H/mm) : 355*145*58
+",139.75,,,4,2815
+jane t,MF 3016,,"T-MOTORS 3016 inches, PAIR, 2 blades",Polymer SERIES (Polymer Folding Props),"BLADES : 2 blades
+Net Weight : 184g/pc
+Gross Weight : 604g
+Size (L*W*H/mm) : 380*155*65
+",157.25,,,4,3016
+jane t,MF 3218,,"T-MOTORS 3218 inches, PAIR, 2 blades",Polymer SERIES (Polymer Folding Props),"BLADES : 2 blades
+Net Weight : 204g/pc
+Gross Weight : 656g
+Size (L*W*H/mm) : 405*158*67
+",174.75,,,4,3218

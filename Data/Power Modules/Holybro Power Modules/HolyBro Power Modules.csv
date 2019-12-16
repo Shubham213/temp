@@ -1,0 +1,14 @@
+Supplier Code,Product Code,Picture,Name,SubName,Description,Price USD,Delivery,Discount,Minimum Order,Sort
+arthur,"1,1",,"12S Power module(PM02 V3)
+Designed for Pix32, Pixhawk4,Pixhawk4mini, Durandal",PM,"Net Weight : 18g
+Gross Weight : 22g
+Packing Size : 120*80mm",26.4,,,,1
+arthur,"1,9",,10S APM Power module,PM,"Net Weight : 18g
+Gross Weight : 22g
+Packing Size : 120*80mm",22,,,,2
+arthur,"1,10",,10S Micro Power Module with UBEC VI sensor (PM06 V2),PM,"Net Weight : 9g
+Gross Weight : 13g
+Packing Size : 120*80mm",19.8,,,,3
+arthur,"4,13",,PM07,PM,"Net Weight : 33g
+Gross Weight : 37g
+Packing Size : 170*90mm",50.6,,,,4

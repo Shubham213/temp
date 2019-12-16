@@ -1,0 +1,73 @@
+{% extends 'baseIn.html' %}
+
+{% block body %}
+
+{% load static %}
+
+<style>
+	.error{
+		color: red;
+text-align:center;
+padding:0 0 20px 0;
+	}
+	.myContainer{
+		width:100%;	
+		max-width:800px;
+		margin:0 auto;
+padding:50px 0 0 0;
+font-size:18px;
+font-family:'Montserrat';
+	}
+#trackLink:hover{
+	box-shadow:0 0 5px 0 rgba(0,0,0,0.2);
+}
+#_input_txtt{
+	font-family:'Montserrat';
+}
+#_input_txtt:focus
+{
+	box-shadow:0 0 5px 0 rgba(0,0,200,0.2),0 0 6px 1px rgba(0,0,200,0.2) !important;
+}
+
+</style>
+
+<div class="myContainer">
+	<div style="width:100%;text-align:center; padding:0 0 30px 0;"><h3 style="margin:0;">TRACK ORDER</h3></div>
+{% if error %}
+<div class="error"> {{ error }} </div>
+{% endif %}
+
+<div style="margin:0 auto;display: flex;justify-content: center;">
+	<input type="text" placeholder="Enter order ID" oninput="updateLink(this)" style="padding:10px 20px;font-size:18px; box-shadow:0 0 3px 0 rgba(0,0,0,0.2); border:solid 1px #aaa; border-radius:5px;" id="_input_txtt"></div>
+<div style="margin:0 auto; padding:10px 20px;display: flex;justify-content: center;">
+	<a href="" id="trackLink" style="color:#24f; border-radius:5px;text-decoration:none; border:solid 1px #aaa; padding:10px 20px;">Track Order</a>
+	<script>
+		function updateLink(elem){
+			var linkElem = document.getElementById('trackLink');
+			linkElem.href = "{% url 'racerfly:track_order' %}?search="+(elem.value).toString();
+		}
+		window.onkeydown = function(){
+			if(event.keyCode=="13"){
+				var elem = document.getElementById("_input_txtt");
+				var var2 =  ""+"{% url 'racerfly:track_order' %}?search="+(elem.value).toString();
+				window.location.href=""+var2;
+			}
+		}
+	</script>
+</div>
+
+{% if order %}
+<div style="width:400px; margin:0 auto; margin-top:40px; margin-bottom:60px; padding:30px 10px; border-radius: 5px; box-shadow:0 0 6px 0 rgba(0,0,0,0.1),0 0 2px 0 rgba(65, 13, 13, 0.2);">
+		<div style="color:#444;"><h3 style="margin:0 0 0 10px;">{{ order.order_id }}</h3></div>
+		<div style="color:#888; padding:5px 0 20px 40px;"><h4 style="margin:0;">{{ order }}</h4></div>
+		<div style="border-bottom:solid 1px #aaa; margin-bottom:30px;"></div>
+		{% if order.track %}
+			<div style="padding:0 20px;">{{ order.track }}</div>
+		{% else %}
+			<div style="padding:5px;text-align:center; color:#999;">No Update</div>
+		{% endif %}
+</div>
+{% endif %}
+
+</div>
+{% endblock %}

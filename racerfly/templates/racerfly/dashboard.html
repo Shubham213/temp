@@ -1,0 +1,198 @@
+{% extends 'baseIn.html' %}
+
+{% block body %}
+{% load static %}
+
+
+    <link rel="stylesheet" href="{% static 'utils/style_dash.css' %}">
+
+<div class="head_cont">
+            <div class="racerFly">
+                <!-- Link to home -->
+                <a href="{% url 'racerfly:home' %}">
+                    <img src="{% static 'images/final_logo.png' %}" alt="">
+                </a>
+            </div>
+            <div class="usr_data">
+                <div class="usrimg">
+                    <!-- User Image -->
+                    <img src="{% static 'images/one.png' %}" alt="">
+                </div>
+                <div class="usrinfo">
+                    <div class="usrname">
+                        <h2>{{ user.name }}</h2>
+                    </div>
+                    <div class="usremail">
+                        {{ user.email }}
+                        <!-- dummyuser<span>@gmail.com</span> -->
+                        
+                    </div>
+                    
+                    {% if user.phone_no %}
+                    <div class="usrmobile">
+                        {{ user.phone_no }}
+                        <!-- <b>+91</b><span>0000000000</span> -->
+                     </div>
+                    {% endif %}
+
+                </div>
+            </div>
+        </div>
+        <div class="data_cont">
+            <div class="left cont">
+                <div class="opt" onclick="gjbkkjh(1,this);">
+                    Your Orders
+                </div>
+                <div class="opt" onclick="gjbkkjh(2,this);">
+                    Your Wish List
+                </div>
+                <div class="opt" onclick="gjbkkjh(3,this);">
+                    Edit Account Details
+                </div>
+                <div class="opt"  onclick="gjbkkjh(4,this);">
+                    Notifications
+                </div>
+                <div class="opt" onclick="gjbkkjh(5,this);">
+                    Settings
+                </div>
+                <div class="opt" onclick="gjbkkjh(6,this);">
+                    Help
+                </div>
+                <div class="contt"></div>
+            </div>
+            <div class="mid cont">
+                <div id="order">
+                    <h2>Your Orders</h2>
+                    <div>
+                        <table>
+                            <tr>
+                                <th>Product Name</th>
+                                <th>Order ID</th>
+                                <th>Order Time</th>
+                                <th>Details</th>
+                            </tr>
+
+                            {% for order in user.my_orders.all %}
+                                <tr>
+                                    <td>
+                                        <!-- Link to Product description Page -->
+                                        <a href="{% url 'racerfly:buyItem' order.item.series.category.id order.item.series.id order.item.id %}">
+                                            <b>{{ order.item.name }}</b>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        {{ order.order_id }}
+                                    </td>
+                                    <td>
+                                        {{ order.order_time }}
+                                    <!-- {% if order.delivered %}
+                                        Package has already delivered.
+                                    {% else %}
+                                        Package is on the way.
+                                    {% endif %} -->
+                                    </td>
+                                    <td>
+                                        <!-- Link to Product Delivery Track Page for delivered and not delivered product-->
+                                        {% if order.delivered %}
+                                        <a href="{% url 'racerfly:track_order' %}?search={{order.order_id}}">
+                                            View delivery log
+                                        </a>
+                                        {% else %}
+                                        <a href="{% url 'racerfly:track_order' %}?search={{order.order_id}}" target="_blank">
+                                            Track package
+                                        </a>
+                                        {% endif %}
+                                    </td>
+                                </tr>
+                            {% endfor %}
+                        </table>
+                    </div>
+                </div>
+
+                <div id="wish_list">
+                    <h2>Wish List</h2>
+                    <div>
+                        <table>
+                            <tr>
+                                <th>Product Name</th>
+                                <th>Order now</th>
+                            </tr>
+
+
+                            {% for wish_item in user.favourites.all %}
+                            <tr>
+                                <td>
+                                    <!-- Link to Product description Page -->
+                                    <a href="{% url 'racerfly:buyItem' wish_item.series.category.id wish_item.series.id wish_item.id %}">
+                                        <b> {{ wish_item.name }} </b>
+                                    </a>
+                                </td>
+                                <td>
+                                    <!-- Link to Product Delivery Track Page for delivered and not delivered product-->
+                                    {% if not wish_item.sold_out %}
+                                    <a href="{% url 'racerfly:dashboard' %}?param={{wish_item.id}}">
+                                        Add To Cart
+                                    </a>
+                                    {% else %}
+                                    <abbr title="Sold Out">Add To Cart</abbr>
+                                    {% endif %}
+                                </td>
+                            </tr>
+                            {% endfor %}
+                            <!-- 
+                            <tr>
+                                <td>
+                                    <a href="">
+                                        <b>Motors by MDMN clear shaft</b>
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="">
+                                        Order now
+                                    </a>
+                                </td>
+                            </tr>
+                                 -->            
+                        </table>
+                    </div>
+                </div>
+                <div id="edit">
+                    <h2>Edit Details</h2>
+                    <div>
+                        <b>Nothing to show here ...</b>
+                        <h4>We will surely try to make it workable in few days.</h4>
+                    </div>
+                </div>
+                <div id="notification">
+                    <h2>Your Notifications</h2>
+                    <div>
+                        <b>Nothing to show here ...</b>
+                        <h4>We will surely try to make it workable in few days.</h4>
+                    </div>
+                </div>
+                <div id="setting">
+                    <h2>Your Settings</h2>
+                    <div>
+                        <b>Nothing to show here ...</b>
+                        <h4>We will surely try to make it workable in few days.</h4>
+                    </div>
+                </div>
+                <div id="help">
+                    <h2>Help</h2>
+                    <div>
+                        <b>Nothing to show here ...</b>
+                        <h4>We will surely try to make it workable in few days.</h4>                
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="{% static 'utils/script_dash.js' %}"></script>
+
+        <script>
+            window.onload = function(){
+                        document.body.setAttribute("m","o");
+                        document.body.setAttribute("h","o");}
+        </script>
+
+{% endblock %}

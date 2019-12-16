@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Racerfly Login </title>
+        <link rel="stylesheet" preload href="{% static 'utils/login.css' %}">
+    </head>
+    <body>
+        <div class="container">
+            <!-- <a href="{% url 'racerfly:home' %}"> -->
+            <a class="logo" href="{% url 'racerfly:home' %}">
+                <img src="{% static 'images/final_logo.png' %}" alt="">
+            </a>
+            <!-- </a> -->
+            <div class="content">
+                <div class="incontent"><h2>Welcome to our Community</h2></div>
+                <div class="full">
+                    <form method="post">
+                        {% csrf_token %}
+                        <div class="input">
+                            <input type="email" required id="id_email" maxlength="30" name="email" autocomplete="off">
+                            <label for="id_email">
+                                <b>
+                                    Email
+                                </b>
+                            </label>
+                            <a title="">
+                                <b><div class="help" onclick="f(0)"></div></b>
+                            </a>
+                        </div>
+                        <div class="input">
+                            <input type="password" required id="id_password" name="password" autocomplete="off">
+                            <label for="id_password">
+                                <b>
+                                    Password
+                                </b>
+                            </label>
+                            <a>
+                                <b><div class="help" onclick="f(1)"></div></b>
+                            </a>                           
+                        </div>
+                        <div class="input">
+                            <input type="submit" value="Login">
+                        </div>
+                    </form>
+                    <div class="extra">
+                        <a href="{% url 'racerfly:forgot_password_index' %}">Forgotten Password ?</a>
+                    </div>
+                    <div class="extra">
+                        New User ? <a href="{% url 'racerfly:register' %}">Create a new account</a>
+                    </div>
+                </div>
+                <div class="helpDiv" id="help1" style="display:none;">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, et!</p>
+                        <div onclick="f(2)">
+                            <svg viewBox="0 0 10 10" width="15" height="15">
+                                <g style="transform-origin: 50%; transform:rotateZ(45deg);">
+                                        <line x1="5" y1="2" x2="5" y2="8" stroke="#000" stroke-width="1" stroke-linecap = "round"></line>
+                                        <line y1="5" x1="2" y2="5" x2="8" stroke="#000" stroke-width="1" stroke-linecap = "round"></line>
+                                    </g>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="helpDiv" id="help2" style="display:none;">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A atque beatae iste ullam velit, et autem iusto odit illo ex.</p>
+                        <div onclick="f(3)">
+                            <svg viewBox="0 0 10 10" width="15" height="15">
+                                <g style="transform-origin: 50%; transform:rotateZ(45deg);">
+                                        <line x1="5" y1="2" x2="5" y2="8" stroke="#000" stroke-width="1" stroke-linecap = "round"></line>
+                                        <line y1="5" x1="2" y2="5" x2="8" stroke="#000" stroke-width="1" stroke-linecap = "round"></line>
+                                    </g>
+                            </svg>
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+        <script src="{% static 'utils/login.js' %}"></script>
+    </body>
+</html>

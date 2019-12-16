@@ -1,0 +1,29 @@
+{% load tags %}
+
+Hi {{ user.name }}, your order is booked with us with booking ids as shown below with the items.
+
+
+{% for item in itemsToShow %}
+<div> 
+	{{ item.item.name }} 
+	<br>
+	<b>Quantity : </b> {{ item.quantity }} 
+	<br>
+	<b> Price : </b> {{ item.item.priceDollar|multiply:dollarToRs|multiply:item.quantity }}  
+	<br>
+	<i><b>Order ID</b></i> {{ item.order_id }} 
+</div>
+<br>
+{% endfor %}
+
+<br>
+<br>
+<div> <b>GST</b> : {{ gst_price }} </div>
+<div> <b>Delivery Charge</b> : {{ delivery_charge }} </div>
+<br>
+<div> <b><i>Grand Total </i></b> : {{ grandTotal }} </div>
+
+
+You can also track your orders from our website.
+THANK YOU FOR ORDERING WITH RACERFLY.
+KEEP UPDATED WITH US FOR OUR NEW SCHEMES AND PROGRAMS.

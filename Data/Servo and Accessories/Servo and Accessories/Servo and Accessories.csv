@@ -1,0 +1,43 @@
+Supplier Code,Product Code,Picture,Name,SubName,Description,Price USD,Delivery,Discount,Minimum Order,Sort
+may,FD-S401,,CCPM 3 Channel Metal Servo Tester,High Grade Items,". Input voltage: DC4.8-6V
+. Dimensions: 48*42 *17mm
+. Weight: 31.5g
+. All-aluminum shell, anodized.
+. To test analog and digital servos.
+. Can control the power transfer.
+. Test three servos simultaneously whether they are synchronized or not. ( This function is mainly for CCPM mode )
+",7.5,,,,1
+may,FD-S402,,Simple Servo Tester,High Grade Items,". Output: <= 15mA (5.0)
+. Input: DC 4.5-6.0v
+. Output signal: 1.5ms to 0.5ms
+. Size: 42.5 x 24.0 x 23.5mm
+. Weight: 8g
+. Adjustment method: manual, automatic, median.
+Features: It is very convenient to detect and set the virtual position, jitter and median of the server.",2.25,,,,2
+may,FD-S403,,Micro 9g Servo,High Grade Items,". Product Name: 9g Mirco Servo
+. Weight: about 9g
+. Speed: 0.12 seconds/60 degrees (4.8V)
+. Torque: 1.6kg/cm (4.8V)
+. Use temperature: -30 to +60 degrees Celsius
+. Operating voltage: 3.5V to 6V
+. Size: about 23x12.2x29mm
+
+",2.25,,,2,3
+may,FD-S404,,"MG90S Micro Metal Gear servo
+
+ ",High Grade Items,"Model: MG90S
+Weight: 14g
+Speed: 0.10sec/60 degrees(4.8V)
+Torque: 2kg/cm
+Voltage: 4.8V
+Wire Length: 250mm
+Dimension: 22.8mm x 12.2mm x 28.5mm
+Metal Gear",4,,,2,4
+may,FD-E503,,5 to 6V Servo Reverser ,High Grade Items,"Item Name: servo signal reveser
+Amp: 2A
+Volts: 5.0v to 6.0v
+weight: 3g",2.25,,,2,5
+may,FD-E504,,Servo Inverter,High Grade Items,"Working Voltage: 3.6v-24v
+(Wide Voltage Support)
+Max Current: 5A
+Weight: 3g",3.75,,,2,6

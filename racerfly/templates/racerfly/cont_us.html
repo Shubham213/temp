@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RacerFly : Contact us</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'utils/cont_us.css' %}">
+</head>
+<style>
+    .thankyouText{
+        background-color: green;
+        color: white;
+        font-family: 'Comic Sans MS';
+    }
+</style>
+<body>
+    <div id="c_us">
+        <div id="c_h">
+            <span></span>
+        </div>
+        <div>
+            <b style="letter-spacing: 1px;">RacerFly</b> provides amazing feedback facility
+        </div>
+
+        <div class="c_b"></div>
+        <div>
+            <b>For any complaints and queries, contact on the board-line number.</b>
+        </div>
+        {% if thankyou %}
+        <div class='thankyouText'>
+            {{ thankyou }}
+        </div>
+        {% endif %}
+        <div class="c_b"></div>
+        <div id="c_m">
+            <div id="c_m_s">
+                <span>
+                    Contact us on
+                </span>
+            </div>
+            <div id="in_c_b">
+                <div></div>
+                <div id="in_in_c_b">
+                    <div id="c_em">
+                        <span><img src="https://img.icons8.com/material-rounded/40/000000/important-mail.png" alt="" style="width:40px; height:40px;"></span>
+                        <b>sales@racerfly.com</b>
+                    </div>
+                    <div></div>
+                    <div></div>
+                    <div id="c_mo">
+                        <span>
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAA6UlEQVRIie3UPUoDQRgG4CcWNoKmMGAj/tQ5gNjYe4Z4Du09gV7EGLyAN9Ag2KTwBoJaibgWMwtxmSjZ2an0hS2W+Xgfhtkd/rNkqsRzmVO40nh/T8zsdAm8lAaeSgMPiZk+NroCbhMzU3y0BZoZCAddf0GP2OqqvM44ls8i2HkOIvCG3RIA3ERkXArYx2tETkshowh84mTBzBrWc5DzOeSssTbAfVx/xh0muFgG6M0hFa6xHcun0pdj1WYnI+GeqoSzmf1Q3gogHPzkl+IsoM4hrnz/4xcCvQxoE8c4whB7wqW4mtn71/IFsaVMtWDhNokAAAAASUVORK5CYII=" style="width:40px; height:40px;">
+                        </span>
+                        <b>+91 6398187426</b>
+                    </div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+        <div class="c_b"></div>
+        <div id="c_fdbk">
+            <div id="c_f_h">
+                <span>Feedback</span>
+            </div>
+            <div id="c_f">
+                <form method='post'>
+                    {% csrf_token %}
+                    <div class="c_v">
+                        <input type="email" autocomplete="off"  name="feed_email" placeholder="E-mail" required id="c_feed_em">
+                    </div>
+                    <div class="c_v">
+                        <input type="number" autocomplete="off"  name="feed_phone" placeholder="Phone Number" required id="c_feed_ph">
+                    </div>
+                    <div class="c_v">
+                        <textarea name="feed_txt" autocomplete="off" id="c_feed_txt" placeholder="Enter your Feedback/Suggestions here" maxlength="500" required rows="4"></textarea>
+                    </div>
+                    <input type="submit" value="Submit" id="c_feed_submit" style="display: none;">
+                    <label for="c_feed_submit">
+                        <div id="c_s"><div></div></div>
+                    </label>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

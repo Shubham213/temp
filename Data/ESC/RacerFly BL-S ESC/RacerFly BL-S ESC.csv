@@ -1,0 +1,316 @@
+Supplier Code,Product Code,Picture,Name,SubName,Description,Price USD,Delivery,Discount,Minimum Order,Sort
+jane v,1,,6A ESC,HIGH GRADE ESC,"BLHELI-S   6A
+Con.Current:6A
+Peak Current(10s):10A
+BEC:NO
+Lipo:2-3s
+Programming :YES
+Weight:4.7g
+Size(PCB):20*11mm",12.25,,,,"6,1"
+jane v,2,,10A ESC,HIGH GRADE ESC,"BLHELI-S   10A
+Con.Current:10A
+Peak Current(10s):15A
+BEC:NO
+Lipo:2-4s
+Programming :YES
+Weight:5.1g
+Size(PCB):22*12mm",12.5,,,,"10,1"
+jane v,3,,12A ESC,HIGH GRADE ESC,"BLHELI-S   12A
+Con.Current:12A
+Peak Current(10s):15A
+BEC:NO
+Lipo:2-4s
+Programming :YES
+Weight:5.4g
+Size(PCB):22*12mm",13,,,,"12,1"
+jane v,4,,15A ESC,HIGH GRADE ESC,"BLHELI-S   15A
+Con.Current:15A
+Peak Current(10s):20A
+BEC:NO
+Lipo:2-4s
+Programming :YES
+Weight:5.6g
+Size(PCB):27*12mm",13.25,,,,"15,1"
+jane v,5,,18A ESC,HIGH GRADE ESC,"BLHELI-S   18A
+Con.Current:18A
+Peak Current(10s):22A
+BEC:NO
+Lipo:2-4s
+Programming :YES
+Weight:6.3g
+Size(PCB):27*12mm",13.5,,,,"18,1"
+jane v,6,,20A ESC,HIGH GRADE ESC,"BLHELI-S   20A
+Con.Current:20A
+Peak Current(10s):25A
+BEC:NO
+Lipo:2-4s
+Programming :YES
+Weight:7.9g
+Size(PCB):27*12mm",13.75,,,,"20,1"
+jane v,7,,25A ESC,HIGH GRADE ESC,"BLHELI-S   25A
+Con.Current:25A
+Peak Current(10s):30A
+BEC:NO
+Lipo:2-4s
+Programming :YES
+Weight:8.5g
+Size(PCB):28*13mm",17.5,,,,"25,1"
+jane v,8,,30A ESC,HIGH GRADE ESC,"BLHELI-S   30A
+Con.Current:30A
+Peak Current(10s):35A
+BEC:NO
+Lipo:2-4s
+Programming :YES
+Weight:9.1g
+Size(PCB):28*13mm",18.5,,,,"30,1"
+jane v,9,,25A ESC,HIGH GRADE ESC,"BLHELI-S   25A
+Con.Current25A
+Peak Current(10s):30A
+BEC:NO
+Lipo:2-6s
+Programming :YES
+Weight:13.1g
+Size(PCB):35*19mm",20.25,,,,"25,2"
+jane v,10,,30A ESC,HIGH GRADE ESC,"BLHELI-S   30A
+Con.Current:30A
+Peak Current(10s):35A
+BEC:NO
+Lipo:2-6s
+Programming :YES
+Weight:15.8g
+Size(PCB):35*19mm",22.25,,,,"30,2"
+jane v,13,,35A ESC,HIGH GRADE ESC,"BLHELI-S   35A
+Con.Current:35A
+Peak Current(10s):40A
+BEC:NO
+Lipo:2-6s
+Programming :YES
+Weight:11.3g
+Size(PCB):36*17mm",24.25,,,,"35,1"
+jane v,16,,7A ESC,HIGH GRADE ESC,"BLHELI-S   7A
+Con.Current:7A
+Peak Current(10s):10A
+BEC:NO
+Lipo:1-2s
+Programming :YES
+Weight:1.1g
+Size(PCB):18*11mm",11.25,,,,"7,1"
+jane v,22,,40A ESC,HIGH GRADE ESC,"BLHELI-S   40A
+Con.Current:40A
+Peak Current(10s):45A
+BEC:NO
+Lipo:2-5s
+Programming :YES
+Weight:9.6g
+Size(PCB):32*15mm",25,,,,"40,1"
+jane v,24,,11A ESC,HIGH GRADE ESC,"BLHELI-S   11A
+Con.Current:11A
+Peak Current(10s):15A
+BEC:NO
+Lipo:1-3s
+Programming :YES
+Weight:5.1g
+Size(PCB):22*12mm",14.75,,,,"11,1"
+jane v,28,,30A ESC,HIGH GRADE ESC,"BLHELI-S   30A
+Con.Current:30A
+Peak Current(10s):40A
+BEC:NO
+Lipo:2-4s
+Programming :YES
+Weight:7.3g
+Size(PCB):27*16mm",18.25,,,,"30,3"
+jane v,34,,50A ESC,HIGH GRADE ESC,"BLHELI-S   50A
+Con.Current:50A
+Peak Current(10s):55A
+BEC:NO
+Lipo:2-6s
+Programming :YES
+Weight:10.3g
+Size(PCB):33*23mm",31.25,,,,"50,1"
+jane v,37,,F4 + OSD + VTX,HIGH GRADE ESC,"F4+OSD+VTX
+Lipo2-6s
+Programming :YES
+Weight: ESC:15g
+Size(PCB):36*36mm
+M3  30.5x30.5mm  mounting holes",103.5,,,,400
+jane v,11,,4 in 1 20A ESC,HIGH GRADE ESC,"BLHELI-S  4 IN 1  20A
+Con.Current:20A
+Peak Current(10s):25A
+BEC:NO
+Lipo:2-4s
+Programming :YES
+Weight:19g
+Size(PCB):36*36mm",54.5,,,,408
+jane v,12,,2 in 1 20A ESC,HIGH GRADE ESC,"BLHELI-S  2 IN 1  20A
+Con.Current:20A
+Peak Current(10s):25A
+BEC:NO
+Lipo:2-4s
+Programming :YES
+Weight:13g
+Size(PCB):27*27mm",27.25,,,,401
+jane v,14,,4 in 1 35A ESC,HIGH GRADE ESC,"BLHELI-S  4 IN 1  35A
+Con.Current:35A
+Peak Current(10s):40A
+BEC:NO
+Lipo:2-4s
+Programming :YES
+Weight:25g
+Size(PCB):36*36mm",81.25,,,,420
+jane v,15,,4 in 1 30A ESC,HIGH GRADE ESC,"BLHELI-S  4 IN 1  30A
+Con.Current:30A
+Peak Current(10s):35A
+BEC:NO
+Lipo:2-6s
+Programming :YES
+Weight:25g
+Size(PCB):36*36mm",96.25,,,,411
+jane v,17,,4 in 1 10A ESC,HIGH GRADE ESC,"BLHELI-S  4 IN 1  10A
+Con.Current:10A
+Peak Current(10s):15A
+BEC:NO
+Lipo:2-3s
+Programming :YES
+Weight:13g
+Size(PCB):27*27mm",55,,,,407
+jane v,18,,4 in 1 20A ESC,HIGH GRADE ESC,"BLHELI-S  4 IN 1  20A
+Con.Current:20A
+Peak Current(10s):25A
+BEC:5V 1.5A ??
+Lipo:2-4s
+Programming :YES
+Weight:19g
+Size(PCB):36*36mm",54.75,,,,409
+jane v,19,,4 in 1 6A ESC,HIGH GRADE ESC,"BLHELI-S  4 IN 1  6A
+Con.Current:6A
+Peak Current(10s):10A
+BEC:0.5A/3.3V
+Lipo:1-2s
+Programming :YES
+Weight:5g
+Size(PCB):27*27mm",46.5,,,,405
+jane v,20,,4 in 1 30A ESC,HIGH GRADE ESC,"BLHELI-S  4 IN 1  30A
+Con.Current:30A
+Peak Current(10s):35A
+SBEC:3A/5V
+Lipo:2-4s
+Programming :YES
+Weight:19g
+Size(PCB):36*36mm",83,,,,412
+jane v,21,,4 in 1 20A ESC,HIGH GRADE ESC,"BLHELI-S  4 IN 1  20A
+Con.Current:20A
+Peak Current(10s):25A
+BEC:NO
+Lipo:2-4s
+Programming :YES
+Weight:19g
+Size(PCB):36*36mm",56.25,,,,417
+jane v,23,,4 in 1 20A ESC,HIGH GRADE ESC,"BLHELI-S  4 IN 1  20A
+Con.Current:30A
+Peak Current(10s):35A
+BEC:NO
+Lipo:2-4s
+Programming :YES
+Weight:25g
+Size(PCB):36*36mm",86.5,,,,410
+jane v,25,,2 in 1 6A ESC,HIGH GRADE ESC,"BLHELI-S  2 IN 1 6A
+Con.Current:6A
+Peak Current(10s):9A
+BEC:NO
+Lipo:1-2S
+Programming :YES
+Weight:3g
+Size(PCB):21*21mm",23.25,,,,402
+jane v,26,,4 in 1 33A ESC,HIGH GRADE ESC,"BLHELI-S  4 IN 1  33A
+Con.Current:33A
+Peak Current(10s):43A
+LBEC:1A/5V
+SBEC:3A/12V
+Lipo:3-5s
+Programming :YES
+Weight:19g
+Size(PCB):36*36mm",87.5,,,,418
+jane v,27,,4 in 1 30A ESC + F4,HIGH GRADE ESC,"BLHELI-S  4 IN 1  30A +F4
+Con.Current:30A
+Peak Current(10s):35A
+LBEC:1A/5V
+Lipo:2-4s
+Programming :YES
+ F4 +BEC+CURRENT(?????
+ Input: 2-4S LIPO
+Output Voltage:   5V/1A 
+STM32F4 CPU
+ICM-MPU6000  Accelerometers and Gyroscopes   SPI
+MicroUSB socket.
+Weight:22g
+Size(PCB):36*36mm",114.75,,,,413
+jane v,29,,2 in 1 10A ESC,HIGH GRADE ESC,"BLHELI-S  2 IN 1  10A
+Con.Current:10A
+Peak Current(10s):15A
+BEC:NO
+Lipo:2-3s
+Programming :YES
+Weight:6g
+Size(PCB):21*21mm",25.75,,,,403
+jane v,30,,4 in 1 33A ESC,HIGH GRADE ESC,"BLHELI-S  4 IN 1  33A
+Con.Current:33A
+Peak Current(10s):43A
+LBEC:1A/5V
+SBEC:3A/12V
+Lipo:3-5s
+Programming :YES
+Weight:19g
+Size(PCB):36*36mm",87.5,,,,419
+jane v,31,,4 in 1 30A ESC + F3,HIGH GRADE ESC,"BLHELI-S  4 IN 1  30A +F3
+Con.Current:30A
+Peak Current(10s):35A
+LBEC:1A/5V
+Lipo:2-4s
+Programming :YES
+ F3 +BEC+OSD+CURRENT(?????
+ Input: 2-4S LIPO
+Output Voltage:   5V/2A 
+STM32F3 CPU
+ICM-MPU6000  Accelerometers and Gyroscopes   SPI
+MicroUSB socket.
+Weight:22g
+Size(PCB):36*36mm",31.5,,,,414
+jane v,32,,4 in 1 5A ESC,HIGH GRADE ESC,"BLHELI-S  4 IN 1  5A
+Con.Current:6A
+Peak Current(10s):7A
+BEC:NO
+Lipo:1-2S
+Programming :YES
+Weight:2g
+Size(PCB):20*20mm
+M2  16x16mm  mounting holes",51.25,,,,404
+jane v,33,,4 in 1 30A ESC + F4 + OSD,HIGH GRADE ESC,"BLHELI-S  4 IN 1  30A +F4+OSD
+Con.Current:30A
+Peak Current(10s):35A
+SBEC:3A/5V
+Lipo:2-4s
+Programming :YES
+ F4 +OSD+BEC+CURRENT
+ Input: 2-4S LIPO
+Output Voltage:   5V/1A 
+STM32F4 CPU
+ICM-MPU6000  Accelerometers and Gyroscopes   SPI
+MicroUSB socket.
+Weight:22g
+Size(PCB):36*36mm",118.75,,,,415
+jane v,35,,4 in 1 25A ESC,HIGH GRADE ESC,"BLHELI-S  4 IN 1 25A
+Con.Current:25A
+Peak Current(10s):30A
+Lipo2-4s
+Programming :YES
+Weight:12g
+Size(PCB):27*27mm
+M2.5  20x20mm  mounting holes",71.5,,,,416
+jane v,36,,4 in 1 6A ESC,HIGH GRADE ESC,"BLS 40A 4 IN1 6S
+Con.Current:40A
+Peak Current(10s):45A
+Lipo2-6s
+Programming :YES
+Weight: ESC:16g
+Size(PCB):36*36mm
+M3  30.5x30.5mm  mounting holes",116.75,,,,406

@@ -1,0 +1,116 @@
+Supplier Code,Product Code,Picture,Name,SubName,Description,Price USD,Delivery,Discount,Minimum Order,Sort
+cassia,1,,ACE 5200mAh 7.4V  2S1P ,ACE & GENGS ACE Car Battery Series,"Voltage : 8.4V
+SIZE : 18.5*44*128mm
+Weight : 229g",58.2,,,,"5200,2"
+cassia,2,,ACE 5200mAh 11.1V  3S1P ,ACE & GENGS ACE Car Battery Series,"Voltage : 12.6V
+SIZE : 27.7*44*128mm
+Weight : 345g",93.5,,,,"5200,3"
+cassia,3,,ACE 6800mAh 50C  7.4V  2S1P ,ACE & GENGS ACE Car Battery Series,"Voltage : 8.4V
+SIZE : 25*47*138mm
+Weight : 420g",87.6,,,,"6800,2"
+cassia,4,,ACE 4000mAh 25C  7.4V  2S1P ,ACE & GENGS ACE Car Battery Series,"Voltage : 8.4V
+SIZE : 21*47*138mm
+Weight : 238g",68.2,,,,"4000,2"
+cassia,5,,ACE 4000mAh 30C  7.4V  2S1P ,ACE & GENGS ACE Car Battery Series,"Voltage : 8.4V
+SIZE : 21*47*138mm
+Weight : 226g",71.1,,,,"4000,2"
+cassia,6,,"ACE 4200mah 60C 7.4V
+2S1P",ACE & GENGS ACE Car Battery Series,"Voltage : 8.4V
+SIZE :  96.04*47.26*25.53mm 
+Weight : 230g",82.1,,,,"4200,2"
+cassia,7,,ACE 6500mAh 50C  7.4V  2S1P ,ACE & GENGS ACE Car Battery Series,"Voltage : 8.4V
+SIZE : 25*47*138mm
+Weight : 329g",101.1,,,,"6500,2"
+cassia,8,,ACE 5700mAh 50C  7.4V  2S3P ,ACE & GENGS ACE Car Battery Series,"Voltage : 8.4V
+SIZE : 25*467*69mm
+Weight : 315g",87.6,,,,"5700,2"
+cassia,9,,ACE 1800mAh 20C  7.4V  2S1P ,ACE & GENGS ACE Car Battery Series,"Voltage : 8.4V
+SIZE : 17*29*91
+Weight : 104g",25.3,,,,"1800,2"
+cassia,10,,ACE 1800mAh 20C  11.1V  3S1P ,ACE & GENGS ACE Car Battery Series,"Voltage : 12.6V
+SIZE : 25*29*91mm
+Weight : 144g",38.2,,,,"1800,3"
+cassia,11,,ACE 5300mAh 30C  11.1V 3S1P ,ACE & GENGS ACE Car Battery Series,"Voltage : 12.6V
+SIZE : 32*42*138mm
+Weight : 405g",135.2,,,,"5300,3"
+cassia,12,,ACE 5000mAh 40C  11.1V  3S1P ,ACE & GENGS ACE Car Battery Series,"Voltage : 12.6V
+SIZE : 34*42*138mm
+Weight : 411g",131.7,,,,"5000,3"
+cassia,13,,ACE 2200mAh 25C  7.4V  2S1P ,ACE & GENGS ACE Car Battery Series,"Voltage : 8.4V
+SIZE : 17*34*85mm
+Weight : 130g",37.0,,,,"2200,2"
+cassia,14,,ACE 5000mAh 45C  11.1V  3S1P  TRAXXAS Plug,ACE & GENGS ACE Car Battery Series,"Voltage : 12.6V
+SIZE : 26*46*143mm
+Weight : 408g",132.3,,,,"5000,3"
+cassia,15,,ACE 7000mAh 40C  11.1V  3S1P  TRAXXAS Plug,ACE & GENGS ACE Car Battery Series,"Voltage : 12.6V
+SIZE : 28*43*193mm
+Weight : 525g",185.2,,,,"7000,3"
+cassia,16,,ACE 7600mAh 25C  7.4V  2S1P ,ACE & GENGS ACE Car Battery Series,"Voltage : 8.4V
+SIZE : 29*47*150mm
+Weight : 446g",111.1,,,,"7600,2"
+cassia,17,,ACE 1400mAh 50C 11.1V 3S1P XT60 plug / TRX / T plug,ACE & GENGS ACE Car Battery Series,"Voltage : 12.6V
+SIZE : 18*34*85mm
+Weight : 131g",37.0,,,,"1400,3"
+cassia,18,,ACE 2200mAh 50C 7.4V 2S1P XT60 plug / TRX / T plug,ACE & GENGS ACE Car Battery Series,"Voltage : 8.4V
+SIZE : 17*34*85mm
+Weight : 130g",37.0,,,,"2200,2"
+cassia,19,,ACE 5000mAh 50C 11.1V 3S1P XT60 plug / TRX / T plug,ACE & GENGS ACE Car Battery Series,"Voltage : 12.6V
+SIZE : 27*46*145mm
+Weight : 375g",132.3,,,,"5000,3"
+cassia,20,,ACE 5500mAh 50C 11.1V 3S1P XT60 plug / TRX / T plug,ACE & GENGS ACE Car Battery Series,"Voltage : 12.6V
+SIZE : 27*45*163mm
+Weight : 420g",145.3,,,,"5500,3"
+cassia,21,,ACE 7600mAh 50C 7.4V 2S1P XT60 plug / TRX / T plug,ACE & GENGS ACE Car Battery Series,"Voltage : 8.4V
+SIZE : 29*47*150mm
+Weight : 446g",111.1,,,,"7600,2"
+cassia,22,,ACE 8400mAh 50C 11.1V 3S2P XT60 plug / TRX / T plug,ACE & GENGS ACE Car Battery Series,"Voltage : 12.6V
+SIZE : 42.7*43*155mm
+Weight : 594g",222.0,,,,"8400,3"
+cassia,23,,GENS ACE 10000mAh 45C 11.1V 3S2P TRX car,ACE & GENGS ACE Car Battery Series,"Voltage : 12.6V
+SIZE : 45.5*46*165mm
+Weight : 720g",240.4,,,,"10000,3"
+cassia,24,,GENS 5800mAh 100C 2S1P ,ACE & GENGS ACE Car Battery Series,"Voltage : 8.4V
+SIZE : 25*47*138mm
+Weight : 300g",128.7,,,,"5800,2"
+cassia,25,,"GENS 5000mAh 100C 7.4V 
+2S1P",ACE & GENGS ACE Car Battery Series,"Voltage : 8.4V
+SIZE : 25*47*138mm
+Weight : 300g",111.1,,,,"5000,2"
+cassia,26,,ACE 5000mAh 40C  7.4V  2S1P ,ACE & GENGS ACE Car Battery Series,"Voltage : 8.4V
+SIZE : 25*47*138mm
+Weight : 300g",89.9,,,,"5000,2"
+cassia,27,,ACE 5000mAh 40C  7.4V  2S1P ,ACE & GENGS ACE Car Battery Series,"Voltage : 8.4V
+SIZE : 25*47*138mm
+Weight : 300g",89.9,,,,"5000,2"
+cassia,28,,ACE 5000mAh 50C  7.4V  2S1P ,ACE & GENGS ACE Car Battery Series,"Voltage : 8.4V
+SIZE : 25*47*138mm
+Weight : 302g",93.5,,,,"5000,2"
+cassia,29,,ACE 5000mAh 65C  7.4V  2S1P ,ACE & GENGS ACE Car Battery Series,"Voltage : 8.4V
+SIZE : 25*47*138mm
+Weight : 352g",105.2,,,,"5000,2"
+cassia,30,,ACE 5300mAh 65C  7.4V  2S1P ,ACE & GENGS ACE Car Battery Series,"Voltage : 8.4V
+SIZE : 25*47*138mm
+Weight : 325g",105.2,,,,"5300,2"
+cassia,31,,ACE 5300mAh 30C  7.4V  2S1P ,ACE & GENGS ACE Car Battery Series,"Voltage : 8.4V
+SIZE : 25*47*138mm
+Weight : 280g",93.5,,,,"5300,2"
+cassia,32,,ACE 5300mAh 30C  7.4V  2S1P ,ACE & GENGS ACE Car Battery Series,"Voltage : 8.4V
+SIZE : 25*47*138mm
+Weight : 280g",93.5,,,,"5300,2"
+cassia,33,,ACE 7000mAh 50C  7.4V  2S1P ,"ACE & GENGS ACE Car Battery Series
+gold plastic shell","Voltage : 8.4V
+SIZE : 25*47*138mm
+Weight : 308g",117.0,,,,"7000,2"
+cassia,34,,ACE 6000mAh 70C  7.4V  2S1P ,"ACE & GENGS ACE Car Battery Series
+gold plastic shell","Voltage : 8.4V
+SIZE : 25*47*138mm
+Weight : 310g",114.6,,,,"6000,2"
+cassia,35,,ACE 5800mAh 45C  7.4V  2S1P ,ACE & GENGS ACE Car Battery Series,"Voltage : 8.4V
+SIZE : 25*47*138mm
+Weight : 362g",102.9,,,,"5800,2"
+cassia,36,,ACE 5800mAh 45C  7.4V  2S1P ,ACE & GENGS ACE Car Battery Series,"Voltage : 8.4V
+SIZE : 25*47*138mm
+Weight : 362g",102.9,,,,"5800,2"
+cassia,37,,ACE 3200mAh 7.4V  2S1P ,ACE & GENGS ACE Car Battery Series,"Voltage : 8.4V
+SIZE : 25*47*138mm
+Weight : 167g",36.4,,,,"3200,2"

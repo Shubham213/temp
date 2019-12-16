@@ -1,0 +1,59 @@
+Supplier Code,Product Code,Picture,Name,SubName,Description,Price USD,Delivery,Discount,Minimum Order,Sort
+lynn,RF206S,,RF206S receiver,Plain packaging,"Receiver model:   RF206S
+Frequency: 2.4 GHz
+Voltage: 3.7 V-8.4 V
+Current: 75 mA
+Resolution PWM: 6 Channel (Mode A)",30,,,,1
+lynn,RF207S,,RF207S receiver,Plain packaging,"Receiver model:   RF207S
+Frequency: 2.4 GHz
+Voltage: 3.7 V-8.4 V
+Current: 75 mA
+Resolution PWM: 7 Channel (Mode A)",34,,,,2
+lynn,RF209S,,"RF209S receiver
+",Plain packaging,"Receiver model:   RF209S
+Frequency: 2.4 GHz
+Voltage: 3.5 V-13 V
+Current: 95 mA
+Resolution PWM: 9 Channel",36,,,,3
+lynn,RF201S,,"RF201S mini receiver 
+",Plain packaging,"Receiver model: RF201S
+Frequency: 2.4 GHz
+PPM,WBUS:Support
+20*14mm
+",28,,,,4
+lynn,RF204W,,"RF204W receiver
+",Plain packaging,"Receiver model:   RF204W
+Frequency: 2.4 GHz
+Voltage: 3.8 V-6.5 V
+Current: 80mA
+Resolution PWM: 4 Channel 28.5mm*14mm
+",28,,,,5
+lynn,WRF09S,,WRF09S receiver,Plain packaging,"Receiver model: WRF09S
+Frequency: 2.4 GHz
+Voltage: 4.8V-6.0 V
+Dual core
+dual antenna
+dual channel
+Output channel: 9 Channel",40,,,,6
+lynn,WRF07S,,WRF07S receiver,Plain packaging,"Receiver model: WRF07S
+Frequency: 2.4 GHz
+Voltage: 4.8V-6.0 V
+Output channel: 7 Channel l",32,,,,7
+lynn,WRF06S,,WRF06S receiver,Plain packaging,"Receiver model: WRF06S
+Frequency: 2.4 GHz
+Voltage: 4.8V-6.0 V
+Output channel: 6 Channel",24,,,,8
+lynn,WRF04H,,WRF04H receiver,Plain packaging,"Receiver model: WRF04H
+Frequency: 2.4 GHz
+Voltage: 4.8V-6.0 V
+Output channel: 4 Channel",26,,,,9
+lynn,WRF04S,,WRF04S receiver,Plain packaging,"Receiver model: WRF04S
+Frequency: 2.4 GHz
+Voltage: 4.8V-6.0 V
+Output channel: 4 Channel
+34*15*9.5mm(PPM)",24,,,,10
+lynn,RD201W,,RD201W receiver,Plain packaging,"Receiver model: RD201W
+Frequency: 2.4 GHz
+Voltage: 4.8 V-12.6 V
+PPM,WBUS:Support
+30.4*22.7*9.5mm",30,,,,11

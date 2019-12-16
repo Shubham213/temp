@@ -1,0 +1,299 @@
+head{
+    scroll-behavior: smooth;
+}
+.ratecard{
+    position: relative;
+    top:-5px;
+    /* min-width:540px; */
+    width:100%;
+    padding: 0 0 10px 0;
+    /* background: cornflowerblue; */
+}
+#table{
+    /* float:left; */
+    width:100%;
+    height:auto;
+    padding:10px 0;
+    overflow:hidden;
+    /* padding-bottom:0; */
+}
+
+#table h4{
+    color:rgb(46, 10, 87) !important;
+}
+
+table{
+    width:100%;
+    /* min-width:500px; */
+    /* border:solid 1px #000; */
+    text-align:left;
+    border-collapse: collapse;
+    /* padding:10px 0; */
+}
+#order{
+    display:flex;
+    width:100%;
+    max-width:400px;
+    margin: auto;
+    padding:10px 0;
+}
+.imp_but{
+    flex:1 1 250px;
+    padding:0 10px;
+    font-family: "Montserrat" , sans-serif;
+}
+.imp_but>div{
+    min-width:120px;
+    padding:10px 20px;
+    text-align: center;
+    position: relative;
+    left:50%;
+    transform: translate(-50%,0);
+    height:20px;
+    cursor: pointer;
+    font-size:15px;
+    color:#fff;
+    background:#444;
+    border-radius: 5px;
+    letter-spacing: 0.5px;
+}
+
+@media (max-width:400px){
+    .imp_but>div{
+        width:130px;
+        min-width:130px !important;
+        padding:10px 5px  !important;
+    }
+}
+
+#describe{
+    width:100%;
+    /* background:#aaa; */
+    padding:20px 0;
+    font-family: "Montserrat";
+}
+
+.data>h2{
+    width: fit-content;
+    text-align: center;
+    border-bottom: solid 2px #444;;
+}
+th,td{
+    padding:8px;
+    font-family:'Montserrat' , sans-serif;
+    color:#000;
+}
+
+label{
+    color:#ccc;
+}
+
+th{
+    text-align: right;
+    color:rgb(94, 94, 94);
+}
+
+.frame{
+    height:400px;
+    background:#f8f8f8;
+    
+}
+.now:not([val="hid"]){
+    height:300px;
+    max-width:calc(100% - 20px);
+}
+.now img{
+    height:100%;
+    width:auto;
+}
+
+
+.ratecard{
+    top:0;
+}
+
+.ratecard{
+    background: #fefefe;
+}
+
+@media (min-width:800px){
+
+    #table{
+        padding-top: 0;
+        min-height: 370px;
+    }
+
+    .frame{
+        width:calc(100% - 408px);
+        max-width:calc(100% - 408px);
+    }
+    
+    .ratecard{
+        float:right;
+        width:405px;
+        position: relative;
+        top:0px;
+    }
+    
+    .ratecard{
+        background: #fefefe;
+    }
+    .frame{
+        padding:10px 0 20px 0px;
+        margin:0;
+        border:solid 0px  rgb(197, 197, 197);
+        border-width: 0 1px 0px 0px;
+        height:350px;
+        background: #fafafa;
+    }
+    #order{
+        padding: 0;
+    }
+
+    #price{
+        min-height:190px;
+        max-height:190px;
+    }
+    
+}
+
+@media (min-width:1000px){
+    .go{
+        display:block;
+    }
+    .frame{
+        padding:10px 0 20px 0px;
+        width:564px;
+        max-width:564px;
+        height:400px;
+        background:#fafafa;
+    }
+    
+    #table{
+        padding: 10px 0;
+        min-height: 410px;
+    }
+
+    .movement{
+        width:calc(100% - 10px);
+    }
+    .ratecard{
+        float:right;
+        position: relative;
+        top:0px;
+        width:calc(100% - 570px);
+        padding: 0 0 10px 0;
+        background: #fefefe;
+    }
+    
+    #price{
+        min-height:235px;
+        max-height:235px;
+    }
+}
+/* 
+@media (min-width:1200px){
+    .frame,.go>div:nth-child(1){
+        width:calc(100% - 583px);
+        max-width:calc(100% - 583px);
+    }
+    .ratecard{
+        width:579px;
+        max-width:579px;
+    }
+} */
+.movement{
+    height:400px;
+}
+.but{
+    width:20px;
+    height:20px;
+    font-size:18px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: auto;
+    cursor:pointer;
+}
+.but::after{
+    content: attr(val);
+}
+
+#respo{
+    display: none;
+}
+#label_respo{
+    position: relative;
+    top:-15px;
+    left:-4px;
+    z-index:auto;
+    padding-top:50px;
+    padding:10px 10px;
+    background:rgb(216, 216, 216);
+    color:rgb(104, 104, 104);
+    border-radius:0 5px 5px 0;
+    cursor: pointer;
+    font-family: "Montserrat",sans-serif;
+}
+
+#clear{
+    width:calc(100% - 105px);
+    max-width:295px;
+    min-width:195px;
+    box-shadow: 0 0 1px 1px rgba(0,0,0,0.1);
+    color:#000;
+    font-family: "Montserrat",sans-serif;
+    border-radius: 5px 5px 0 5px;
+    border:0;
+    margin:0;
+    margin-left: 10px;
+    padding:10px 5px;
+    overflow:hidden;
+    min-height:64px;
+    max-height:64px;
+}
+#place_order>div{
+    background:rgb(51, 136, 192);
+    background:#35aa18;
+}
+#add_to_cart>div{
+    background:#6294ce;
+}
+
+.data>h2:before{
+    content:'Browse in ';
+    color:#888;
+}
+
+.imp_but:hover>div{
+    transition: 0.15s;
+    box-shadow: 0 0 6px 1px rgba(0,0,0,0.13);
+}
+
+.now[zero="0"]>img{
+    opacity:0;
+    transition: 0.15s;
+}
+.now[zero="0"]{
+    transition: 0.25 ease-out !important;
+    height:300px !important;
+    transform:translate(-50%,-30%) !important;
+    opacity:0;
+}
+.dir{
+    height:26px;
+}
+
+.go>:nth-child(1){
+    display:none;
+}
+.input_text:focus-within{
+   box-shadow: 0 0 3px 1px rgba(0,0,0,0.13);
+}
+.dir>div:active>div{
+    box-shadow: 0 0 2px 1px rgba(0,0,0,1);
+}
+.dir>div>div{
+    position: relative;
+    top:10px;
+    background:rgb(83, 145, 211);
+}

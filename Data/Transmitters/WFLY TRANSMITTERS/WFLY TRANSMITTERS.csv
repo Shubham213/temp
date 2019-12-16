@@ -1,0 +1,70 @@
+Supplier Code,Product Code,Picture,Name,SubName,Description,Price USD,Delivery,Discount,Minimum Order,Sort
+lynn,ET06 RF206S,,"6 Channel transmitter  +  F206S receiver
+   ","Full set, Standard configuration","Transmitter model: ET06
+Channel: 6
+Working voltage: 3.5-6V
+Working current: 140mA
+Resolution: Full Channel 4096
+Resolution Band: 2.4GHz
+Receiver model:   RF206 S
+Frequency: 2.4 GHz
+Voltage: 3.7 V-8.4 V
+Current: 75 mA
+Resolution PWM: 6 Channel (Mode A)",90,,,,6
+lynn,ET07 RF207S,,10 Channel transmitter  +  RF207S receiver,"Full set, Standard configuration","Transmitter model: ET07
+Channel: 10
+Working voltage: 3.7V
+Working current: <=260mA
+Resolution: Full Channel 4096
+Resolution Band: 2.4GHz
+Receiver model:   RF207S
+Frequency: 2.4 GHz
+Voltage: 3.7 V-8.4 V
+Current: 75 mA
+Resolution PWM: 7 Channel (Mode A)",180,,,,10
+lynn,ET12 RF209S,,"12 Channel transmitter  +  RF209S receiver 
+","Full set, Standard configuration","Transmitter model: ET12
+Channel: 12
+Working voltage: 3.5V-13V
+Working current: 260-400mA
+Resolution: Full Channel 4096
+Resolution Band: 2.4GHz (2 way)
+Receiver model:   RF209S
+Frequency: 2.4 GHz
+Voltage: 3.5 V-13 V
+Current: 95 mA
+Resolution PWM: 9 Channel",200,,,,12
+lynn,WFX4 WRF04H,,4 Channel transmitter  +  WFR04 receiver,"Full set, Standard configuration ","Transmitter model: WFX4
+Channel: 4
+Working voltage: 3.7V-6.5V
+Resolution: Full Channel 4096
+Resolution Band: 2.4-2.48GHz
+Receiver model:   WFR04H
+Frequency: 2.4 GHz
+Voltage: 4.8 V-6.0V",104,,,,4
+lynn,WFT07 WRF07S,,7 Channel transmitter  +  WRF07S receiver,"Full set, Standard configuration ","Transmitter model: WFT07
+Channel: 7
+Working voltage: 3.7-6.0V
+Resolution Band: 2.4GHz
+Receiver model:   WRF07S
+Frequency: 2.4 GHz
+Voltage: 4.8 V-6.0V
+Output channels: 7 Channel",124,,,,7
+lynn,WFT09II WRF09S,,9 Channel transmitter  +  WRF09S receiver,"Full set, Standard configuration ","Transmitter model: WFT09II
+Channel: 9
+Working voltage: 9.6-12.0V
+Resolution Band: 2.4GHz
+15 groups model data
+Receiver model:   WRF09S
+Frequency: 2.4 GHz
+Voltage: 4.8 V-6.0V
+Output channels: 9 Channel",160,,,,"9,1"
+lynn,WFT09SII WRF09S,,9 Channel transmitter  +  WRF09S receiver,"Full set, Standard configuration ","Transmitter model: WFT09SII
+Channel: 9
+Working voltage: 9.6-12.0V         
+Resolution Band: 2.4GHz
+85 groups model data                  
+Receiver model:   WRF09S
+Frequency: 2.4 GHz
+Voltage: 4.8 V-6.0V
+Output channels: 9 Channel",190,,,,"9,2"

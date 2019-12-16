@@ -1,0 +1,59 @@
+
+{% extends 'baseIn.html' %}
+
+{% block body %}
+{% load static %}
+{% load tags %}
+<link rel="stylesheet" href="{% static 'utils/cart.css' %}">
+<link rel="stylesheet" href="{% static 'utils/style.css' %}">
+<link rel="stylesheet" href="{% static 'utils/style2.css' %}">
+
+
+            <div class="go">
+                <!-- Main content -->
+                <style>                
+                    ._div,#totalprice{
+                        max-width:800px; margin:0 auto; font-family: 'Montserrat',sans-serif;
+                    }
+                </style>
+                <!-- Each Item -->
+                <div id="totalprice" style="max-width:800px; margin:0 auto;">
+                    <div style="padding:20px; width:100%; box-sizing:border-box;color:#4c0; text-shadow:0 0 2px rgba(20,120,20,0.3);">
+                        <h1  style="font-size:25px; margin:20px;">
+                            SUCCESS 
+                        </h1>
+                    </div>
+                    <div style="font-size:16px; color:#888;">
+                        Dear <b style="color:#444;">{{ user.name }}</b>, your order has been successfully booked with us.
+                        It will be delivered soon and you can also track your order from the side navigation bar.
+                        <br/>
+                        You can also reach out to us through mail mentioned in contact us.
+                        <br/>
+                        <span style="color:#444; padding-left:40px; font-size:18px;"> Grand Total : <b>{{ grandTotal }}</b> </span>
+                    </div>
+                </div>
+                {% for item_cart in itemsToShow %}
+                <div class="_div" style="max-width:800px; margin:0 auto; font-family: 'Montserrat',sans-serif;">
+                    <div class="__div">
+                        <div class="_img">
+                            <img src="{{item_cart.item.image1.url}}" alt="">
+                        </div>
+                        <div class="_data">
+                            <div><b>{{ item_cart.item.name }} </b></div>
+                            <div><span> {{ item_cart.item.subname }}</span></div>
+                            <div><span>Quantity : <b>{{ item_cart.quantity }}</b></span></div>
+                            <div class="_price_log"><span>PRICE : <b>₹​ {{ item_cart.item.priceDollar|multiply:dollarToRs|multiply:item_cart.quantity|makediscount:item_cart.item.discount }}</b></span></div>
+                            <div class="_price_log"><span>ORDER ID : <b>{{ item_cart.order_id }}</b></span></div>
+                        </div>
+                    </div>
+                    <a href="{% url 'racerfly:buyItem' item_cart.item.series.category.id item_cart.item.series.id item_cart.item.id %}">
+                        <div class="_full"></div>
+                    </a>
+                </div>
+                {% endfor %}
+                <!-- Item end -->
+                <div> Go back to <a href="{% url 'racerfly:cart' %}">Cart</a> </div>
+            </div>
+
+            
+{% endblock %}

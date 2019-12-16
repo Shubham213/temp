@@ -1,0 +1,106 @@
+Supplier Code,Product Code,Picture,Name,SubName,Description,Price USD,Delivery,Discount,Minimum Order,Sort
+cassia,1,,TATTU 2500mAh 2S1P 7.4V DC3.5mm GOGGLE glasses battery,TATTU FPV Battery Series,"Voltage : 8.4V
+SIZE : 18.6*38.1*73.7mm
+Weight : 102g",46.4,10 - 15,,,"2500,2"
+cassia,2,,220mAh 45C 1S1P,TATTU FPV Battery Series,"Voltage : 4.2V
+SIZE : 5.5*11*55mm 
+Weight : 5.5g",10.5,10 - 15,,,"220,1"
+cassia,3,,450mAh 7.4V 75C 2S1P,TATTU FPV Battery Series,"Voltage : 8.4V
+SIZE : 15*16.5*63mm
+Weight : 30g",18.8,10 - 15,,,"450,2"
+cassia,4,,450mAh 11.1V 75C 3S1P,TATTU FPV Battery Series,"Voltage : 12.6V
+SIZE : 21*16.5*63mm
+Weight : 45g",23.5,10 - 15,,,"450,3"
+cassia,5,,450mAh 14.8V 75C 4S1P,TATTU FPV Battery Series,"Voltage : 16.8V
+SIZE : 27*16.5*64.5mm
+Weight : 58g",31.2,10 - 15,,,"450,4"
+cassia,6,,850mAh 11.1V 45C 3S1P,TATTU FPV Battery Series,"Voltage : 12.6V
+SIZE : 22.2*30.4*60mm
+Weight : 76g",24.7,10 - 15,,,"850,3"
+cassia,7,,850mAh 14.8V 45C 4S1P,TATTU FPV Battery Series,"Voltage : 16.8V
+SIZE : 29*31*60mm
+Weight : 99g",32.9,10 - 15,,,"850,4"
+cassia,8,,850mAh 11.1V 75C 3S1P,TATTU FPV Battery Series,"Voltage : 12.6V
+SIZE : 22.8*30*61mm
+Weight : 80g",29.4,10 - 15,,,"850,3"
+cassia,9,,850mAh 14.8V 75C 4S1P,TATTU FPV Battery Series,"Voltage : 16.8V
+SIZE : 30.5*30*61mm
+Weight : 107g",39.4,10 - 15,,,"850,4"
+cassia,10,,1300mAh 11.1V 45C 3S1P,TATTU FPV Battery Series,"Voltage : 12.6V
+SIZE : 24.5*36.5*72mm
+Weight : 127g",34.1,10 - 15,,,"1300,3"
+cassia,11,,1300mAh 14.8V 45C 4S1P,TATTU FPV Battery Series,"Voltage : 16.8V
+SIZE : 31.5*36.5*72mm
+Weight : 166g",45.9,10 - 15,,,"1300,4"
+cassia,12,,1300mAh 11.1V 75C 3S1P,TATTU FPV Battery Series,"Voltage : 12.6V
+SIZE : 24.5*36.5*72mm
+Weight : 127g",40.6,10 - 15,,,"1300,3"
+cassia,13,,1300mAh 14.8V 75C 4S1P,TATTU FPV Battery Series,"Voltage : 16.8V
+SIZE : 32*36.5*72mm
+Weight : 166g",54.1,10 - 15,,,"1300,4"
+cassia,14,,1300mAh 18.5V 75C 5S1P,TATTU FPV Battery Series,"Voltage : 21V
+SIZE : 40*36.5*72mm
+Weight : 207g",66.6,10 - 15,,,"1300,5"
+cassia,15,,1300mAh 14.8V 95C 4S1P,TATTU FPV Battery Series,"Voltage : 16.8V
+SIZE : 32*36*72mm
+Weight : 172.6g",70.0,10 - 15,,,"1300,4"
+cassia,16,,1300mAh 14.8V 95C 4S1P,TATTU FPV Battery Series,"Voltage : 16.8V
+SIZE : 37.2*49*49mm
+Weight : 162.5g",70.0,10 - 15,,,"1300,4"
+cassia,17,,1300mAh 18.5V 95C 5S1P,TATTU FPV Battery Series,"Voltage : 21V
+SIZE : 40*36*72mm
+Weight : 215g",87.4,10 - 15,,,"1300,5"
+cassia,18,,1300mAh 15.2V 100C 4S1P,TATTU FPV Battery Series,"Voltage : 17.4V
+SIZE : 32*36*72mm
+Weight : 162.5g",88.2,10 - 15,,,"1300,4"
+cassia,19,,1550mAh 14.8V 95C 4S1P,TATTU FPV Battery Series,"Voltage : 16.8V
+SIZE : 36*35*72mm
+Weight : 192.6g",83.5,10 - 15,,,"1550,4"
+cassia,20,,1550mAh 15.2V 100C 4S1P,TATTU FPV Battery Series,"Voltage : 17.4V
+SIZE : 36*35*72mm
+Weight : 192.6g",102.9,10 - 15,,,"1550,4"
+cassia,21,,1550mAh 11.1V 45C 3S1P,TATTU FPV Battery Series,"Voltage : 12.6V
+SIZE : 25*36.5*72mm
+Weight : 133g",40.6,10 - 15,,,"1550,3"
+cassia,22,,1550mAh 14.8V 45C 4S1P,TATTU FPV Battery Series,"Voltage : 16.8V
+SIZE : 33*36.5*72mm
+Weight : 178g",54.1,10 - 15,,,"1550,4"
+cassia,23,,1550mAh 11.1V 75C 3S1P,TATTU FPV Battery Series,"Voltage : 12.6V
+SIZE : 28.5*36.5*75mm
+Weight : 142g",50.0,10 - 15,,,"1550,3"
+cassia,24,,1550mAh 14.8V 75C 4S1P,TATTU FPV Battery Series,"Voltage : 16.8V
+SIZE : 37*37*75mm
+Weight : 186g",67.6,10 - 15,,,"1550,4"
+cassia,25,,1800mAh 11.1V 45C 3S1P,TATTU FPV Battery Series,"Voltage : 12.6V
+SIZE : 20.8*35.5*106mm
+Weight : 162g",48.2,10 - 15,,,"1800,3"
+cassia,26,,1800mAh 14.8V 45C 4S1P ,TATTU FPV Battery Series,"Voltage : 16.8V
+SIZE : 27.4*35.5*106mm
+Weight : 206g",64.1,10 - 15,,,"1800,4"
+cassia,27,,1800mAh 11.1V 75C 3S1P,TATTU FPV Battery Series,"Voltage : 12.6V
+SIZE : 22*35.5*109mm
+Weight : 157g",58.2,10 - 15,,,"1800,3"
+cassia,28,,1800mAh 14.8V 75C 4S1P,TATTU FPV Battery Series,"Voltage : 16.8V
+SIZE : 28*35.5*109mm
+Weight : 206g",79.4,10 - 15,,,"1800,4"
+cassia,29,,2300mAh 11.1V 45C 3S1P,TATTU FPV Battery Series,"Voltage : 12.6V
+SIZE : 23.2*35.5*106mm
+Weight : 180g",61.7,10 - 15,,,"2300,3"
+cassia,30,,2300mAh 14.8V 45C 4S1P,TATTU FPV Battery Series,"Voltage : 16.8V
+SIZE : 30.6*35.5*106mm
+Weight : 236g",82.3,10 - 15,,,"2300,4"
+cassia,31,,3700mAh 14.8V 45C 4S1P,TATTU FPV Battery Series,"Voltage : 16.8V
+SIZE : 29*43.5*136mm
+Weight : 365g",99.3,10 - 15,,,"3700,4"
+cassia,32,,350mAh 30C 1S1P,TATTU FPV Battery Series,"Voltage : 4.2V
+SIZE : 8*20*33mm
+Weight : 9.3g",11.7,10 - 15,,,"350,1"
+cassia,33,,450mAh 14.8V 45C 4S1P,TATTU FPV Battery Series,"Voltage : 16.8V
+SIZE : 
+Weight : ",31.6,10 - 15,,,"450,4"
+cassia,34,,600mAh 30C 1S1P,TATTU FPV Battery Series,"Voltage : 4.2V
+SIZE : 7.7*18.5*58.5mm
+Weight : 15.7g",13.6,10 - 15,,,"600,1"
+cassia,35,,650mAh 11.1V 75C 3S1P,TATTU FPV Battery Series,"Voltage : 12.6V
+SIZE : 16*31*58mm
+Weight : 59g",29.1,10 - 15,,,"650,3"

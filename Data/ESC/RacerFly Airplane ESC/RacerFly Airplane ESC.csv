@@ -1,0 +1,106 @@
+Supplier Code,Product Code,Picture,Name,SubName,Description,Price USD,Delivery,Discount,Minimum Order,Sort
+jane v,1,,6A ESC,HOGH GRADE ESC,"A32 6A 2S LB
+Con.Current:6A
+Peak Current(10s):10A
+BEC:YES
+Lipo:2s
+Programming :YES
+BEC Output?5.5V/1.5A
+PWM:8-18KHz
+Weight:5.5g (w/wire)
+Size(PCB):25*11mm
+",13.95,,,,6
+jane v,2,,11A ESC,HOGH GRADE ESC,"BL-32  11A  SB
+Con.Current:11A
+Peak Current(10s):15A
+BEC:YES
+Lipo:2-3s
+Programming :YES
+BEC Output?5.5V/2A
+PWM:8-18KHz
+Weight:5g (w/wire)
+Size(PCB):22.5*10.7mm
+",15.525,,,,11
+jane v,3,,20A ESC,HOGH GRADE ESC,"A32 20A 4S SB
+Con.Current:20A
+Peak Current(10s):30A
+BEC:YES
+Lipo:2-4s
+Programming :YES
+BEC Output?5.5V/4A
+PWM:8-18KHz
+Weight:11.3g(w/wire)
+Size(PCB):30*17.5mm",18.45,,,,20
+jane v,4,,30A ESC,HOGH GRADE ESC,"A32 30A 4S SB
+Con.Current:30A
+Peak Current(10s):40A
+BEC:YES
+Lipo:2-4s
+Programming :YES
+BEC Output?5.5V/4A
+PWM:8-18KHz
+Weight:20.0g(w/wire)
+Size(PCB):36*23.5mm",23.625,,,,30
+jane v,5,,40A ESC,HOGH GRADE ESC,"A32 40A 6S SB
+Con.Current:40A
+Peak Current(10s):50A
+BEC:YES
+Lipo:2-6s
+Programming :YES
+BEC Output?5.5V/5A
+PWM:8-18KHz
+Weight:44.5g(w/wire)
+Size(PCB):50*25mm",34.875,,,,40
+jane v,6,,60A ESC,HOGH GRADE ESC,"A32 60A 6S SB
+Con.Current:60A
+Peak Current(10s):80A
+BEC:YES
+Lipo:2-6s
+Programming :YES
+BEC Output;5.5V/5A
+PWM:8-18KHz
+Weight:58.1g(w/wire)
+Size(PCB):50.2*31.1mm",46.125,,,,60
+jane v,7,,80A ESC,HOGH GRADE ESC,"A32 80A 6S SB
+Con.Current:80A
+Peak Current(10s):100A
+BEC:YES
+Lipo:2-6s
+Programming :YES
+BEC Output;5.5V/5A
+PWM:8-18KHz
+Weight:63.5g(w/wire)
+Size(PCB):50.2*31.1mm",56.25,,,,80
+jane v,8,,100A ESC,HOGH GRADE ESC,"A32 100A 6S SB
+Con.Current:100A
+Peak Current(10s):120A
+BEC:YES
+Lipo:2-6s
+Programming :YES
+BEC Output;5.5V/5A
+PWM:8-18KHz
+Weight:74.1g(w/wire)
+Size(PCB):50.2*31.1mm",61.875,,,,100
+jane v,9,,120A ESC,HOGH GRADE ESC,"A32 120A 8S SB
+Con.Current:120A
+Peak Current(10s):140A
+BEC:YES
+Lipo:2-8s
+Programming :YES
+BEC Output;5.5V/8A
+PWM:8-18KHz
+Weight:80.2g(w/wire)
+Size(PCB):50.2*31.1mm",104.85,,,,120
+jane v,10,,150A ESC,HOGH GRADE ESC,"A32 150A 6S SB
+Con.Current:150A
+Peak Current(10s):180A
+BEC:YES
+Lipo:2-6s
+Programming :YES
+BEC Output;5.5V/5A
+PWM:8-18KHz
+Weight:82g(w/wire)
+Size(PCB):50.2*31.1mm",73.35,,,,150
+jane v,11,,ARM- PROGRAM CARD,HOGH GRADE ESC,"ARM- PROGRAM CARD
+Weight:19g
+Size(PCB):112*72mm",11.25,,,,400

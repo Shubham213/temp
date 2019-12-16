@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	{% load static %}
+    <link rel="SHORTCUT ICON" href="{% static 'images/favicon.png' %}" />
+    <link rel="icon" href="{% static 'images/favicon.png' %}" type="image/png" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Racerfly</title>
+    <meta name="description" content="RacerFly.com is an international online store for almost all required RC, Robotics and Electronic items.">
+    <meta name="keywords" content="RC parts,RC,Electronic items,Drone,drone parts,plane parts,RC car,car parts,gimbals,propellers,carbon fibre,bldc,motors,tiger-motors,sunnysky,lipo battery,lipo charger,balance charger,flight controller">
+    <link rel="stylesheet" href="{% static 'utils/style.css' %}">
+    <link rel="stylesheet" href="{% static 'utils/style2.css' %}">
+    <link rel="stylesheet" href="{% static 'utils/footer.css' %}">
+    
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <style>
+                .content{
+                    min-height: calc(100% - 280px)  !important;
+                }
+            </style>
+                <div class="header" style="z-index:1000;">
+                        <div class="left_header">
+                            <label for="menu_check">
+                                <div id="menu"  tabindex="1">
+                                    <svg viewBox="0 0 36 36" width="30" height="30">
+                                        <g>
+                                            <line y1="9" x1="8" y2="9" x2="28" stroke-width  ="3" stroke="#444" stroke-linecap="round"></line>
+                                            <line y1="18" x1="8" y2="18" x2="28" stroke-width="3" stroke="#444" stroke-linecap="round"></line>
+                                            <line y1="27" x1="8" y2="27" x2="28" stroke-width="3" stroke="#444" stroke-linecap="round"></line>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="mid_header">
+                            <input id="menu_check" class="menu_check" type="checkbox">
+                            
+                            
+                            <!--  Change the link here  -->
+                            
+                            <a href="/">
+                                <div class="logo">
+                                    <img class="logo_img" src="{% static 'images/final_logo.png' %}">
+                                </div>
+                            </a>
+                            
+                            <!-- ... .!. ... -->
+
+                            <div class="search_bar">
+                                    <form onsubmit="">
+                                            <div class="search">
+                                        <div class="input_text" style="border-color:#ccc;">
+                                            <input type="text" maxlength="225" autocomplete="off" name="search" placeholder="Go for a Search"  disabled>
+                                        </div>
+                                        <input id="submit" type="submit" value="Go" disabled>
+                                                <style>
+                                                    #submit:disabled{
+                                                        background:#ccc;
+                                                        pointer-events: none;
+                                                    }
+                                                    [name="search"]:disabled{
+                                                        pointer-events: none;
+                                                        opacity:0.5;
+                                                    }
+                                                </style>
+                                        <div></div>
+                                        <div class="suggest hide">
+                                            <div val="" tabindex="-1"></div>
+                                            <div val="" tabindex="-1"></div>
+                                            <div val="" tabindex="-1"></div>
+                                            <div val="" tabindex="-1"></div>
+                                            <div val="" tabindex="-1"></div>
+                                            <div val="" tabindex="-1"></div>
+                                        </div>
+                                </div>
+                            </form>
+                        </div>
+                        </div>
+                        <div class="right_header">
+                                <input class="menu_check" id="menu_check2" type="checkbox">
+                                <label for="menu_check2">
+                                <div class="mini_search collap"  tabindex="1">
+                                        <svg viewbox="0 0 36 36" height="24" width="24">
+                                            <g>
+                                                    <line x1="16" y1="16" x2="35" y2="35" stroke="#000" stroke-width="2.5"></line>
+                                                    <circle cx="16" cy="16" r="12" fill="#eee" stroke="#000" stroke-width="2.5"></circle>
+                                            </g>
+                                        </svg>
+                                        <svg width="24" height="24" viewBox="0 0 90 90"  style="display:none;">
+                                                <g>
+                                                    <line x1="18" y1="50" x2="43" y2="30" stroke="#555" stroke-width="7" stroke-linecap="round"></line>
+                                                    <line x1="18" y1="50" x2="43" y2="70" stroke="#555" stroke-width="7" stroke-linecap="round"></line>
+                                                    <line x1="18" y1="50" x2="82" y2="50" stroke="#555" stroke-width="7" stroke-linecap="round"></line>
+                                                </g>
+                                            </svg>
+                                    </div>
+                                    </label>
+                                    <a href="{% url 'racerfly:cart' %}">
+                                        <div class="sign collap">
+                                            <svg xmlns="http://www.w3.org/2000/svg"  width="24" height="24" viewBox="0 0 128 128"><path fill="#000" stroke="#000" stroke-width="4" d="M76,107c-5.5,0-10,4.5-10,10s4.5,10,10,10s10-4.5,10-10S81.5,107,76,107z M76,121c-2.2,0-4-1.8-4-4s1.8-4,4-4 s4,1.8,4,4S78.2,121,76,121z"></path><path fill="#000" stroke="#222" stroke-width="4" d="M117.4,25.2c-1.9-2.6-4.9-4.2-8.1-4.2H22v-7c0-1.7-1.3-3-3-3H9c-1.7,0-3,1.3-3,3s1.3,3,3,3h7v74 c0,5.5,4.5,10,10,10h50c1.7,0,3-1.3,3-3s-1.3-3-3-3H26c-2.2,0-4-1.8-4-4V27h87.3c1.3,0,2.5,0.6,3.2,1.7c0.8,1.1,1,2.4,0.5,3.6 L99.3,73.5C97.8,78,93.7,81,88.9,81H33c-1.7,0-3,1.3-3,3s1.3,3,3,3h55.9c7.3,0,13.8-4.7,16.1-11.6l13.7-41.2 C119.8,31.1,119.3,27.8,117.4,25.2z"></path><path fill="#000" stroke="#222" stroke-width="4" d="M26,107c-5.5,0-10,4.5-10,10s4.5,10,10,10s10-4.5,10-10S31.5,107,26,107z M26,121c-2.2,0-4-1.8-4-4s1.8-4,4-4 s4,1.8,4,4S28.2,121,26,121z"></path></svg>
+
+          
+
+                                        </div>
+                                    </a>
+                                    <a href="{% url 'racerfly:dashboard' %}">
+                            <div class="sign collap" tabindex="4">
+                                        <div id="sign" style="height:25px;">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 172 172"><g fill="#555" stroke="none"><path d="M86,172c-47.49649,0 -86,-38.50351 -86,-86v0c0,-47.49649 38.50351,-86 86,-86v0c47.49649,0 86,38.50351 86,86v0c0,47.49649 -38.50351,86 -86,86z" fill="#666" stroke="#666" stroke-width="0"></path><path fill="#eee" style="transform: scale(0.65,0.65) translate(45px,45px); " d="M86,17.2c-19.00027,0 -34.4,15.39973 -34.4,34.4v5.73333c0,19.00027 15.39973,34.4 34.4,34.4c19.00027,0 34.4,-15.39973 34.4,-34.4v-5.73333c0,-19.00027 -15.39973,-34.4 -34.4,-34.4zM85.9888,108.93333c-22.96773,0 -52.43707,12.42324 -60.91667,23.44844c-5.24027,6.81693 -0.25182,16.68489 8.34245,16.68489h105.15964c8.59427,0 13.58271,-9.86796 8.34245,-16.68489c-8.4796,-11.01947 -37.96013,-23.44844 -60.92786,-23.44844z"></path></g>
+                                            </svg>
+                                            
+                                            <svg  xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" style="position:relative; top:-30px;" id="issignin" issignin="no">
+                                                <g fill="none" stroke="#eee" stroke-width="3">
+                                                    <circle cx="23" cy="23" r="5" fill="var(--color)"></circle>
+                                                </g>
+                                            </svg>
+                                            <style>
+                                                html{
+                                                    --color:#f44;
+                                                }
+                                                #issignin[issignin="no"]{
+                                                    --color:#f44;
+                                                }
+                                                #issignin[issignin="yes"]{
+                                                    display:none;
+                                                }
+                                                
+                                            </style>
+                                            
+                                        </div>
+                                </div>
+                            </a>
+                                
+                            </div>
+        
+                    </div>
+
+
+
+
+
+
+
+
+
+                    {% block body %}
+                    {% endblock %}
+
+
+
+<!-- Side bar -->
+
+<label for="menu_check">
+           	<div class="info">
+                <style>
+                    .info{
+                        z-index:200;
+                    }
+                </style>
+               <div>
+                <div class="inner_info">
+                        <div class="box">
+
+                            
+                            <a href="/">
+                            	<div class="layer1">
+                                    <div class="layer2">
+                                        <div class="layer3">
+                                            <div class="layer4">
+                                                <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="25" height="25" viewBox="0 0 24 24"><g transform="translate(0,24) scale(0.1,-0.1)" fill="none" stroke="#777" stroke-width="20"><path d="M58 179 c-50 -43 -59 -59 -33 -59 11 0 15 -12 15 -45 0 -43 1 -45 30 -45 28 0 30 3 30 35 0 28 4 35 20 35 16 0 20 -7 20 -35 0 -32 2 -35 30 -35 29 0 30 2 30 45 0 33 4 45 15 45 8 0 15 4 15 8 0 13 -97 92 -112 92 -7 -1 -34 -19 -60 -41z"/></g></svg>
+                                            </div>
+                                        </div>
+	                                    <div class="layer3">
+	                                		<span>Home</span>
+										</div>
+									</div>
+								</div>
+                            </a>
+                        </div>
+                        <div class="border"></div>
+
+                        <div class="box">
+                            <div style="padding:10px 0 10px 20px;font-size:15px; line-height:20px;"> Sign in to use Cart and other Features of RacerFly </div>
+                            <a href="{% url 'racerfly:login' %}">
+                                    <div class="layer1">
+                                        <div class="layer2">
+                                            <div class="layer3">
+                                                <div class="layer4">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="25" height="25" fill="#555"><path d="M 24.982422 1.9824219 C 12.303546 1.9824219 1.9824219 12.303546 1.9824219 24.982422 C 1.9824219 37.661298 12.303546 47.982422 24.982422 47.982422 C 34.562196 47.982422 42.787616 42.100566 46.236328 33.746094 A 2.0002 2.0002 0 1 0 42.539062 32.220703 C 39.691775 39.118231 32.926648 43.982422 24.982422 43.982422 C 14.465298 43.982422 5.9824219 35.499546 5.9824219 24.982422 C 5.9824219 14.465298 14.465298 5.9824219 24.982422 5.9824219 C 32.927741 5.9824219 39.691717 10.848427 42.539062 17.746094 A 2.0002 2.0002 0 1 0 46.236328 16.220703 C 42.787673 7.8663695 34.563102 1.9824219 24.982422 1.9824219 z M 22.978516 15.962891 A 2.0002 2.0002 0 0 0 21.603516 16.568359 L 14.603516 23.568359 A 2.0002 2.0002 0 0 0 14.603516 26.396484 L 21.603516 33.396484 A 2.0002 2.0002 0 1 0 24.431641 30.568359 L 20.845703 26.982422 L 46.017578 26.982422 A 2.0002 2.0002 0 1 0 46.017578 22.982422 L 20.845703 22.982422 L 24.431641 19.396484 A 2.0002 2.0002 0 0 0 22.978516 15.962891 z"></path></svg>
+                                                </div>
+                                            </div>
+                                            <div class="layer3">
+                                                <span>Sign in</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            <a href="{% url 'racerfly:register' %}">
+                            	<div class="layer1">
+                                    <div class="layer2">
+                                        <div class="layer3">
+                                            <div class="layer4" style="position:relative;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="25" height="25" fill="#555"><path d="M 24.982422 1.9824219 C 12.303546 1.9824219 1.9824219 12.303546 1.9824219 24.982422 C 1.9824219 37.661298 12.303546 47.982422 24.982422 47.982422 C 34.562196 47.982422 42.787616 42.100566 46.236328 33.746094 A 2.0002 2.0002 0 1 0 42.539062 32.220703 C 39.691775 39.118231 32.926648 43.982422 24.982422 43.982422 C 14.465298 43.982422 5.9824219 35.499546 5.9824219 24.982422 C 5.9824219 14.465298 14.465298 5.9824219 24.982422 5.9824219 C 32.927741 5.9824219 39.691717 10.848427 42.539062 17.746094 A 2.0002 2.0002 0 1 0 46.236328 16.220703 C 42.787673 7.8663695 34.563102 1.9824219 24.982422 1.9824219 z M 22.978516 15.962891 A 2.0002 2.0002 0 0 0 21.603516 16.568359 L 14.603516 23.568359 A 2.0002 2.0002 0 0 0 14.603516 26.396484 L 21.603516 33.396484 A 2.0002 2.0002 0 1 0 24.431641 30.568359 L 20.845703 26.982422 L 46.017578 26.982422 A 2.0002 2.0002 0 1 0 46.017578 22.982422 L 20.845703 22.982422 L 24.431641 19.396484 A 2.0002 2.0002 0 0 0 22.978516 15.962891 z"></path></svg>
+                                                
+                                                <svg xmlns="http://www.w3.org/2000/svg" style="position:absolute; top:5px; left:8px; " version="1.0" width="20" height="20" viewBox="0 0 344 344" preserveAspectRatio="xMidYMid meet">
+                                                    <g transform="translate(0.000000,344.000000) scale(0.1,-0.1) " fill="" stroke="none">
+                                                    
+                                                    <path fill="#555" d="M2425 1685 c-170 -31 -317 -109 -439 -231 -345 -345 -322 -918 49 -1234 98 -83 209 -140 346 -177 89 -24 309 -24 398 0 317 86 531 300 618 618 25 91 24 308 -1 404 -114 432 -535 701 -971 620z m265 -535 l0 -170 170 0 170 0 0 -120 0 -120 -170 0 -170 0 0 -170 0 -170 -110 0 -110 0 0 170 0 170 -175 0 -175 0 0 120 0 120 175 0 175 0 0 170 0 170 110 0 110 0 0 -170z"/>
+                                                    </g>
+                                                    </svg>
+                                            </div>
+                                        </div>
+	                                    <div class="layer3">
+	                                		<span>Sign up</span>
+										</div>
+									</div>
+								</div>
+                            </a>
+
+                            
+                        </div>
+                        <div class="border"></div>
+                        <div class="box">
+                            <div style="padding:10px 0 10px 20px;font-size:15px; line-height:20px;">Your Account</div>
+			<a href="{% url 'racerfly:cart' %}">
+                                <div class="layer1">
+                                    <div class="layer2">
+                                        <div class="layer3">
+                                            <div class="layer4">
+                                                <svg xmlns="http://www.w3.org/2000/svg"  width="25" height="25" viewBox="0 0 128 128"><path fill="#666" stroke="#666" stroke-width="4" d="M76,107c-5.5,0-10,4.5-10,10s4.5,10,10,10s10-4.5,10-10S81.5,107,76,107z M76,121c-2.2,0-4-1.8-4-4s1.8-4,4-4 s4,1.8,4,4S78.2,121,76,121z"></path><path fill="#666" stroke="#666" stroke-width="4" d="M117.4,25.2c-1.9-2.6-4.9-4.2-8.1-4.2H22v-7c0-1.7-1.3-3-3-3H9c-1.7,0-3,1.3-3,3s1.3,3,3,3h7v74 c0,5.5,4.5,10,10,10h50c1.7,0,3-1.3,3-3s-1.3-3-3-3H26c-2.2,0-4-1.8-4-4V27h87.3c1.3,0,2.5,0.6,3.2,1.7c0.8,1.1,1,2.4,0.5,3.6 L99.3,73.5C97.8,78,93.7,81,88.9,81H33c-1.7,0-3,1.3-3,3s1.3,3,3,3h55.9c7.3,0,13.8-4.7,16.1-11.6l13.7-41.2 C119.8,31.1,119.3,27.8,117.4,25.2z"></path><path fill="#666" stroke="#666" stroke-width="4" d="M26,107c-5.5,0-10,4.5-10,10s4.5,10,10,10s10-4.5,10-10S31.5,107,26,107z M26,121c-2.2,0-4-1.8-4-4s1.8-4,4-4 s4,1.8,4,4S28.2,121,26,121z"></path></svg>    
+                                            </div>
+                                        </div>
+                                        <div class="layer3">
+                                            <span>Cart</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="{% url 'racerfly:dashboard' %}">
+                                <div class="layer1">
+                                    <div class="layer2">
+                                        <div class="layer3">
+                                            <div class="layer4">
+                                                <svg viewBox="0 0 24 24" style="width: 28px; height: 28px;"><g fill="none" stroke="#777" stroke-width="2"><path d="M12,6.75 L10.2,5 L4.8,5 C3.81,5 3,5.8 3,6.75 L3,17.25 C3,18.2125 3.81,19 4.8,19 L19.2,19 C20.19,19 21,18 21,17.25 L21,8.5 C21,7.5375 20.19,6.75 19.2,6.75 L12,6.75 Z" class="style-scope yt-icon"></path></g></svg>
+                                            </div>
+                                        </div>
+                                        <div class="layer3">
+                                            <span>Dashboard</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+		<a href="{% url 'racerfly:track_order' %}">
+                                <div class="layer1">
+                                    <div class="layer2">
+                                        <div class="layer3">
+                                            <div class="layer4">
+                                                <img src="{% static 'images/track-order.png' %}" style="opacity:0.6;" width="25" height="25">
+                                            </div>
+                                        </div>
+                                        <div class="layer3">
+                                            <span>Track Order</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>                            
+
+                        </div>
+                        <div class="border"></div>
+                            <div class="box">
+                                    <div style="padding:10px 0 10px 20px;font-size:15px; line-height:20px;">Categories</div>
+
+                            	{% for category in categories %}
+                                <a href="{% url 'racerfly:series' category.id %}">
+                                    <div class="layer1">
+                                        <div class="layer2">
+                                            <div class="layer3" style="width:20px;">
+                                                <div class="layer4">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="20" height="24" viewBox="0 0 20 24" preserveAspectRatio="xMidYMid meet" style="transform: translateX(-12px);" > <g fill="#666666" stroke="none"><circle cx="10" cy="12" r="2"></circle></g></div>
+                                            </div>
+                                            <div class="layer3" style="text-overflow:ellipsis;overflow:hidden;width:160px;white-space:nowrap;">
+                                                <span>{{ category.name }}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                {% endfor %}
+                                        
+                            </div>
+                            <div class="border"></div>
+                            <div class="box">
+                                    <a href="{% url 'racerfly:aboutUs' %}">
+                                            <div class="layer1">
+                                                <div class="layer2">
+                                                    <div class="layer3">
+                                                        <div class="layer4">
+                                                            <div style="width:25px;height:25px;">
+                                                                <img src="{% static 'images/rf.png' %}" alt="" style="position:relative;top:3px; width:30px; height:auto;">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="layer3">
+                                                        <span>About Us</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    <a href="{% url 'racerfly:cont_us' %}">
+                                        <div class="layer1">
+                                            <div class="layer2">
+                                                <div class="layer3">
+                                                    <div class="layer4">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="#666" d="M 8 2.398438 C 8.101563 2.398438 8.101563 2.398438 8.199219 2.5 C 8.300781 2.601563 8.601563 2.898438 8.601563 3.101563 C 8.601563 3.300781 8.601563 3.800781 8.699219 4.199219 C 8.898438 4.699219 9.101563 6.02 9.398438 6.699219 C 9.699219 7.398438 9.800781 7.800781 9.5 8.199219 C 9.199219 8.699219 7.300781 10.601563 7.300781 10.601563 C 7.300781 10.601563 7.800781 11.601563 8.398438 12.199219 C 8.898438 12.898438 9.699219 13.898438 10.699219 14.699219 C 11.699219 15.601563 12.800781 16.398438 13.898438 16.898438 C 15 15.800781 15.898438 14.898438 16.199219 14.699219 C 16.5 14.5 16.5 14.398438 17 14.601563 C 17.5 14.800781 18.199219 15.101563 19 15.199219 C 19.699219 15.300781 20.5 15.398438 21 15.5 C 21.5 15.601563 21.5 15.601563 21.601563 15.800781 C 21.800781 16 21.898438 16.300781 21.898438 16.398438 C 21.898438 16.5 21.898438 16.800781 21.898438 17.800781 C 21.898438 18.800781 21.898438 20.199219 21.898438 20.5 C 21.898438 20.800781 21.898438 20.800781 21.800781 21 C 21.699219 21.199219 21.601563 21.699219 21.601563 21.699219 C 21.601563 21.800781 21.101563 22 20.800781 22 C 20.5 22 19.398438 22 18.699219 21.898438 C 18 21.800781 16.101563 21.398438 15.398438 21.101563 C 14.699219 20.898438 12.398438 20.101563 9.601563 18 C 7 16 5.101563 13.300781 4 11.101563 C 2.898438 8.898438 2.300781 6.5 2.199219 5.300781 C 2 4.101563 2 3.601563 2 3.300781 C 2.101563 3 2.398438 2.699219 2.601563 2.601563 C 2.800781 2.5 3.101563 2.398438 3.398438 2.398438 C 3.699219 2.398438 4.5 2.398438 5.601563 2.398438 C 6.699219 2.398438 8 2.398438 8 2.398438 Z"></path></svg>
+                                                    </div>
+                                                </div>
+                                                <div class="layer3">
+                                                    <span>Contact Us</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="border"></div>
+                                <div class="box">
+                                    <div class="layer1">
+                                        <div style="padding:10px 60px; font-family: 'Montserrat'; font-size:15px; color:#999;">© 2019 <b>RacerFly</b></div>
+                                    </div>
+				</div>
+			</div>
+            	</div>
+            </div>
+           </label>
+
+                    <!-- Footer -->
+<script src="{% static 'utils/script.js' %}"></script>
+</div>
+
+<div id="footer" style="position:relative;">
+	
+            <div class="page_footer">
+                    <div class="f_l">
+                        <div class="f_c">
+            
+                            <h2>RacerFly</h2>
+                            <!-- Short Description -->
+                            <div><p>Hi Folks,
+                            </p></div>
+                            <div><p>Hobbyist or Researcher or Experimential?
+                            </p></div>
+                            <div><p>Don't worry! We have everything that you need with highest quality available in International market.</p></div>
+                            <div><p>Enjoy TECH!
+                            </p></div>
+                        </div>
+                    <hr>
+            
+                        <div class="f_c">
+                            <h2>Companies</h2>
+                            <!-- Latest products -->
+            
+                            <!-- Not more than 5 -->
+            
+                            <div><a href="#">WFLY</a></div>
+                            <div><a href="#">HOLYBRO</a></div>
+                            <div><a href="#">SUNNYSKY</a></div>
+                            <div><a href="#">TATTU</a></div>
+                            <div><a href="#">T-MOTORS</a></div>
+                            
+                        </div>
+                    
+                    </div>
+                    <hr class="f_hr">
+                    <div class="f_r">
+                        <div class="f_c">
+                            <h2>Useful Links</h2>
+            
+                            <!-- If Logged in  else show "Sign in"-->
+                            <div><a href="{% url 'racerfly:login' %}">Sign In</a></div>
+			    <div><a href="{% url 'racerfly:register' %}">Sign Up</a></div>
+                            <div><a href="{% url 'racerfly:aboutUs' %}">About Us</a></div>
+                            <div><a href="{% url 'racerfly:cont_us' %}">Contact Us</a></div>
+                            <div><a href="{% url 'racerfly:tnc' %}" target="_blank">Terms of Service</a></div>
+                        </div>
+                    <hr>
+            
+                        <div class="f_c">
+                            <h2>Contact with Us</h2>
+                            <!-- Address -->
+				<div class="f_div f_div_in" style="padding-top:10px;"></div>
+                            <div class="f_div" title="Address">
+                                <span>
+                                    <img src="https://img.icons8.com/material-rounded/24/444444/home.png" alt="" style="width:20px; height:20px; transform: translateY(4px);">
+                                </span><span>Delhi , India</span>
+                            </div>
+                            
+                            <div class="f_div" title="E-mail">
+                                <span>
+                                    <img src="https://img.icons8.com/material-rounded/24/444444/important-mail.png" alt="" style="width:20px; height:20px; transform: translateY(7px);">
+                                </span>
+                                <span>
+                                    sales@racerfly.com
+                                </span>
+                            </div>
+            			<div class="f_sgtn" style="padding:5px 20px; padding-top:20px;font-weight:500; background:#eee;">
+		<!-- <div style="font-size:12px; line-height:15px; ">
+			<span>Is still something Missing?</span>
+			<br/><span>
+				Write at <a href="/login"style="cursor:pointer;padding:0 5px;" ><span><img src="https://img.icons8.com/small/20/222222/help.png" alt="" width="15" height="15"   style="position:relative; top:3px;"></span><span><b>Suggestion</b></span></a>
+			</span>
+		</div> -->
+	</div>
+                        </div>
+                    </div>
+	<div id="suggest" class="hide" style="position:absolute; width:100%; height:calc(100% - 35px); top:0px; background:rgba(200,200,200,0.85);" >
+		<div style="width:300px; height:150px; position:absolute; top:50%;left:50%; transform:translateX(-50%) translateY(-50%);">
+			
+		<!--  Suggestion form  -->
+			<form>
+			<div style="color:#222; padding-bottom:10px; font-size:15px; line-height:10px;"><b>Suggestion Form</b></div>
+				<textarea max-length="255" style="width:100%; min-width:100%; max-width:100%; height:100px; min-height:100px; max-height:100px; font-size:16px; font-family:Montserrat,Arial,sans-serif;  box-sizing:border-box;" placeholder="  Suggestion"></textarea>
+				<input type="submit"  style="width:100%;cursor:pointer;padding:10px;background: #44C;border-radius: 0 0 10px 10px;border: 0;color: #fff;margin-top: -10px;">
+			</form>
+		</div>
+		<div style="position:absolute;top:7px;right:7px;width:15px;height:15px;padding:2.5px;border-radius:50%;background:#fff;cursor: pointer; box-shadow:0 0 6px 0 rgba(0,0,0,0.25);" onclick="document.getElementById('suggest').className='hide';">
+			<svg viewBox="0 0 10 10" width="15" height="15">
+                                <g style="transform-origin: 50%; transform:rotateZ(45deg);">
+                                        <line x1="5" y1="2" x2="5" y2="8" stroke="#000" stroke-width="1" stroke-linecap="round"></line>
+                                        <line y1="5" x1="2" y2="5" x2="8" stroke="#000" stroke-width="1" stroke-linecap="round"></line>
+                                    </g>
+                            </svg>
+		</div>
+	</div>
+                </div>
+                <div class="f_cp">
+                    <span>
+                        <span style="position:relative; top:-4px;"><b style="font-size:12px; ">RacerFly</b></span>
+                        <span>
+                            <img src="https://img.icons8.com/metro/10/ffffff/copyright.png" style="position:relative; top:-4px;">
+                        </span>
+                        <span style="font-size:12px; position:relative; top:-4px;">2019</span>
+                    </span>
+                </div>
+    </div>
+</div>
+</body>
+
+
+</html>

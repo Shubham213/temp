@@ -1,0 +1,224 @@
+{% extends auth|yesno:'baseIn.html,baseOut.html' %}
+
+
+{% block body %}
+{% load static %}
+{% load tags %}
+
+<link rel="stylesheet" href="{% static 'utils/style_series.css' %}">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+
+
+ <!-- Main content -->
+                            <div class="go">
+                                <div>
+                                    <span>
+                                        <a href="{% url 'racerfly:home' %}">Home</a> > <b> {{ category.name }} </b>
+                                    </span>
+                                </div>
+                                <form method="post">
+                                {% csrf_token %}
+                                {% for ser in category.choice_series.all %}
+                                <div class="innercontainer">
+                                    <style>
+                                        .innercontainer{
+                                            min-height:auto !important;
+                                            padding: 0;
+                                        }
+                                    </style>
+                                    <div class="indiv">
+                                        <div class="indivname">
+                                            <div><h1>
+                                                {{ ser.name }}
+                                            </h1></div>
+                                        </div>
+                                        <div class="inindiv">
+                                            {% for item in ser.choice_items.all|sortAndSlice:4 %}
+                                            
+                                                <div>
+                                                    <div class="inimg">
+                                                        {% if item.image1 %}
+                                                        <img src="{{ item.image1.url }}"/>
+                                                        {% else %}
+                                                        <img src="{% static 'images/img.png' %}"/>
+                                                        {% endif %}
+                                                    </div>
+                                                    <div class="inimgdata">
+                                                        <div class="inimgdataname">
+                                                            <b>{{ item.name }}</b><br/><span>{{ item.subname }}</span>
+                                                        </div>
+                                                        <div class="inimgdataprice">
+                                                            <div><h3>₹​ {{ item.priceDollar|multiply:dollarToRs|makediscount:item.discount|roundTo2 }}</h3></div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- IMPORTANT  -->
+
+                                                    <!-- this is the IMPORTANT link -->
+                                                    <!-- Use this as the product or item link -->
+                                                    <a href="{% url 'racerfly:buyItem' category.id ser.id item.id %}" target="_blank"><div style="position:absolute; top:0px; left:0px; width:100%; height:100%;"></div></a>
+
+                                                    <div class="cart_order">
+                                                        {% if not item.sold_out %}
+                                                        <button name='addToCart' value='{{item.id}}' id='cart_{{item.id}}' style="display: none;"></button>
+
+                                                        <a href="#" onclick='clickCartBtn({{item.id}},"{{ item.name }}")'>
+                                                            <div>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 128 128"  style="padding:6px 0  0 7px;"><path fill="#000" stroke="#000" stroke-width="4" d="M76,107c-5.5,0-10,4.5-10,10s4.5,10,10,10s10-4.5,10-10S81.5,107,76,107z M76,121c-2.2,0-4-1.8-4-4s1.8-4,4-4 s4,1.8,4,4S78.2,121,76,121z"></path><path fill="#000" stroke="#000" stroke-width="4" d="M117.4,25.2c-1.9-2.6-4.9-4.2-8.1-4.2H22v-7c0-1.7-1.3-3-3-3H9c-1.7,0-3,1.3-3,3s1.3,3,3,3h7v74 c0,5.5,4.5,10,10,10h50c1.7,0,3-1.3,3-3s-1.3-3-3-3H26c-2.2,0-4-1.8-4-4V27h87.3c1.3,0,2.5,0.6,3.2,1.7c0.8,1.1,1,2.4,0.5,3.6 L99.3,73.5C97.8,78,93.7,81,88.9,81H33c-1.7,0-3,1.3-3,3s1.3,3,3,3h55.9c7.3,0,13.8-4.7,16.1-11.6l13.7-41.2 C119.8,31.1,119.3,27.8,117.4,25.2z"></path><path fill="#000" stroke="#222" stroke-width="4" d="M26,107c-5.5,0-10,4.5-10,10s4.5,10,10,10s10-4.5,10-10S31.5,107,26,107z M26,121c-2.2,0-4-1.8-4-4s1.8-4,4-4 s4,1.8,4,4S28.2,121,26,121z"></path></svg>
+                                                            </div>
+                                                        </a>
+                                                        {% else %}
+                                                        <!-- <button></button> -->
+                                                        <!-- <abbr title="Sold Out"> -->
+                                                        <a class="itm_sld_out">
+                                                            <div>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 128 128"  style="padding:6px 0  0 7px;"><path fill="#000" stroke="#000" stroke-width="4" d="M76,107c-5.5,0-10,4.5-10,10s4.5,10,10,10s10-4.5,10-10S81.5,107,76,107z M76,121c-2.2,0-4-1.8-4-4s1.8-4,4-4 s4,1.8,4,4S78.2,121,76,121z"></path><path fill="#000" stroke="#000" stroke-width="4" d="M117.4,25.2c-1.9-2.6-4.9-4.2-8.1-4.2H22v-7c0-1.7-1.3-3-3-3H9c-1.7,0-3,1.3-3,3s1.3,3,3,3h7v74 c0,5.5,4.5,10,10,10h50c1.7,0,3-1.3,3-3s-1.3-3-3-3H26c-2.2,0-4-1.8-4-4V27h87.3c1.3,0,2.5,0.6,3.2,1.7c0.8,1.1,1,2.4,0.5,3.6 L99.3,73.5C97.8,78,93.7,81,88.9,81H33c-1.7,0-3,1.3-3,3s1.3,3,3,3h55.9c7.3,0,13.8-4.7,16.1-11.6l13.7-41.2 C119.8,31.1,119.3,27.8,117.4,25.2z"></path><path fill="#000" stroke="#222" stroke-width="4" d="M26,107c-5.5,0-10,4.5-10,10s4.5,10,10,10s10-4.5,10-10S31.5,107,26,107z M26,121c-2.2,0-4-1.8-4-4s1.8-4,4-4 s4,1.8,4,4S28.2,121,26,121z"></path></svg>
+                                                            </div>
+                                                        </a>
+                                                        <style>
+                                                        .itm_sld_out{
+                                                            cursor:pointer;
+                                                        }
+                                                        .itm_sld_out>div{
+                                                            opacity:0.8;
+                                                        }           
+                                                        .itm_sld_out>div::after{
+                                                            content:"Sold out";
+                                                            background:rgba(100, 100, 100, 0.75) !important;
+                                                            position:absolute;
+                                                            top:20px;
+                                                            opacity:0; 
+                                                            left:-18px;
+                                                        }
+                                                        .itm_sld_out:hover>div::after{
+                                                            top:40px;
+                                                            opacity:1;
+                                                        }
+                                                        </style>
+                                                        <!-- </abbr> -->
+                                                        {% endif %}
+                                                        <button name="addToFav" value='{{item.id}}' id='fav_{{item.id}}' style="display: none;"></button>
+                                                        <a href="#" onclick="clickFavBtn({{item.id}},'{{ item.name }}')">
+                                                            <div>
+                                                                <svg xmlns=   "http://www.w3.org/2000/svg" version="1.0" width="20" height="16" viewBox="0 0 512 512" style="margin-top: 2px;"><g transform="translate(0,512) scale(0.1,-0.1)" fill="none" stroke="#000" stroke-width="400"><path d="M1165 4765 c-460 -81 -827 -352 -1025 -758 -108 -221 -145 -399 -137 -655 7 -225 40 -364 132 -559 99 -210 80 -189 1224 -1336 581 -582 1074 -1070 1095 -1085 33 -23 50 -27 106 -27 56 0 73 4 106 27 21 15 514 503 1095 1085 1144 1147 1125 1126 1224 1336 92 195 125 334 132 559 8 256 -29 434 -137 655 -155 317 -436 572 -758 688 -184 66 -343 90 -541 82 -272 -11 -500 -85 -724 -234 -94 -63 -253 -216 -329 -317 -33 -45 -64 -81 -68 -81 -4 0 -34 36 -67 80 -201 266 -495 455 -818 526 -119 27 -396 34 -510 14z"></path></g></svg>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            {% endfor %}                                            
+                                            </div>
+                                            <div>
+                                                <a href="{% url 'racerfly:items' category.id ser.id %}">
+                                                <div>
+                                                    <svg width="30" height="30" viewBox="0 0 95 95">
+                                                            <g style="transform:rotateZ(180deg); transform-origin:center;">
+                                                                <line x1="18" y1="50" x2="43" y2="30" stroke="#fff" stroke-width="5" stroke-linecap="round"></line>
+                                                                <line x1="18" y1="50" x2="43" y2="70" stroke="#fff" stroke-width="5" stroke-linecap="round"></line>
+                                                                <line x1="18" y1="50" x2="75" y2="50" stroke="#fff" stroke-width="5" stroke-linecap="round"></line>
+                                                            </g>
+                                                    </svg>
+                                                </div>
+                                                <div>
+                                                    <h4>View All</h4>
+                                                </div>
+                                                </a>
+                                            </div>
+                                    </div>
+                                </div>
+                                {% endfor %}
+                                </form>
+                            </div>
+	<div id="atert" style="display: none;">
+		<div id="crt_div">
+        <div class="crt loader"></div>
+        <div class="crt nme"> 
+            <h3 style="margin:0; padding:0;">
+                Adding to your Cart
+            </h3>
+            <div style="font-size:15px; height:20px; color:#eef; text-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.5); width:250px; padding-top:15px; white-space: nowrap; overflow:hidden; text-overflow:ellipsis;" id='crt_nme'></div>
+        </div>
+        </div>
+        <div id="wish_div">
+        <div class="crt loader"></div>
+        <div class="crt nme">
+            <h3 style="margin:0; padding:0;">
+                Adding to your Wishlist
+            </h3>
+            <div style="font-size:15px; height:20px; color:#eef; text-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.5); width:250px; padding-top:15px; white-space: nowrap; overflow:hidden; text-overflow:ellipsis;" id='wish_nme'></div>
+        </div>
+        </div>
+	</div>
+	<style>
+		#atert{
+			position:absolute; bottom:20px; right:20px; background:rgba(76, 175, 80, 0.75); box-shadow:0 0 6px 0 rgba(76, 175, 80, 0.6); width:400px; height:100px; z-index:200; border-radius:10px; overflow:hidden;
+		}
+		#atert>#crt_div,#atert>#wish_div{
+			margin:10px;padding: 15px 0;
+			display:flex;
+            flex-direction: row;
+            -ms-flex-direction: row;
+            font-size:15px;
+            line-height: 20px;
+            font-family: 'Montserrat',sans-serif;
+		}
+@keyframes rot{ 
+        0%{transform: rotateZ(0deg);} 
+		40%{transform: rotateZ(90deg);}
+		100%{transform: rotateZ(360deg);}
+		 
+	}
+	.loader{
+		margin-left:20px;
+		animation:0.5s rot infinite linear;
+        width: 40px;
+		height: 40px;
+        flex: 0 0 40px;
+		background: transparent;
+		border-radius: 50%;
+		border: solid 5px transparent;
+		border-top-color: rgb(44, 102, 46);
+		border-bottom-color: rgb(44, 102, 46);
+	}
+    .crt.nme{
+        color:#fff;
+        padding-left:30px;
+    }
+    
+    #atert>div{display:none !important;}
+    #atert[c]>#crt_div{
+        display:flex !important;
+    }
+    #atert[w]>#wish_div{
+        display:flex !important;
+    }
+    .inimg{
+        border-bottom:solid 1px #eee;
+    }
+	</style>
+<script>
+
+    function clickCartBtn(x,y){
+        document.getElementById('cart_'+x.toString()).click();
+        try{
+            document.getElementById('atert').removeAttribute("c",'');
+            document.getElementById('atert').removeAttribute("w",'');
+        }catch(e){}
+        document.getElementById('atert').setAttribute("c",'');
+        document.getElementById('crt_nme').innerHTML=""+y;
+	    document.getElementById('atert').style="";
+
+    }
+    function clickFavBtn(x,y){
+        document.getElementById('fav_'+x.toString()).click();
+        try{
+            document.getElementById('atert').removeAttribute("c",'');
+            document.getElementById('atert').removeAttribute("w",'');
+        }catch(e){}
+        document.getElementById('atert').setAttribute("w",'');
+        document.getElementById('wish_nme').innerHTML=""+y;
+	    document.getElementById('atert').style="";
+    }
+</script>
+
+{% endblock %}

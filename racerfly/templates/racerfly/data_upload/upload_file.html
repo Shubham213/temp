@@ -1,0 +1,13 @@
+<div>
+	<form method="post" enctype="multipart/form-data">
+		{% csrf_token %}
+		<input name="modelname" placeholder="Category..." required>
+		<input name="seriesname" placeholder="Series..." required>
+		<button name='upload'> Upload </button>
+	</form>
+
+	<form method="post">
+		{% csrf_token %}
+		<button name='logout'> Logout </button>
+	</form>
+</div>

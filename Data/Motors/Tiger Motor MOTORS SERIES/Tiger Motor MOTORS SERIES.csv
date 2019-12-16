@@ -1,0 +1,359 @@
+Supplier Code,Product Code,Name,SubName,Description,Price USD,Delivery,Discount,Minimum Order,Sort,,,,,
+jane t,P60,T-MOTORS 170 KV,P Series,"Motor KV : 170
+Cables : 600mm no connector
+Net Weight : 368.0g
+Gross Weight : 546.0g
+Size : 101*146*69 mm",189.75,,,,170,,,,,
+jane t,P60,T-MOTORS 340 KV,P Series,"Motor KV : 340
+Cables : 600mm no connector
+Net Weight : 368.0g
+Gross Weight : 546.0g
+Size : 101*146*69 mm",189.75,,,,340,,,,,
+jane t,P80,T-MOTORS 100 KV,P Series,"Motor KV : 100
+Cables : 90mm no connector
+Net Weight : 650.0g
+Gross Weight : 920.0g
+Size : 181*125*70 mm",332.25,,,,100,,,,,
+jane t,P80,T-MOTORS 120 KV,P Series,"Motor KV : 120
+Cables : 90mm no connector
+Net Weight : 650.0g
+Gross Weight : 920.0g
+Size : 181*125*70 mm",332.25,,,,120,,,,,
+jane t,P80,T-MOTORS 170 KV,P Series,"Motor KV : 170
+Cables : 90mm no connector
+Net Weight : 650.0g
+Gross Weight : 920.0g
+Size : 181*125*70 mm",332.25,,,,170,,,,,
+jane t,U3,T-MOTORS 700 KV,U-POWER SERIES,"Motor KV : 700
+Cables : 600mm 3.5mm connector
+Net Weight : 97.0g
+Gross Weight : 260.0g
+Size : 126*101*48 mm",155,,,,700,,,,,
+jane t,U5,T-MOTORS 400 KV,U-POWER SERIES,"Motor KV : 400
+Cables : 600mm 3.5mm connector
+Net Weight : 156.0g
+Gross Weight : 320.0g
+Size : 126*101*48 mm",180,,,,400,,,,,
+jane t,U7,T-MOTORS 420 KV,U-POWER SERIES,"Motor KV : 420
+Cables : 750mm no connector
+Net Weight : 255.0g
+Gross Weight : 458.0g
+Size : 152*111*49 mm",217.5,,,,420,,,,,
+jane t,U7,T-MOTORS 490 KV,U-POWER SERIES,"Motor KV : 490
+Cables : 750mm no connector
+Net Weight : 255.0g
+Gross Weight : 458.0g
+Size : 152*111*49 mm",217.5,,,,490,,,,,
+jane t,U7,T-MOTORS 280 KV,U-POWER SERIES,"Motor KV : 280
+Cables : 750mm no connector
+Net Weight : 255.0g
+Gross Weight : 458.0g
+Size : 152*111*49 mm",217.5,,,,280,,,,,
+jane t,U8 lite,T-MOTORS 85 KV,U-POWER SERIES,"Motor KV : 85
+Cables : 90mm no connector
+Net Weight : 243.0g
+Gross Weight : 411.0g
+Size : 115*132*50 mm",522.5,,,,85,,,,,
+jane t,U8 lite,T-MOTORS 150 KV,U-POWER SERIES,"Motor KV : 150
+Cables : 90mm no connector
+Net Weight : 243.0g
+Gross Weight : 411.0g
+Size : 115*132*50 mm",522.5,,,,150,,,,,
+jane t,U8 lite,T-MOTORS 190 KV,U-POWER SERIES,"Motor KV : 190
+Cables : 90mm no connector
+Net Weight : 243.0g
+Gross Weight : 411.0g
+Size : 115*132*50 mm",522.5,,,,190,,,,,
+jane t,U8 II,T-MOTORS 85 KV,U-POWER SERIES,"Motor KV : 85
+Cables : 90mm no connector
+Net Weight : 275.0g
+Gross Weight : 435.0g
+Size : 114*132*50 mm",547.5,,,,85,,,,,
+jane t,U8 II,T-MOTORS 150 KV,U-POWER SERIES,"Motor KV : 150
+Cables : 90mm no connector
+Net Weight : 275.0g
+Gross Weight : 435.0g
+Size : 114*132*50 mm",547.5,,,,150,,,,,
+jane t,U8 II,T-MOTORS 190 KV,U-POWER SERIES,"Motor KV : 190
+Cables : 90mm no connector
+Net Weight : 275.0g
+Gross Weight : 435.0g
+Size : 114*132*50 mm",547.5,,,,190,,,,,
+jane t,U10 II,T-MOTORS 100 KV,U-POWER SERIES,"Motor KV : 100
+Cables : 90mm no connector
+Net Weight : 415.0g
+Gross Weight : 
+Size : 137*129*58.5 mm",595,,,,100,,,,,
+jane t,U11 II,T-MOTORS 120 KV,U-POWER SERIES,"Motor KV : 120
+Cables : 1250mm no connector
+Net Weight : 772.0g
+Gross Weight : 
+Size : 137*112*80 mm",612.5,,,,120,,,,,
+jane t,U15 II,T-MOTORS 80 KV,U-POWER SERIES,"Motor KV : 80
+Cables : 100mm Enameled wire
+Net Weight : 1740
+Gross Weight : 
+Size : 281*171*105 mm",1207.25,,,,80,,,,,
+jane t,U15 II,T-MOTORS 100 KV,U-POWER SERIES,"Motor KV : 100
+Cables : 100mm Enameled wire
+Net Weight : 1740
+Gross Weight : 
+Size : 281*171*105 mm",1207.25,,,,100,,,,,
+jane t,MN2212 V2.0,T-MOTORS 780 KV,MN SERIES,"Motor KV : 780
+Cables : 400mm 3.5mm connector
+Net Weight : 51.0g
+Gross Weight : 104.0g
+Size : 84*55*33 mm",72.5,,,,780,,,,,
+jane t,MN2212 V2.0,T-MOTORS 920 KV,MN SERIES,"Motor KV : 920
+Cables : 400mm 3.5mm connector
+Net Weight : 51.0g
+Gross Weight : 104.0g
+Size : 84*55*33 mm",72.5,,,,920,,,,,
+jane t,MN3110,T-MOTORS 470 KV,MN SERIES,"Motor KV : 470
+Cables : 600mm 3.5mm connector
+Net Weight : 80.0g
+Gross Weight : 174.0g
+Size : 60*60*65 mm",90,,,,470,,,,,
+jane t,MN3110,T-MOTORS 700 KV,MN SERIES,"Motor KV : 700
+Cables : 600mm 3.5mm connector
+Net Weight : 80.0g
+Gross Weight : 174.0g
+Size : 60*60*65 mm",90,,,,700,,,,,
+jane t,MN3110,T-MOTORS 780 KV,MN SERIES,"Motor KV : 780
+Cables : 600mm 3.5mm connector
+Net Weight : 80.0g
+Gross Weight : 174.0g
+Size : 60*60*65 mm",90,,,,780,,,,,
+jane t,MN3508,T-MOTORS 380 KV,MN SERIES,"Motor KV : 380
+Cables : 600mm 3.5mm connector
+Net Weight : 82.0g
+Gross Weight : 175.0g
+Size : 60*60*65 mm",107.5,,,,380,,,,,
+jane t,MN3508,T-MOTORS 580 KV,MN SERIES,"Motor KV : 580
+Cables : 600mm 3.5mm connector
+Net Weight : 82.0g
+Gross Weight : 175.0g
+Size : 60*60*65 mm",107.5,,,,580,,,,,
+jane t,MN3508,T-MOTORS 700 KV,MN SERIES,"Motor KV : 700
+Cables : 600mm 3.5mm connector
+Net Weight : 82.0g
+Gross Weight : 175.0g
+Size : 60*60*65 mm",107.5,,,,700,,,,,
+jane t,MN3510,T-MOTORS 360 KV,MN SERIES,"Motor KV : 360
+Cables : 600mm 3.5mm connector
+Net Weight : 97.0g
+Gross Weight : 191.0g
+Size : 60*60*65 mm",117.5,,,,360,,,,,
+jane t,MN3510,T-MOTORS 630 KV,MN SERIES,"Motor KV : 630
+Cables : 600mm 3.5mm connector
+Net Weight : 97.0g
+Gross Weight : 191.0g
+Size : 60*60*65 mm",117.5,,,,630,,,,,
+jane t,MN3510,T-MOTORS 700 KV,MN SERIES,"Motor KV : 700
+Cables : 600mm 3.5mm connector
+Net Weight : 97.0g
+Gross Weight : 191.0g
+Size : 60*60*65 mm",117.5,,,,700,,,,,
+jane t,MN3515,T-MOTORS 400 KV,MN SERIES,"Motor KV : 400
+Cables : 600mm 3.5mm connector
+Net Weight : 158.0g
+Gross Weight : 295.0g
+Size : 76*76*80 mm",140,,,,400,,,,,
+jane t,MN3520,T-MOTORS 400 KV,MN SERIES,"Motor KV : 400
+Cables : 600mm 3.5mm connector
+Net Weight : 194.0g
+Gross Weight : 351.0g
+Size : 76*76*80 mm",157.5,,,,400,,,,,
+jane t,MN4010,T-MOTORS 370 KV,MN SERIES,"Motor KV : 370
+Cables : 600mm 3.5mm connector
+Net Weight : 112.0g
+Gross Weight : 273.0g
+Size : 76*76*80 mm",137.5,,,,370,,,,,
+jane t,MN4012,T-MOTORS 480 KV,MN SERIES,"Motor KV : 480
+Cables : 600mm 3.5mm connector
+Net Weight : 134.0g
+Gross Weight : 296.0g
+Size : 76*76*80 mm",145,,,,480,,,,,
+jane t,MN4014,T-MOTORS 330 KV,MN SERIES,"Motor KV : 330
+Cables : 600mm 3.5mm connector
+Net Weight : 149.0g
+Gross Weight : 310.0g
+Size : 76*76*80 mm",150,,,,330,,,,,
+jane t,MN4014,T-MOTORS 400 KV,MN SERIES,"Motor KV : 400
+Cables : 600mm 3.5mm connector
+Net Weight : 149.0g
+Gross Weight : 310.0g
+Size : 76*76*80 mm",150,,,,400,,,,,
+jane t,MN5208,T-MOTORS 340 KV,MN SERIES,"Motor KV : 340
+Cables : 600mm 3.5mm connector
+Net Weight : 195.0g
+Gross Weight : 342.0g
+Size : 126*55*101 mm",170,,,,340,,,,,
+jane t,MN5212,T-MOTORS 340 KV,MN SERIES,"Motor KV : 340
+Cables : 600mm 3.5mm connector
+Net Weight : 205.0g
+Gross Weight : 385.0g
+Size : 126*55*101 mm",185,,,,340,,,,,
+jane t,MN501-S,T-MOTORS 240 KV,MN SERIES,"Motor KV : 240
+Cables : 150mm no connector
+Net Weight : 170.0g
+Gross Weight : 350.0g
+Size : 132*109.5*54 mm",165,,,,240,,,,,
+jane t,MN501-S,T-MOTORS 300 KV,MN SERIES,"Motor KV : 300
+Cables : 150mm no connector
+Net Weight : 170.0g
+Gross Weight : 350.0g
+Size : 132*109.5*54 mm",165,,,,300,,,,,
+jane t,MN501-S,T-MOTORS 360 KV,MN SERIES,"Motor KV : 360
+Cables : 150mm no connector
+Net Weight : 170.0g
+Gross Weight : 350.0g
+Size : 132*109.5*54 mm",165,,,,360,,,,,
+jane t,MN505-S,T-MOTORS 320 KV,MN SERIES,"Motor KV : 320
+Cables : 150mm no connector
+Net Weight : 225.0g
+Gross Weight : 400.0g
+Size : 132*109.5*54 mm",180,,,,320,,,,,
+jane t,MN505-S,T-MOTORS 380 KV,MN SERIES,"Motor KV : 380
+Cables : 150mm no connector
+Net Weight : 225.0g
+Gross Weight : 400.0g
+Size : 132*109.5*54 mm",180,,,,380,,,,,
+jane t,MN601-S,T-MOTORS 170 KV -2PCS/SET,MN SERIES,"Motor KV : 170
+Cables : 150mm no connector
+Net Weight : 246.0g
+Gross Weight : 837.0g
+Size : 193*119*74 mm",410,,,,170,,,,,
+jane t,MN601-S,T-MOTORS 320 KV -2PCS/SET,MN SERIES,"Motor KV : 320
+Cables : 150mm no connector
+Net Weight : 246.0g
+Gross Weight : 837.0g
+Size : 193*119*74 mm",410,,,,320,,,,,
+jane t,MN605-S,T-MOTORS 170 KV -2PCS/SET,MN SERIES,"Motor KV : 170
+Cables : 150mm no connector
+Net Weight : 316.0g
+Gross Weight : 1036.0g
+Size : 193*120*75 mm",450,,,,170,,,,,
+jane t,MN605-S,T-MOTORS 320 KV -2PCS/SET,MN SERIES,"Motor KV : 320
+Cables : 150mm no connector
+Net Weight : 316.0g
+Gross Weight : 1036.0g
+Size : 193*120*75 mm",450,,,,320,,,,,
+jane t,MN701-S,T-MOTORS 135 KV -2PCS/SET,MN SERIES,"Motor KV : 135
+Cables : 150mm no connector
+Net Weight : 346.0g
+Gross Weight : 1075.0g
+Size : 220*134*64 mm",770,,,,135,,,,,
+jane t,MN701-S,T-MOTORS 280 KV -2PCS/SET,MN SERIES,"Motor KV : 280
+Cables : 150mm no connector
+Net Weight : 346.0g
+Gross Weight : 1075.0g
+Size : 220*134*64 mm",770,,,,280,,,,,
+jane t,MN705-S,T-MOTORS 125 KV -2PCS/SET,MN SERIES,"Motor KV : 125
+Cables : 150mm no connector
+Net Weight : 450.0g
+Gross Weight : 1309.0g
+Size : 220*134*64 mm",840,,,,125,,,,,
+jane t,MN705-S,T-MOTORS 260 KV -2PCS/SET,MN SERIES,"Motor KV : 260
+Cables : 150mm no connector
+Net Weight : 450.0g
+Gross Weight : 1309.0g
+Size : 220*134*64 mm",840,,,,260,,,,,
+jane t,MN801-S,T-MOTORS 120 KV,MN SERIES,"Motor KV : 120
+Cables : 150mm no connector
+Net Weight : 480.0g
+Gross Weight : 600.0g
+Size : 220*134*64 mm",437.5,,,,120,,,,,
+jane t,MN801-S,T-MOTORS 150 KV,MN SERIES,"Motor KV : 150
+Cables : 150mm no connector
+Net Weight : 480.0g
+Gross Weight : 600.0g
+Size : 220*134*64 mm",437.5,,,,150,,,,,
+jane t,MN805-S,T-MOTORS 120 KV,MN SERIES,"Motor KV : 120
+Cables : 150mm no connector
+Net Weight : 625.0g
+Gross Weight : 750.0g
+Size : 220*134*64 mm",457.25,,,,120,,,,,
+jane t,MN805-S,T-MOTORS 150 KV,MN SERIES,"Motor KV : 150
+Cables : 150mm no connector
+Net Weight : 625.0g
+Gross Weight : 750.0g
+Size : 220*134*64 mm",457.25,,,,150,,,,,
+jane t,MN805-S,T-MOTORS 170 KV,MN SERIES,"Motor KV : 170
+Cables : 150mm no connector
+Net Weight : 625.0g
+Gross Weight : 750.0g
+Size : 220*134*64 mm",457.25,,,,170,,,,,
+jane t,MN4004,"T-MOTORS 300 KV
+- 2 pcs set",ANTIGRAVITY SERIES,"Motor KV : 300
+Cables : 600mm 3.5mm connector
+Net Weight : 104.0g
+Gross Weight : 192.0g
+Size : 110*38*185 mm",265,,,,300,,,,,
+jane t,MN4004,"T-MOTORS 400 KV
+- 2 pcs set",ANTIGRAVITY SERIES,"Motor KV : 400
+Cables : 600mm 3.5mm connector
+Net Weight : 104.0g
+Gross Weight : 192.0g
+Size : 110*38*185 mm",265,,,,400,,,,,
+jane t,MN4006,"T-MOTORS 380 KV
+- 2 pcs set",ANTIGRAVITY SERIES,"Motor KV : 380
+Cables : 600mm 3.5mm connector
+Net Weight : 66.0g
+Gross Weight : 220.0g
+Size : 110*38*185 mm",270,,,,380,,,,,
+jane t,MN6007,T-MOTORS 160 KV,ANTIGRAVITY SERIES,"Motor KV : 160
+Cables : 60mm no connector
+Net Weight : 180.0g
+Gross Weight : 
+Size :  mm",220,,,,160,,,,,
+jane t,MN6007,T-MOTORS 320 KV,ANTIGRAVITY SERIES,"Motor KV : 320
+Cables : 60mm no connector
+Net Weight : 180.0g
+Gross Weight : 
+Size :  mm",220,,,,320,,,,,
+jane t,MN7005,T-MOTORS 115 KV,ANTIGRAVITY SERIES,"Motor KV : 115
+Cables : 60mm no connector
+Net Weight : 188.0g
+Gross Weight : 320.0g
+Size : 146*35*115 mm",397.5,,,,115,,,,,
+jane t,MN7005,T-MOTORS 230 KV,ANTIGRAVITY SERIES,"Motor KV : 230
+Cables : 60mm no connector
+Net Weight : 188.0g
+Gross Weight : 320.0g
+Size : 146*35*115 mm",397.5,,,,230,,,,,
+jane t,GB2208,T-MOTORS 125 KV,GB MOTOR SERIES,"Motor KV : 125
+Cables : 200mm
+Net Weight : 39.5g
+Gross Weight : 60.0g
+Size : 84*56*33 mm",45,,,,125,,,,,
+jane t,GB4106,T-MOTORS 53 KV,GB MOTOR SERIES,"Motor KV : 53
+Cables : 350mm
+Net Weight : 70.0g
+Gross Weight : 96.0g
+Size : 115*87*45 mm",80,,,,53,,,,,
+jane t,GB36-1,T-MOTORS 50 KV,GB MOTOR SERIES,"Motor KV : 50
+Cables : 351mm
+Net Weight : 88.0g
+Gross Weight : 180.0g
+Size : 115*87*46 mm",87.5,,,,50,,,,,
+jane t,GB36-2,T-MOTORS 31 KV,GB MOTOR SERIES,"Motor KV : 31
+Cables : 352mm
+Net Weight : 128.0g
+Gross Weight : 201.0g
+Size : 115*87*47 mm",90,,,,31,,,,,
+jane t,GB54-1,T-MOTORS 33 KV,GB MOTOR SERIES,"Motor KV : 33
+Cables : 353mm
+Net Weight : 137.0g
+Gross Weight : 213.0g
+Size : 115*87*48 mm",115,,,,33,,,,,
+jane t,GB54-2,T-MOTORS 26 KV,GB MOTOR SERIES,"Motor KV : 26
+Cables : 354mm
+Net Weight : 156.0g
+Gross Weight : 238.5g
+Size : 115*87*49 mm",117.5,,,,26,,,,,
+jane t,GB85-1,T-MOTORS 11 KV,GB MOTOR SERIES,"Motor KV : 11
+Cables : 450mm
+Net Weight : 240.0g
+Gross Weight : 377.0g
+Size : 155*125*40 mm",375,,,,11,,,,,

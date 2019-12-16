@@ -1,0 +1,186 @@
+Supplier Code,Product Code,Name,SubName,Description,Price USD,Delivery,Discount,Minimum Order,Sort,,,,,,
+jane t,F60PROIII,T-MOTORS 1900 KV,FPV MOTORS,"Size: 2207.5
+Color: gray
+KV: 1900/2150
+Weight Excluding Cables:32g
+Wire(AWG):  #20 Auw, 150mm
+Spare parts: 4*(M3*7) , 1*M5 Prop Nut , 1*M2.5*6 shaft screw,1*shaft screw washer, 2*stickers",47.25,,,,1900,,,,,,
+jane t,F60PROIII,T-MOTORS 2150 KV,FPV MOTORS,"Size: 2207.5
+Color: gray
+KV: 1900/2150
+Weight Excluding Cables:32g
+Wire(AWG):  #20 Auw, 150mm
+Spare parts: 4*(M3*7) , 1*M5 Prop Nut , 1*M2.5*6 shaft screw,1*shaft screw washer, 2*stickers",47.25,,,,2150,,,,,,
+jane t,F40PROIII,T-MOTORS 2400 KV,FPV MOTORS,"Size: 2306.5
+Color: gray
+KV: 2400/2600
+Weight Excluding Cables:30g
+Wire(AWG):  #20 Auw, 150mm
+Spare parts: 4*(M3*7) , 1*M5 Prop Nut , 1*M2.5*6 shaft screw,1*shaft screw washer,",48.75,,,,2400,,,,,,
+jane t,F40PROIII,T-MOTORS 2600 KV,FPV MOTORS,"Size: 2306.5
+Color: gray
+KV: 2400/2600
+Weight Excluding Cables:30g
+Wire(AWG):  #20 Auw, 150mm
+Spare parts: 4*(M3*7) , 1*M5 Prop Nut , 1*M2.5*6 shaft screw,1*shaft screw washer,",48.75,,,,2600,,,,,,
+jane t,F60PROIII,T-MOTORS 2500 KV,FPV MOTORS,"Size: 2207.5
+Color: gray
+KV: 2500/2700/1750
+Weight Excluding Cables:32g
+Wire(AWG):  #20 Auw, 150mm
+Spare parts: 4*(M3*7) , 1*M5 Prop Nut , 1*M2.5*6 shaft screw,1*shaft screw washer, 2*stickers",48.75,,,,2500,,,,,,
+jane t,F60PROIII,T-MOTORS 2700 KV,FPV MOTORS,"Size: 2207.5
+Color: gray
+KV: 2500/2700/1750
+Weight Excluding Cables:32g
+Wire(AWG):  #20 Auw, 150mm
+Spare parts: 4*(M3*7) , 1*M5 Prop Nut , 1*M2.5*6 shaft screw,1*shaft screw washer, 2*stickers",48.75,,,,2700,,,,,,
+jane t,F60PROIII,T-MOTORS 1750 KV,FPV MOTORS,"Size: 2207.5
+Color: gray
+KV: 2500/2700/1750
+Weight Excluding Cables:32g
+Wire(AWG):  #20 Auw, 150mm
+Spare parts: 4*(M3*7) , 1*M5 Prop Nut , 1*M2.5*6 shaft screw,1*shaft screw washer, 2*stickers",48.75,,,,1750,,,,,,
+jane t,BLACK BIRD,T-MOTORS 2700 KV,FPV MOTORS,"Size: 2207
+Color: gold & black
+KV: 2700
+Weight Excluding Cables:30g
+Wire(AWG):  #20 Auw, 150mm
+Spare parts: 4*(M3*7) , 1*M5 Prop Nut , 1*M2.5*6 shaft screw,1*shaft screw washer, 2*stickers",49.75,,,,2700,,,,,,
+jane t,MCK,T-MOTORS 1800 KV,FPV MOTORS,"Size: 2207
+Color: gold & black
+KV: 1800/2500
+Weight Excluding Cables:30g
+Wire(AWG):  #20 Auw, 150mm
+Spare parts: 4*(M3*7) , 1*M5 Prop Nut , 1*M2.5*6 shaft screw,1*shaft screw washer, 2*stickers",52.25,,,,1800,,,,,,
+jane t,MCK,T-MOTORS 2500 KV,FPV MOTORS,"Size: 2207
+Color: gold & black
+KV: 1800/2500
+Weight Excluding Cables:30g
+Wire(AWG):  #20 Auw, 150mm
+Spare parts: 4*(M3*7) , 1*M5 Prop Nut , 1*M2.5*6 shaft screw,1*shaft screw washer, 2*stickers",52.25,,,,2500,,,,,,
+jane t,F40PROII,T-MOTORS 2400 KV,FPV MOTORS,"Size: 2306
+Color: gray
+KV:  2400KV/2600KV
+Wire(AWG): #20 Auw, 150mm
+Spare parts: 4*(M3*7) , 1*M2.5*6 shaft screw,1*shaft screw washer, 2*stickers,1* washer only for POPO motor",51.25,,,,2400,,,,,,
+jane t,F40PROII,T-MOTORS 2600 KV,FPV MOTORS,"Size: 2306
+Color: gray
+KV:  2400KV/2600KV
+Wire(AWG): #20 Auw, 150mm
+Spare parts: 4*(M3*7) , 1*M2.5*6 shaft screw,1*shaft screw washer, 2*stickers,1* washer only for POPO motor",51.25,,,,2600,,,,,,
+jane t,F60PROII,T-MOTORS 2500 KV,FPV MOTORS,"Size: 2207
+Color: gray
+KV: 2500KV/2700KV
+Wire(AWG): #20 Auw, 150mm
+Spare parts: 4*(M3*7) , 1*M2.5*6 shaft screw,1*shaft screw washer, 2*stickers,1* washer only for POPO motor",51.25,,,,2500,,,,,,
+jane t,F60PROII,T-MOTORS 2700 KV,FPV MOTORS,"Size: 2207
+Color: gray
+KV: 2500KV/2700KV
+Wire(AWG): #20 Auw, 150mm
+Spare parts: 4*(M3*7) , 1*M2.5*6 shaft screw,1*shaft screw washer, 2*stickers,1* washer only for POPO motor",51.25,,,,2700,,,,,,
+jane t,F80PRO,T-MOTORS 1900 KV,FPV MOTORS,"Size: 2408
+Color: gray
+KV:  1900/2200/2500
+Weight (NG):36.4g
+Wire(AWG):  #18 Auw, 100mm
+Spare parts: 1* M2.5*6MM Black sink hexanular screw, 1*Black washer 4*M3*7mm black cap head hexangular screw, 1*Aluminum f;lange self-locking nut",48.75,,,,1900,,,,,,
+jane t,F80PRO,T-MOTORS 2200 KV,FPV MOTORS,"Size: 2408
+Color: gray
+KV:  1900/2200/2500
+Weight (NG):36.4g
+Wire(AWG):  #18 Auw, 100mm
+Spare parts: 1* M2.5*6MM Black sink hexanular screw, 1*Black washer 4*M3*7mm black cap head hexangular screw, 1*Aluminum f;lange self-locking nut",48.75,,,,2200,,,,,,
+jane t,F80PRO,T-MOTORS 2500 KV,FPV MOTORS,"Size: 2408
+Color: gray
+KV:  1900/2200/2500
+Weight (NG):36.4g
+Wire(AWG):  #18 Auw, 100mm
+Spare parts: 1* M2.5*6MM Black sink hexanular screw, 1*Black washer 4*M3*7mm black cap head hexangular screw, 1*Aluminum f;lange self-locking nut",48.75,,,,2500,,,,,,
+jane t,F40PROII,T-MOTORS 2400 KV,FPV MOTORS,"Size: 2306
+KV:  2400/2600/1600/1750/2150
+Colors: Gray / Green / Red/blue&black
+Weight (NG): 27.5g
+Wire(AWG): #20 Auw, 150mm
+Spare parts: 4*(M3*7) , 1*M5 Prop Nut , 1*M2.5*6 shaft screw,1*shaft screw washer, 2*stickers",46.25,,,,2400,,,,,,
+jane t,F40PROII,T-MOTORS 2600 KV,FPV MOTORS,"Size: 2306
+KV:  2400/2600/1600/1750/2150
+Colors: Gray / Green / Red/blue&black
+Weight (NG): 27.5g
+Wire(AWG): #20 Auw, 150mm
+Spare parts: 4*(M3*7) , 1*M5 Prop Nut , 1*M2.5*6 shaft screw,1*shaft screw washer, 2*stickers",46.25,,,,2600,,,,,,
+jane t,F40PROII,T-MOTORS 1600 KV,FPV MOTORS,"Size: 2306
+KV:  2400/2600/1600/1750/2150
+Colors: Gray / Green / Red/blue&black
+Weight (NG): 27.5g
+Wire(AWG): #20 Auw, 150mm
+Spare parts: 4*(M3*7) , 1*M5 Prop Nut , 1*M2.5*6 shaft screw,1*shaft screw washer, 2*stickers",46.25,,,,1600,,,,,,
+jane t,F40PROII,T-MOTORS 1750 KV,FPV MOTORS,"Size: 2306
+KV:  2400/2600/1600/1750/2150
+Colors: Gray / Green / Red/blue&black
+Weight (NG): 27.5g
+Wire(AWG): #20 Auw, 150mm
+Spare parts: 4*(M3*7) , 1*M5 Prop Nut , 1*M2.5*6 shaft screw,1*shaft screw washer, 2*stickers",46.25,,,,1750,,,,,,
+jane t,F40PROII,T-MOTORS 2150 KV,FPV MOTORS,"Size: 2306
+KV:  2400/2600/1600/1750/2150
+Colors: Gray / Green / Red/blue&black
+Weight (NG): 27.5g
+Wire(AWG): #20 Auw, 150mm
+Spare parts: 4*(M3*7) , 1*M5 Prop Nut , 1*M2.5*6 shaft screw,1*shaft screw washer, 2*stickers",46.25,,,,2150,,,,,,
+jane t,F60PROII,T-MOTORS 2350 KV,FPV MOTORS,"Size: 2207
+KV:  2350/2500/2700/1750
+Colors: Grey /Green / Red/ black&red
+Weight (NG): 34.6g (including wire)
+Wire(AWG):#20 Auw, 150mm
+Spare parts: 4*(M3*7) , 1*M5 Prop Nut , 1*M2.5*6 shaft screw,1*shaft screw washer, 2*stickers",46.25,,,,2350,,,,,,
+jane t,F60PROII,T-MOTORS 2500 KV,FPV MOTORS,"Size: 2207
+KV:  2350/2500/2700/1750
+Colors: Grey /Green / Red/ black&red
+Weight (NG): 34.6g (including wire)
+Wire(AWG):#20 Auw, 150mm
+Spare parts: 4*(M3*7) , 1*M5 Prop Nut , 1*M2.5*6 shaft screw,1*shaft screw washer, 2*stickers",46.25,,,,2500,,,,,,
+jane t,F60PROII,T-MOTORS 2700 KV,FPV MOTORS,"Size: 2207
+KV:  2350/2500/2700/1750
+Colors: Grey /Green / Red/ black&red
+Weight (NG): 34.6g (including wire)
+Wire(AWG):#20 Auw, 150mm
+Spare parts: 4*(M3*7) , 1*M5 Prop Nut , 1*M2.5*6 shaft screw,1*shaft screw washer, 2*stickers",46.25,,,,2700,,,,,,
+jane t,F60PROII,T-MOTORS 1750 KV,FPV MOTORS,"Size: 2207
+KV:  2350/2500/2700/1750
+Colors: Grey /Green / Red/ black&red
+Weight (NG): 34.6g (including wire)
+Wire(AWG):#20 Auw, 150mm
+Spare parts: 4*(M3*7) , 1*M5 Prop Nut , 1*M2.5*6 shaft screw,1*shaft screw washer, 2*stickers",46.25,,,,1750,,,,,,
+jane t,F10,T-MOTORS 7500 KV,FPV MOTORS,"Size: 1104
+KV:  7500
+Colors:orange
+Wire(AWG):#20 Auw,",21.25,,,,7500,,,,,,
+jane t,F15,T-MOTORS 6000 KV,FPV MOTORS,"Size: 1106
+KV: 6000
+Colors: orange
+Wire(AWG):24",24.75,,,,6000,,,,,,
+jane t,F20II,T-MOTORS 2800 KV,FPV MOTORS,"KV:  2800/3250/3750
+Weight (NG): 15.2g
+Wire(AWG):  #24 , 80MM
+Spare parts: 4*(M2*6) /4*(M2*5) , 1*M5 Prop Nut , 2*C-clips",34.975,,,,2800,,,,,,
+jane t,F20II,T-MOTORS 3250 KV,FPV MOTORS,"KV:  2800/3250/3750
+Weight (NG): 15.2g
+Wire(AWG):  #24 , 80MM
+Spare parts: 4*(M2*6) /4*(M2*5) , 1*M5 Prop Nut , 2*C-clips",34.975,,,,3250,,,,,,
+jane t,F20II,T-MOTORS 3750 KV,FPV MOTORS,"KV:  2800/3250/3750
+Weight (NG): 15.2g
+Wire(AWG):  #24 , 80MM
+Spare parts: 4*(M2*6) /4*(M2*5) , 1*M5 Prop Nut , 2*C-clips",34.975,,,,3750,,,,,,
+jane t,F40III,T-MOTORS 2400 KV,FPV MOTORS,"Size: 2306
+KV:  2400
+Weight (NG): 30.8g
+Wire(AWG):  #18 Auw, 100mm
+Spare parts: 4*(M3*6) , 1*M5 Prop Nut , 2*C-clips",34.75,,,,2400,,,,,,
+jane t,F1000,T-MOTORS 545 KV,FPV MOTORS,"KV:  545/675
+Weight (NG): 315g
+Wire(AWG): #14 Auw, 750mm
+Spare parts: 4*(M4*8) , 1*M6 Prop Nut , 1*Props washer",212.25,,,,545,,,,,,
+jane t,F1000,T-MOTORS 675 KV,FPV MOTORS,"KV:  545/675
+Weight (NG): 315g
+Wire(AWG): #14 Auw, 750mm
+Spare parts: 4*(M4*8) , 1*M6 Prop Nut , 1*Props washer",212.25,,,,675,,,,,,

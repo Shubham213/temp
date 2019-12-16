@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	{% load static %}
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Racerfly</title>
+    <link rel="stylesheet" href="{% static 'utils/style.css' %}">
+    <link rel="stylesheet" href="{% static 'utils/style2.css' %}">
+    <link rel="stylesheet" href="{% static 'utils/footer.css' %}">
+    
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+                <div class="header" style="z-index:1;">
+                        <div class="left_header">
+                            <label for="menu_check">
+                                <div id="menu"  tabindex="1">
+                                    <svg viewBox="0 0 36 36" width="30" height="30">
+                                        <g>
+                                            <line y1="9" x1="8" y2="9" x2="28" stroke-width  ="3" stroke="#444" stroke-linecap="round"></line>
+                                            <line y1="18" x1="8" y2="18" x2="28" stroke-width="3" stroke="#444" stroke-linecap="round"></line>
+                                            <line y1="27" x1="8" y2="27" x2="28" stroke-width="3" stroke="#444" stroke-linecap="round"></line>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="mid_header">
+                            <input id="menu_check" class="menu_check" type="checkbox">
+                            <div class="logo">
+                                <a href="{% url 'racerfly:home' %}"><img class="logo_img" src="{% static 'images/final_logo.png' %}"></a>
+                            </div>
+
+                            <div class="search_bar">
+                                    <form onsubmit="">
+                                            <div class="search">
+                                        <div class="input_text">
+                                            <input type="text" maxlength="225" autocomplete="off" name="search" placeholder="Go for a Search">
+                                        </div>
+                                        <input id="submit" type="submit" value="Go">
+                                        <div></div>
+                                        <div class="suggest hide">
+                                            <div val="" tabindex="-1"></div>
+                                            <div val="" tabindex="-1"></div>
+                                            <div val="" tabindex="-1"></div>
+                                            <div val="" tabindex="-1"></div>
+                                            <div val="" tabindex="-1"></div>
+                                            <div val="" tabindex="-1"></div>
+                                        </div>
+                                </div>
+                            </form>
+                        </div>
+                        </div>
+                        <div class="right_header">
+                                <input class="menu_check" id="menu_check2" type="checkbox">
+                                <label for="menu_check2">
+                                <div class="mini_search collap"  tabindex="1">
+                                        <svg viewbox="0 0 36 36" height="24" width="24">
+                                            <g>
+                                                    <line x1="16" y1="16" x2="35" y2="35" stroke="#000" stroke-width="2.5"></line>
+                                                    <circle cx="16" cy="16" r="12" fill="#eee" stroke="#000" stroke-width="2.5"></circle>
+                                            </g>
+                                        </svg>
+                                        <svg width="24" height="24" viewBox="0 0 90 90"  style="display:none;">
+                                                <g>
+                                                    <line x1="18" y1="50" x2="43" y2="30" stroke="#555" stroke-width="7" stroke-linecap="round"></line>
+                                                    <line x1="18" y1="50" x2="43" y2="70" stroke="#555" stroke-width="7" stroke-linecap="round"></line>
+                                                    <line x1="18" y1="50" x2="82" y2="50" stroke="#555" stroke-width="7" stroke-linecap="round"></line>
+                                                </g>
+                                            </svg>
+                                    </div>
+                                    </label>
+                                    <a href="{% url 'racerfly:cart' %}">
+                                        <div class="sign collap">
+                                            <svg xmlns="http://www.w3.org/2000/svg"  width="24" height="24" viewBox="0 0 128 128"><path fill="#000" stroke="#000" stroke-width="4" d="M76,107c-5.5,0-10,4.5-10,10s4.5,10,10,10s10-4.5,10-10S81.5,107,76,107z M76,121c-2.2,0-4-1.8-4-4s1.8-4,4-4 s4,1.8,4,4S78.2,121,76,121z"></path><path fill="#000" stroke="#222" stroke-width="4" d="M117.4,25.2c-1.9-2.6-4.9-4.2-8.1-4.2H22v-7c0-1.7-1.3-3-3-3H9c-1.7,0-3,1.3-3,3s1.3,3,3,3h7v74 c0,5.5,4.5,10,10,10h50c1.7,0,3-1.3,3-3s-1.3-3-3-3H26c-2.2,0-4-1.8-4-4V27h87.3c1.3,0,2.5,0.6,3.2,1.7c0.8,1.1,1,2.4,0.5,3.6 L99.3,73.5C97.8,78,93.7,81,88.9,81H33c-1.7,0-3,1.3-3,3s1.3,3,3,3h55.9c7.3,0,13.8-4.7,16.1-11.6l13.7-41.2 C119.8,31.1,119.3,27.8,117.4,25.2z"></path><path fill="#000" stroke="#222" stroke-width="4" d="M26,107c-5.5,0-10,4.5-10,10s4.5,10,10,10s10-4.5,10-10S31.5,107,26,107z M26,121c-2.2,0-4-1.8-4-4s1.8-4,4-4 s4,1.8,4,4S28.2,121,26,121z"></path></svg>
+                                        </div>
+                                    </a>
+                                    <a href="{% url 'racerfly:dashboard' %}">
+                            <div class="sign collap" tabindex="4">
+                                        <div id="sign">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 172 172"><g fill="#555" stroke="none"><path d="M86,172c-47.49649,0 -86,-38.50351 -86,-86v0c0,-47.49649 38.50351,-86 86,-86v0c47.49649,0 86,38.50351 86,86v0c0,47.49649 -38.50351,86 -86,86z" fill="#666" stroke="#666" stroke-width="0"></path><path fill="#eee" style="transform: scale(0.65,0.65) translate(45px,45px); " d="M86,17.2c-19.00027,0 -34.4,15.39973 -34.4,34.4v5.73333c0,19.00027 15.39973,34.4 34.4,34.4c19.00027,0 34.4,-15.39973 34.4,-34.4v-5.73333c0,-19.00027 -15.39973,-34.4 -34.4,-34.4zM85.9888,108.93333c-22.96773,0 -52.43707,12.42324 -60.91667,23.44844c-5.24027,6.81693 -0.25182,16.68489 8.34245,16.68489h105.15964c8.59427,0 13.58271,-9.86796 8.34245,-16.68489c-8.4796,-11.01947 -37.96013,-23.44844 -60.92786,-23.44844z"></path></g></svg>
+                                        </div>
+                                </div>
+                            </a>
+                                
+                            </div>
+        
+                    </div>
+
+
+
+
+
+
+
+
+
+                    {% block body %}
+                    {% endblock %}
+
+
+
+<!-- Side bar -->
+
+<label for="menu_check">
+           	<div class="info">
+               <div>
+                <div class="inner_info">
+                        <div class="box">
+
+                            <a href="{% url 'racerfly:cart' %}">
+                            	<div class="layer1">
+                                    <div class="layer2">
+                                        <div class="layer3">
+                                            <div class="layer4">
+                                                <svg xmlns="http://www.w3.org/2000/svg"  width="25" height="25" viewBox="0 0 128 128"><path fill="#666" stroke="#666" stroke-width="4" d="M76,107c-5.5,0-10,4.5-10,10s4.5,10,10,10s10-4.5,10-10S81.5,107,76,107z M76,121c-2.2,0-4-1.8-4-4s1.8-4,4-4 s4,1.8,4,4S78.2,121,76,121z"></path><path fill="#666" stroke="#666" stroke-width="4" d="M117.4,25.2c-1.9-2.6-4.9-4.2-8.1-4.2H22v-7c0-1.7-1.3-3-3-3H9c-1.7,0-3,1.3-3,3s1.3,3,3,3h7v74 c0,5.5,4.5,10,10,10h50c1.7,0,3-1.3,3-3s-1.3-3-3-3H26c-2.2,0-4-1.8-4-4V27h87.3c1.3,0,2.5,0.6,3.2,1.7c0.8,1.1,1,2.4,0.5,3.6 L99.3,73.5C97.8,78,93.7,81,88.9,81H33c-1.7,0-3,1.3-3,3s1.3,3,3,3h55.9c7.3,0,13.8-4.7,16.1-11.6l13.7-41.2 C119.8,31.1,119.3,27.8,117.4,25.2z"></path><path fill="#666" stroke="#666" stroke-width="4" d="M26,107c-5.5,0-10,4.5-10,10s4.5,10,10,10s10-4.5,10-10S31.5,107,26,107z M26,121c-2.2,0-4-1.8-4-4s1.8-4,4-4 s4,1.8,4,4S28.2,121,26,121z"></path></svg>    
+                                            </div>
+                                        </div>
+	                                    <div class="layer3">
+	                                		<span>Cart</span>
+										</div>
+									</div>
+								</div>
+                            </a>
+
+                            <a href="{% url 'racerfly:register' %}">
+                            	<div class="layer1">
+                                    <div class="layer2">
+                                        <div class="layer3">
+                                            <div class="layer4">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 172 172"><g fill="#555" stroke="none"><path d="M86,172c-47.49649,0 -86,-38.50351 -86,-86v0c0,-47.49649 38.50351,-86 86,-86v0c47.49649,0 86,38.50351 86,86v0c0,47.49649 -38.50351,86 -86,86z" fill="#666" stroke="#666" stroke-width="0"></path><path fill="#eee" style="transform: scale(0.65,0.65) translate(45px,45px); " d="M86,17.2c-19.00027,0 -34.4,15.39973 -34.4,34.4v5.73333c0,19.00027 15.39973,34.4 34.4,34.4c19.00027,0 34.4,-15.39973 34.4,-34.4v-5.73333c0,-19.00027 -15.39973,-34.4 -34.4,-34.4zM85.9888,108.93333c-22.96773,0 -52.43707,12.42324 -60.91667,23.44844c-5.24027,6.81693 -0.25182,16.68489 8.34245,16.68489h105.15964c8.59427,0 13.58271,-9.86796 8.34245,-16.68489c-8.4796,-11.01947 -37.96013,-23.44844 -60.92786,-23.44844z"></path></g></svg>    
+                                            </div>
+                                        </div>
+	                                    <div class="layer3">
+	                                		<span>Sign up</span>
+										</div>
+									</div>
+								</div>
+                            </a>
+
+                            <a href="{% url 'racerfly:login' %}">
+                            	<div class="layer1">
+                                    <div class="layer2">
+                                        <div class="layer3">
+                                            <div class="layer4">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 172 172"><g fill="#555" stroke="none"><path d="M86,172c-47.49649,0 -86,-38.50351 -86,-86v0c0,-47.49649 38.50351,-86 86,-86v0c47.49649,0 86,38.50351 86,86v0c0,47.49649 -38.50351,86 -86,86z" fill="#666" stroke="#666" stroke-width="0"></path><path fill="#eee" style="transform: scale(0.65,0.65) translate(45px,45px); " d="M86,17.2c-19.00027,0 -34.4,15.39973 -34.4,34.4v5.73333c0,19.00027 15.39973,34.4 34.4,34.4c19.00027,0 34.4,-15.39973 34.4,-34.4v-5.73333c0,-19.00027 -15.39973,-34.4 -34.4,-34.4zM85.9888,108.93333c-22.96773,0 -52.43707,12.42324 -60.91667,23.44844c-5.24027,6.81693 -0.25182,16.68489 8.34245,16.68489h105.15964c8.59427,0 13.58271,-9.86796 8.34245,-16.68489c-8.4796,-11.01947 -37.96013,-23.44844 -60.92786,-23.44844z"></path></g></svg>    
+                                            </div>
+                                        </div>
+	                                    <div class="layer3">
+	                                		<span>Sign in</span>
+										</div>
+									</div>
+								</div>
+                            </a>
+						</div>
+
+
+                            <div class="border"></div>
+                            <div class="box">
+                            	{% for category in categories %}
+								<a href="{% url 'racerfly:series' category.id %}">
+									<div class="layer1">
+										<div class="layer2">
+											<div class="layer3">
+												<div class="layer4"></div>
+											</div>
+											<div class="layer3">
+												<span> {{ category.name }} </span>
+											</div>
+										</div>
+                                    </div>
+								</a>
+								{% endfor %}
+                                        
+                            </div>
+                            <div class="border"></div>
+				</div>
+            	</div>
+            </div>
+           </label>
+
+                    <!-- Footer -->
+<script src="{% static 'utils/script.js' %}"></script>
+</div>
+</div>
+
+<div id="footer">
+            <div class="page_footer">
+                    <div class="f_l">
+                        <div class="f_c">
+            
+                            <h2>RacerFly</h2>
+                            <!-- Short Description -->
+                            <div><p>This is the new era of online shopping creating the greatest ever trading and goods network.
+                            </p></div><div><p>Now everyone will get everything at <b class="green">lowest prices</b> and everyone will earn with us.</p></div>
+                        </div>
+                    <hr>
+            
+                        <div class="f_c">
+                            <h2>Products</h2>
+                            <!-- Latest products -->
+            
+                            <!-- Not more than 5 -->
+            
+                            <div><a href="">RACER : robo-drone series</a></div>
+                            <div><a href="">RUSH : audio-music series</a></div>
+                            <div><a href="">RACER : robo-drone series</a></div>
+                            <div><a href="">RUSH : audio-music series</a></div>
+                            <div><a href="">RACER : robo-drone series</a></div>
+                            
+                        </div>
+                    
+                    </div>
+                    <hr class="f_hr">
+                    <div class="f_r">
+                        <div class="f_c">
+                            <h2>Useful Links</h2>
+            
+                            <!-- If Logged in  else show "Sign in"-->
+                            <div><a href="{% url 'racerfly:dashboard' %}">Your Account</a></div>
+                            <div><a href="{% url 'racerfly:aboutUs' %}">About Us</a></div>
+                            <div><a href="">Help</a></div>
+                            <div><a href="{% url 'racerfly:cont_us' %}">Contact Us</a></div>
+                            <div><a href="{% url 'racerfly:tnc' %}" target="_blank">Terms of Service</a></div>
+                        </div>
+                    <hr>
+            
+                        <div class="f_c">
+                            <h2>Contact</h2>
+                            <!-- Address -->
+                            <div class="f_div" title="Address">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        width="22" height="22"
+                                        viewBox="0 0 30 30"
+                                        style="fill:#444; transform: translateY(5px);">
+                                        <path d="M 15 2 A 1 1 0 0 0 14.300781 2.2851562 L 3.3925781 11.207031 A 1 1 0 0 0 3.3554688 11.236328 L 3.3183594 11.267578 L 3.3183594 11.269531 A 1 1 0 0 0 3 12 A 1 1 0 0 0 4 13 L 5 13 L 5 24 C 5 25.105 5.895 26 7 26 L 23 26 C 24.105 26 25 25.105 25 24 L 25 13 L 26 13 A 1 1 0 0 0 27 12 A 1 1 0 0 0 26.681641 11.267578 L 26.666016 11.255859 A 1 1 0 0 0 26.597656 11.199219 L 25 9.8925781 L 25 6 C 25 5.448 24.552 5 24 5 L 23 5 C 22.448 5 22 5.448 22 6 L 22 7.4394531 L 15.677734 2.2675781 A 1 1 0 0 0 15 2 z M 18 15 L 22 15 L 22 23 L 18 23 L 18 15 z"></path>
+                                    </svg>
+                                </span><span>Delhi , India</span>
+                            </div>
+                            
+                            <div class="f_div" title="E-mail">
+                                <span>
+                                    <img src="https://img.icons8.com/material-rounded/24/444444/important-mail.png" alt="" style="width:20px; height:20px; transform: translateY(7px);">
+                                </span>
+                                <span>
+                                    sales@racerfly.com
+                                </span>
+                            </div>
+                            <div class="f_div" title="Contact no.">
+                                <span>
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAA6UlEQVRIie3UPUoDQRgG4CcWNoKmMGAj/tQ5gNjYe4Z4Du09gV7EGLyAN9Ag2KTwBoJaibgWMwtxmSjZ2an0hS2W+Xgfhtkd/rNkqsRzmVO40nh/T8zsdAm8lAaeSgMPiZk+NroCbhMzU3y0BZoZCAddf0GP2OqqvM44ls8i2HkOIvCG3RIA3ERkXArYx2tETkshowh84mTBzBrWc5DzOeSssTbAfVx/xh0muFgG6M0hFa6xHcun0pdj1WYnI+GeqoSzmf1Q3gogHPzkl+IsoM4hrnz/4xcCvQxoE8c4whB7wqW4mtn71/IFsaVMtWDhNokAAAAASUVORK5CYII=" style=" width:20px; height:20px; opacity:0.75; transform: translateY(8px);">
+                                </span>
+                                <span><b>+91</b> 6398187426</span>
+                            </div>
+            
+                        </div>
+                    </div>
+                </div>
+                <div class="f_cp">
+                    <span>
+                        <span style="position:relative; top:-4px;"><b>RacerFly</b></span>
+                        <span>
+                            <img src="https://img.icons8.com/metro/18/ffffff/copyright.png">
+                        </span>
+                        <span>2019</span>
+                    </span>
+                </div>
+    </div>
+</body>
+
+
+</html>

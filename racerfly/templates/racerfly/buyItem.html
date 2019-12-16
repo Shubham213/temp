@@ -1,0 +1,763 @@
+{% extends auth|yesno:'baseIn.html,baseOut.html' %}
+
+{% block body %}
+
+{% load static %}
+{% load tags %}
+<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+<style>
+        html,body{
+            border:0;
+            padding:0;
+            margin:0;
+            min-width:1000px;
+            cursor:default;
+        }
+    </style>
+    <link rel="stylesheet" href="{% static 'utils/style_buyItem.css' %}">
+
+        <div id="itm_product">
+            <div class="item">
+                <div class="item bread rf" style="padding-bottom:30px;">
+                    <div class="itm_a"><a href="{% url 'racerfly:home' %}">Home</a></div>
+                    <div class="itm_sp"><span>»</span></div>
+                    <div class="itm_a"><a href="{% url 'racerfly:series' category.id %}">{{ category.name }}</a></div>
+                    <div class="itm_sp"><span>»</span></div>
+                    <div class="itm_a"><a href="{% url 'racerfly:items' category.id ser.id %}">{{ ser.name }}</a></div>
+                    <div class="itm_sp"><span>»</span></div>
+                    <div class="itm_sp"><b>{{ item.name }}</b></div>
+                </div>
+                <div id="itm_lft">
+                    <div id="itm_img">
+                        <div>
+                            <div id="itm_pre_scr" track="1">
+                                <div class="itm_pre_div pre"></div>
+                                <div class="itm_nxt_div nxt"></div>
+                            </div>
+                            <div id="itm_pre" track="1">
+                                <div track="1">
+                                    <div class="itm_pre_div" open no="1">
+                                        <img src="{{ item.image1.url }}" alt style="width:100%;">
+                                    </div>
+                                    {% if item.image2 %}
+                                    <div class="itm_pre_div" no="2">
+                                        <img src="{{ item.image2.url }}" alt style="width:100%;">
+                                    </div>
+                                    {% endif %}
+                                    {% if item.image3 %}
+                                    <div class="itm_pre_div" no="3">
+                                        <img src="{{ item.image3.url }}" alt style="width:100%;">
+                                    </div>
+                                    {% endif %}
+                                    {% if item.image4 %}
+                                    <div class="itm_pre_div"  no="4">
+                                        <img src="{{ item.image4.url }}" alt style="width:100%;">
+                                    </div>
+                                    {% endif %}
+                                    {% if item.image5 %}
+                                    <div class="itm_pre_div"  no="5">
+                                        <img src="{{ item.image5.url }}" alt style="width:100%;">
+                                    </div>
+                                    {% endif %}
+                                    {% if item.image6 %}
+                                    <div class="itm_pre_div" id="more" no="6">
+                                        <img src="{{ item.image6.url }}" alt style="width:100%;">
+                                        <div class="itm_pre_div2" more="+ 14 More"></div>
+                                    </div>
+                                    {% endif %}
+                                    {% if item.image7 %}
+                                    <div class="itm_pre_div" hide no="7">
+                                        <img src="{{ item.image7.url }}" alt style="width:100%;">
+                                    </div>
+                                    {% endif %}
+                                    {% if item.image8 %}
+                                    <div class="itm_pre_div" hide no="8">
+                                        <img src="{{ item.image8.url }}" alt style="width:100%;">
+                                    </div>
+                                    {% endif %}
+                                    {% if item.image9 %}
+                                    <div class="itm_pre_div" hide no="9">
+                                        <img src="{{ item.image9.url }}" alt style="width:100%;">
+                                    </div>
+                                    {% endif %}
+                                    {% if item.image10 %}
+                                    <div class="itm_pre_div" hide no="10">
+                                        <img src="{{ item.image10.url }}" alt style="width:100%;">
+                                    </div>
+                                    {% endif %}
+
+                                </div>
+                                <div track="2">
+                                    {% if item.image11 %}
+                                    <div class="itm_pre_div" open no="11">
+                                        <img src="{{ item.image11.url }}" alt style="width:100%;">
+                                    </div>
+                                    {% endif %}
+                                    {% if item.image12 %}
+                                    <div class="itm_pre_div" no="12">
+                                        <img src="{{ item.image12.url }}" alt style="width:100%;">
+                                    </div>
+                                    {% endif %}
+                                    {% if item.image13 %}
+                                    <div class="itm_pre_div" no="13">
+                                        <img src="{{ item.image13.url }}" alt style="width:100%;">
+                                    </div>
+                                    {% endif %}
+                                    {% if item.image14 %}
+                                    <div class="itm_pre_div"  no="14">
+                                        <img src="{{ item.image14.url }}" alt style="width:100%;">
+                                    </div>
+                                    {% endif %}
+                                    {% if item.image15 %}
+                                    <div class="itm_pre_div"  no="15">
+                                        <img src="{{ item.image15.url }}" alt style="width:100%;">
+                                    </div>
+                                    {% endif %}
+                                    {% if item.image16 %}
+                                    <div class="itm_pre_div" id="more" no="16">
+                                        <img src="{{ item.image16.url }}" alt style="width:100%;">
+                                        <div class="itm_pre_div2" more="+ 4 More"></div>
+                                    </div>
+                                    {% endif %}
+                                    {% if item.image17 %}
+                                    <div class="itm_pre_div" no="17">
+                                        <img src="{{ item.image17.url }}" alt style="width:100%;">
+                                    </div>
+                                    {% endif %}
+                                    {% if item.image18 %}
+                                    <div class="itm_pre_div" no="18">
+                                        <img src="{{ item.image18.url }}" alt style="width:100%;">
+                                    </div>
+                                    {% endif %}
+                                    {% if item.image19 %}
+                                    <div class="itm_pre_div" no="19">
+                                        <img src="{{ item.image19.url }}" alt style="width:100%;">
+                                    </div>
+                                    {% endif %}
+                                    {% if item.image20 %}
+                                    <div class="itm_pre_div" no="20">
+                                        <img src="{{ item.image20.url }}" alt style="width:100%;">
+                                    </div>
+                                    {% endif %}
+
+                                </div>
+                                
+                            </div>
+                            <div id="itm_img_cont" style="position: relative;">
+                                <!-- <div> -->
+                                    <div class="itm_image" show>
+                                        <img src="{{ item.image1.url }}" alt onload="this.naturalHeight>=(this.naturalWidth*500/420)?this.parentNode.style='height:500px;  position:relative; left:50%; transform:translateX(-50%); width:'+(this.naturalWidth/this.naturalHeight*500)+'px;':this.parentNode.style='width:420px; height:'+(this.naturalHeight/this.naturalWidth*420)+'px; position:relative; top:50%; transform:translateY(-50%);';this.removeAttribute('onload');">
+                                    </div> 
+                                    {% if item.image2 %}
+                                    <div class="itm_image" hide>
+                                        <img src="{{ item.image2.url }}" alt onload="this.naturalHeight>=(this.naturalWidth*500/420)?this.parentNode.style='height:500px;  position:relative; left:50%; transform:translateX(-50%); width:'+(this.naturalWidth/this.naturalHeight*500)+'px;':this.parentNode.style='width:420px; height:'+(this.naturalHeight/this.naturalWidth*420)+'px; position:relative; top:50%; transform:translateY(-50%);';this.removeAttribute('onload');">
+                                    </div>
+                                    {% endif %}
+                                    {% if item.image3 %}
+                                    <div class="itm_image" hide>
+                                        <img src="{{ item.image3.url }}" alt onload="this.naturalHeight>=(this.naturalWidth*500/420)?this.parentNode.style='height:500px;  position:relative; left:50%; transform:translateX(-50%); width:'+(this.naturalWidth/this.naturalHeight*500)+'px;':this.parentNode.style='width:420px; height:'+(this.naturalHeight/this.naturalWidth*420)+'px; position:relative; top:50%; transform:translateY(-50%);';this.removeAttribute('onload');">
+                                    </div>
+                                    {% endif %}
+                                    {% if item.image4 %}
+                                    <div class="itm_image" hide>
+                                        <img src="{{ item.image4.url }}" alt onload="this.naturalHeight>=(this.naturalWidth*500/420)?this.parentNode.style='height:500px;  position:relative; left:50%; transform:translateX(-50%); width:'+(this.naturalWidth/this.naturalHeight*500)+'px;':this.parentNode.style='width:420px; height:'+(this.naturalHeight/this.naturalWidth*420)+'px; position:relative; top:50%; transform:translateY(-50%);';this.removeAttribute('onload');">
+                                    </div>
+                                    {% endif %}
+                                    {% if item.image5 %}
+                                    <div class="itm_image" hide>
+                                        <img src="{{ item.image5.url }}" alt onload="this.naturalHeight>=(this.naturalWidth*500/420)?this.parentNode.style='height:500px;  position:relative; left:50%; transform:translateX(-50%); width:'+(this.naturalWidth/this.naturalHeight*500)+'px;':this.parentNode.style='width:420px; height:'+(this.naturalHeight/this.naturalWidth*420)+'px; position:relative; top:50%; transform:translateY(-50%);';this.removeAttribute('onload');">
+                                    </div>
+                                    {% endif %}
+                                    {% if item.image6 %}
+                                    <div class="itm_image" hide>
+                                        <img src="{{ item.image6.url }}" alt onload="this.naturalHeight>=(this.naturalWidth*500/420)?this.parentNode.style='height:500px;  position:relative; left:50%; transform:translateX(-50%); width:'+(this.naturalWidth/this.naturalHeight*500)+'px;':this.parentNode.style='width:420px; height:'+(this.naturalHeight/this.naturalWidth*420)+'px; position:relative; top:50%; transform:translateY(-50%);';this.removeAttribute('onload');">
+                                    </div>
+                                    {% endif %}
+                                    {% if item.image7 %}
+                                    <div class="itm_image" hide>
+                                        <img src="{{ item.image7.url }}" alt onload="this.naturalHeight>=(this.naturalWidth*500/420)?this.parentNode.style='height:500px;  position:relative; left:50%; transform:translateX(-50%); width:'+(this.naturalWidth/this.naturalHeight*500)+'px;':this.parentNode.style='width:420px; height:'+(this.naturalHeight/this.naturalWidth*420)+'px; position:relative; top:50%; transform:translateY(-50%);';this.removeAttribute('onload');">
+                                    </div>
+                                    {% endif %}
+                                    {% if item.image8 %}
+                                    <div class="itm_image" hide>
+                                        <img src="{{ item.image8.url }}" alt onload="this.naturalHeight>=(this.naturalWidth*500/420)?this.parentNode.style='height:500px;  position:relative; left:50%; transform:translateX(-50%); width:'+(this.naturalWidth/this.naturalHeight*500)+'px;':this.parentNode.style='width:420px; height:'+(this.naturalHeight/this.naturalWidth*420)+'px; position:relative; top:50%; transform:translateY(-50%);';this.removeAttribute('onload');">
+                                    </div>
+                                    {% endif %}
+                                    {% if item.image9 %}
+                                    <div class="itm_image" hide>
+                                        <img src="{{ item.image9.url }}" alt onload="this.naturalHeight>=(this.naturalWidth*500/420)?this.parentNode.style='height:500px;  position:relative; left:50%; transform:translateX(-50%); width:'+(this.naturalWidth/this.naturalHeight*500)+'px;':this.parentNode.style='width:420px; height:'+(this.naturalHeight/this.naturalWidth*420)+'px; position:relative; top:50%; transform:translateY(-50%);';this.removeAttribute('onload');">
+                                    </div>
+                                    {% endif %}
+                                    {% if item.image10 %}
+                                    <div class="itm_image" hide>
+                                        <img src="{{ item.image10.url }}" alt onload="this.naturalHeight>=(this.naturalWidth*500/420)?this.parentNode.style='height:500px;  position:relative; left:50%; transform:translateX(-50%); width:'+(this.naturalWidth/this.naturalHeight*500)+'px;':this.parentNode.style='width:420px; height:'+(this.naturalHeight/this.naturalWidth*420)+'px; position:relative; top:50%; transform:translateY(-50%);';this.removeAttribute('onload');">
+                                    </div>
+                                    {% endif %}
+                                    {% if item.image11 %}
+                                    <div class="itm_image" hide>
+                                        <img src="{{ item.image11.url }}" alt onload="this.naturalHeight>=(this.naturalWidth*500/420)?this.parentNode.style='height:500px;  position:relative; left:50%; transform:translateX(-50%); width:'+(this.naturalWidth/this.naturalHeight*500)+'px;':this.parentNode.style='width:420px; height:'+(this.naturalHeight/this.naturalWidth*420)+'px; position:relative; top:50%; transform:translateY(-50%);';this.removeAttribute('onload');">
+                                    </div>
+                                    {% endif %}
+                                    {% if item.image12 %}
+                                    <div class="itm_image" hide>
+                                        <img src="{{ item.image12.url }}" alt onload="this.naturalHeight>=(this.naturalWidth*500/420)?this.parentNode.style='height:500px;  position:relative; left:50%; transform:translateX(-50%); width:'+(this.naturalWidth/this.naturalHeight*500)+'px;':this.parentNode.style='width:420px; height:'+(this.naturalHeight/this.naturalWidth*420)+'px; position:relative; top:50%; transform:translateY(-50%);';this.removeAttribute('onload');">
+                                    </div>
+                                    {% endif %}
+                                    {% if item.image13 %}
+                                    <div class="itm_image" hide>
+                                        <img src="{{ item.image13.url }}" alt onload="this.naturalHeight>=(this.naturalWidth*500/420)?this.parentNode.style='height:500px;  position:relative; left:50%; transform:translateX(-50%); width:'+(this.naturalWidth/this.naturalHeight*500)+'px;':this.parentNode.style='width:420px; height:'+(this.naturalHeight/this.naturalWidth*420)+'px; position:relative; top:50%; transform:translateY(-50%);';this.removeAttribute('onload');">
+                                    </div>
+                                    {% endif %}
+                                    {% if item.image14 %}
+                                    <div class="itm_image" hide >
+                                        <img src="{{ item.image14.url }}" alt onload="this.naturalHeight>=(this.naturalWidth*500/420)?this.parentNode.style='height:500px;  position:relative; left:50%; transform:translateX(-50%); width:'+(this.naturalWidth/this.naturalHeight*500)+'px;':this.parentNode.style='width:420px; height:'+(this.naturalHeight/this.naturalWidth*420)+'px; position:relative; top:50%; transform:translateY(-50%);';this.removeAttribute('onload');">
+                                    </div>
+                                    {% endif %}
+                                    {% if item.image15 %}
+                                    <div class="itm_image" hide>
+                                        <img src="{{ item.image15.url }}" alt onload="this.naturalHeight>=(this.naturalWidth*500/420)?this.parentNode.style='height:500px;  position:relative; left:50%; transform:translateX(-50%); width:'+(this.naturalWidth/this.naturalHeight*500)+'px;':this.parentNode.style='width:420px; height:'+(this.naturalHeight/this.naturalWidth*420)+'px; position:relative; top:50%; transform:translateY(-50%);';this.removeAttribute('onload');">
+                                    </div>
+                                    {% endif %}
+                                    {% if item.image16 %}
+                                    <div class="itm_image" hide>
+                                        <img src="{{ item.image16.url }}" alt onload="this.naturalHeight>=(this.naturalWidth*500/420)?this.parentNode.style='height:500px;  position:relative; left:50%; transform:translateX(-50%); width:'+(this.naturalWidth/this.naturalHeight*500)+'px;':this.parentNode.style='width:420px; height:'+(this.naturalHeight/this.naturalWidth*420)+'px; position:relative; top:50%; transform:translateY(-50%);';this.removeAttribute('onload');">
+                                    </div>
+                                    {% endif %}
+                                    {% if item.image17 %}
+                                    <div class="itm_image" hide>
+                                        <img src="{{ item.image17.url }}" alt onload="this.naturalHeight>=(this.naturalWidth*500/420)?this.parentNode.style='height:500px;  position:relative; left:50%; transform:translateX(-50%); width:'+(this.naturalWidth/this.naturalHeight*500)+'px;':this.parentNode.style='width:420px; height:'+(this.naturalHeight/this.naturalWidth*420)+'px; position:relative; top:50%; transform:translateY(-50%);';this.removeAttribute('onload');">
+                                    </div>
+                                    {% endif %}
+                                    {% if item.image18 %}
+                                    <div class="itm_image" hide>
+                                        <img src="{{ item.image18.url }}" alt onload="this.naturalHeight>=(this.naturalWidth*500/420)?this.parentNode.style='height:500px;  position:relative; left:50%; transform:translateX(-50%); width:'+(this.naturalWidth/this.naturalHeight*500)+'px;':this.parentNode.style='width:420px; height:'+(this.naturalHeight/this.naturalWidth*420)+'px; position:relative; top:50%; transform:translateY(-50%);';this.removeAttribute('onload');">
+                                    </div>
+                                    {% endif %}
+                                    {% if item.image19 %}
+                                    <div class="itm_image" hide>
+                                        <img src="{{ item.image19.url }}" alt onload="this.naturalHeight>=(this.naturalWidth*500/420)?this.parentNode.style='height:500px;  position:relative; left:50%; transform:translateX(-50%); width:'+(this.naturalWidth/this.naturalHeight*500)+'px;':this.parentNode.style='width:420px; height:'+(this.naturalHeight/this.naturalWidth*420)+'px; position:relative; top:50%; transform:translateY(-50%);';this.removeAttribute('onload');">
+                                    </div>
+                                    {% endif %}
+                                    {% if item.image20 %}
+                                    <div class="itm_image" hide >
+                                        <img src="{{ item.image20.url }}" alt onload="this.naturalHeight>=(this.naturalWidth*500/420)?this.parentNode.style='height:500px;  position:relative; left:50%; transform:translateX(-50%); width:'+(this.naturalWidth/this.naturalHeight*500)+'px;':this.parentNode.style='width:420px; height:'+(this.naturalHeight/this.naturalWidth*420)+'px; position:relative; top:50%; transform:translateY(-50%);';this.removeAttribute('onload');">
+                                    </div>
+                                    {% endif %}
+                                <!-- </div> -->
+                                <div id="itm_zoom" style="display:none;"></div>
+                                <div id="itm_preview">
+                                    <div>
+                                        <span>Tap on image to Zoom</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <!-- Useful Form -->
+                                <form method="post">
+                                    {% csrf_token %}
+                                        <div id="order">
+                                                
+                                                <input type="number" style="display: none;" min="{{ item.min_quantity }}" max="50" value="{{ item.min_quantity }}" id="id_quantity" name="quantity">
+                                            <button name="fav" style="border:0; background:none;padding:0;"><div class="imp_but" id="place_order"><div>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="20" height="16" viewBox="0 0 512 512"><g transform="translate(0,512) scale(0.1,-0.1)" fill="none" stroke="#fff" stroke-width="500"><path d="M1165 4765 c-460 -81 -827 -352 -1025 -758 -108 -221 -145 -399 -137 -655 7 -225 40 -364 132 -559 99 -210 80 -189 1224 -1336 581 -582 1074 -1070 1095 -1085 33 -23 50 -27 106 -27 56 0 73 4 106 27 21 15 514 503 1095 1085 1144 1147 1125 1126 1224 1336 92 195 125 334 132 559 8 256 -29 434 -137 655 -155 317 -436 572 -758 688 -184 66 -343 90 -541 82 -272 -11 -500 -85 -724 -234 -94 -63 -253 -216 -329 -317 -33 -45 -64 -81 -68 -81 -4 0 -34 36 -67 80 -201 266 -495 455 -818 526 -119 27 -396 34 -510 14z"></path></g></svg>
+                                                <span style="position: relative; top:-1px; padding:0 0 0 10px;">Wishlist</span></div></div></button>
+
+                                        {% if not item.sold_out %}
+                                            <button name="add_cart" style="border:0; background:none;padding:0;"><div class="imp_but" id="add_to_cart"><div style=" position: relative;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 128 128" style="padding-right:10px;"><path fill="#fff" stroke="#fff" stroke-width="5" d="M76,107c-5.5,0-10,4.5-10,10s4.5,10,10,10s10-4.5,10-10S81.5,107,76,107z M76,121c-2.2,0-4-1.8-4-4s1.8-4,4-4 s4,1.8,4,4S78.2,121,76,121z"></path><path fill="#fff" stroke="#fff" stroke-width="5" d="M117.4,25.2c-1.9-2.6-4.9-4.2-8.1-4.2H22v-7c0-1.7-1.3-3-3-3H9c-1.7,0-3,1.3-3,3s1.3,3,3,3h7v74 c0,5.5,4.5,10,10,10h50c1.7,0,3-1.3,3-3s-1.3-3-3-3H26c-2.2,0-4-1.8-4-4V27h87.3c1.3,0,2.5,0.6,3.2,1.7c0.8,1.1,1,2.4,0.5,3.6 L99.3,73.5C97.8,78,93.7,81,88.9,81H33c-1.7,0-3,1.3-3,3s1.3,3,3,3h55.9c7.3,0,13.8-4.7,16.1-11.6l13.7-41.2 C119.8,31.1,119.3,27.8,117.4,25.2z"></path><path fill="#fff" stroke="#fff" stroke-width="5" d="M26,107c-5.5,0-10,4.5-10,10s4.5,10,10,10s10-4.5,10-10S31.5,107,26,107z M26,121c-2.2,0-4-1.8-4-4s1.8-4,4-4 s4,1.8,4,4S28.2,121,26,121z"></path></svg><span style="position: relative; top:-2.5px; padding:0 0 0 10px;"><b>Cart</b></span></div></div></button>
+                                        {% else %}
+                                            <button style="border:0; background:none;padding:0; pointer-events:none;" disabled ><div class="imp_but"  style="pointer-events:none;"><div style="background:#888; pointer-events:none; position: relative;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 128 128" style="padding-right:10px;"><path fill="#fff" stroke="#fff" stroke-width="5" d="M76,107c-5.5,0-10,4.5-10,10s4.5,10,10,10s10-4.5,10-10S81.5,107,76,107z M76,121c-2.2,0-4-1.8-4-4s1.8-4,4-4 s4,1.8,4,4S78.2,121,76,121z"></path><path fill="#fff" stroke="#fff" stroke-width="5" d="M117.4,25.2c-1.9-2.6-4.9-4.2-8.1-4.2H22v-7c0-1.7-1.3-3-3-3H9c-1.7,0-3,1.3-3,3s1.3,3,3,3h7v74 c0,5.5,4.5,10,10,10h50c1.7,0,3-1.3,3-3s-1.3-3-3-3H26c-2.2,0-4-1.8-4-4V27h87.3c1.3,0,2.5,0.6,3.2,1.7c0.8,1.1,1,2.4,0.5,3.6 L99.3,73.5C97.8,78,93.7,81,88.9,81H33c-1.7,0-3,1.3-3,3s1.3,3,3,3h55.9c7.3,0,13.8-4.7,16.1-11.6l13.7-41.2 C119.8,31.1,119.3,27.8,117.4,25.2z"></path><path fill="#fff" stroke="#fff" stroke-width="5" d="M26,107c-5.5,0-10,4.5-10,10s4.5,10,10,10s10-4.5,10-10S31.5,107,26,107z M26,121c-2.2,0-4-1.8-4-4s1.8-4,4-4 s4,1.8,4,4S28.2,121,26,121z"></path></svg><span style="position: relative; top:-2.5px; padding:0 0 0 10px;"><b>Sold Out</b></span></div></div></button>
+                                        {% endif %}
+                                        </div>
+                                    <!-- </form> -->
+                                    
+                        </div>
+                    </div>
+                </div>
+                <div id="itm_rt">
+                    <div class="itm_main">
+                            <div class="item bread">
+                                <div class="itm_a"><a href="{% url 'racerfly:home' %}">Home</a></div>
+                                <div class="itm_sp"><span>»</span></div>
+                                <div class="itm_a"><a href="{% url 'racerfly:series' category.id %}">{{ category.name }}</a></div>
+                                <div class="itm_sp"><span>»</span></div>
+                                <div class="itm_a"><a href="{% url 'racerfly:items' category.id ser.id %}">{{ ser.name }}</a></div>
+                                <div class="itm_sp"><span>»</span></div>
+                                <div class="itm_sp"><b>{{ item.name }}</b></div>
+                            </div>
+                        <div class="itm_up">
+                            <div id="itm_name">
+                                <h2 style="color:#606066;">{{ item.name }}</h2>
+                            </div>
+                            <!-- if Subname is there -->
+                            <div id="itm_subnme">
+                                <span>
+                                    {{ item.subname }}
+                                </span>
+                            </div>
+                            
+                            <!-- If Company is there -->
+                            <!-- <div id="itm_comp">by <span><a>WFLY</a></span></div> -->
+                            
+                        </div>
+                        <div class="itm_dwn">
+                            <div id="itm_prc">
+                                <div id="itm_pst">
+                                    <h1><span id="itm_cur">₹</span><span>{{ item.priceDollar|multiply:dollarToRs|makediscount:item.discount }}</span></h1>
+                                </div>
+                                <div id="itm_prt">
+                                    &nbsp;<span>₹{{ item.priceDollar|multiply:dollarToRs }}</span>&nbsp;
+                                </div>
+                                <div id="itm_dis">
+                                    <span><span>{{ item.discount }}</span>% off</span>
+                                </div>
+                                <div style="padding:10px 0 0 30px;"><div id="itm_info" onmouseover="document.getElementById('itm_pr_info').style='';" onmouseout="document.getElementById('itm_pr_info').style='display:none;';"><div style="transform:translateX(-3px) translateY(-8px);"><i>i</i></div></div></div>
+                                <div id="itm_pr_info" style="display:none;">
+                                    All prices are exclusive of GST
+                                </div>
+                            </div>
+                        </div>
+                        <div class="itm_qnt" style="height:175px; overflow:hidden;">
+                            <div class="itm_quant">
+                                <div><b>Quantity</b>&nbsp;»</div>
+                                <div id="quant">
+                                    <input id="quantity" type="number" min="{{ item.min_quantity }}" max="50" value="{{ item.min_quantity }}" maxlength="2">
+                                </div>
+
+                            <div style="margin:10px; box-sizing:border-box; width:calc(100% - 20px); border-bottom:solid 1px #eee;"></div>
+                            <div class="itm_req_form">
+                                <!-- <form action="" method="post"> -->
+                                    <textarea maxlength="255" name="special_requirements" id="form_txt" placeholder="Special Requirement"></textarea>
+                                </form>
+                            </div>
+
+                            <style>
+                            #form_txt{
+                                border-radius:5px;
+                                padding:5px;
+                                border-color: #aaa;
+                                box-shadow: 0 0 3px 0 rgba(0,0,0,0.1);
+                            }
+                            #form_txt:focus{
+                                border-color: #000;
+                                box-shadow: 0 0 6px 0 rgba(0,0,0,0.2);
+                            }
+                            </style>
+                            <div style="padding-left:340px; display:flex; margin-top:-10px;"><div id="itm_info2" onclick="document.getElementsByClassName('itm_qnt')[0].style='';"><div style="transform:translateX(-3px) translateY(-8px);"><i>i</i></div></div><div  onclick="document.getElementsByClassName('itm_qnt')[0].style='';" style=" cursor:pointer; padding-left:4px; color:#aaa;">info</div></div>
+                            <div>
+                                <ul style="padding-left:30px; font-size:13px; font-family:'Montserrat';">
+                                    <li style="padding:5px 0;">Specify <a href="#" onclick="document.getElementById('form_txt').focus();">here</a> if any specific variety of item or equipment is required.</li>
+                                    <li style="padding:5px 0;">Before adding to Cart or to Wishlist, fill out this field if you have any special requirement.</li>
+                                    <li style="padding:5px 0;">As it is added to Cart or Wishlist, this field is also submitted.</li>
+                                </ul>
+                            </div>
+                            <!-- <div id="itm_req" class="itm_qnt itm_quant itm_req">
+                                Special Requirement
+                            </div> -->
+                        </div>
+                        </div>
+                            <div class="itm_qnt" style=" margin-top:20px;">
+                            <div class="itm_quant">
+                                <div><b>Delivery Time</b>&nbsp;»</div>
+                                <div style="padding-top:5px;">
+                                    <b>7-15</b> Days
+                                </div>
+                            </div>
+                        </div>
+                        <!-- If any specifications -->
+                        <div class="itm_des">
+                            <div class="itm_spec">
+                                <h2>Specifications</h2>
+                            </div>
+                            <div id="itm_spec2">
+                                <ul>
+                                    {{item.description}}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="item_menubar" style='display:none;'>
+                    <div id="mnubar_itm1"  >
+                        <div  id="mnubar_itm2"  >
+                            <div  id="mnubar_itm3"  >
+                                <div  id="mnubar_itm4"  >
+                                    <h2  style="margin:0;">Descriptive Image</h2>
+                                </div>
+                            </div>
+                            <div  id="mnubar_itm5"  >
+                                <div id="item_menubar_div"  no="1">
+
+                                    <div no="1" style="position: relative; top:50%; left:50%; transform: translateX(-50%) translateY(-50%);">
+                                        <img src="{{ item.image1.url }}" alt >
+                                    </div>
+
+                                    {% if item.image2 %}
+                                    <div no="2" style="position: relative; top:50%; left:50%; transform: translateX(-50%) translateY(-50%);">
+                                        <img src="{{ item.image2.url }}" alt  >
+                                    </div>
+                                    {% endif %}
+                                    {% if item.image3 %}
+                                    <div no="3" style="position: relative; top:50%; left:50%; transform: translateX(-50%) translateY(-50%);">
+                                        <img src="{{ item.image3.url }}" alt >
+                                    </div>
+{% endif %}
+{% if item.image4 %}
+                                    <div no="4" style="position: relative; top:50%; left:50%; transform: translateX(-50%) translateY(-50%);">
+                                        <img src="{{ item.image4.url }}" alt >
+                                    </div>
+{% endif %}
+{% if item.image5 %}
+                                    
+                                    <div no="5" style="position: relative; top:50%; left:50%; transform: translateX(-50%) translateY(-50%);">
+                                        <img src="{{ item.image5.url }}" alt >
+                                    </div>
+{% endif %}
+{% if item.image6 %}
+                                    <div no="6" style="position: relative; top:50%; left:50%; transform: translateX(-50%) translateY(-50%);">
+                                        <img src="{{ item.image6.url }}" alt >
+                                    </div>
+{% endif %}
+{% if item.image7 %}
+                                    <div no="7" style="position: relative; top:50%; left:50%; transform: translateX(-50%) translateY(-50%);">
+                                        <img src="{{ item.image7.url }}" alt >
+                                    </div>
+{% endif %}
+{% if item.image8 %}
+                                    <div no="8" style="position: relative; top:50%; left:50%; transform: translateX(-50%) translateY(-50%);">
+                                        <img src="{{ item.image8.url }}" alt >
+                                    </div>
+{% endif %}
+{% if item.image9 %}
+                                    <div no="9" style="position: relative; top:50%; left:50%; transform: translateX(-50%) translateY(-50%);">
+                                        <img src="{{ item.image9.url }}" alt >
+                                    </div>
+{% endif %}
+{% if item.image10 %}
+                                    
+                                    <div no="10" style="position: relative; top:50%; left:50%; transform: translateX(-50%) translateY(-50%);">
+                                        <img src="{{ item.image10.url }}" alt >
+                                    </div>
+{% endif %}
+{% if item.image11 %}
+                                    <div no="11" style="position: relative; top:50%; left:50%; transform: translateX(-50%) translateY(-50%);">
+                                        <img src="{{ item.image11.url }}" alt >
+                                    </div>
+{% endif %}
+{% if item.image12 %}
+                                    <div no="12" style="position: relative; top:50%; left:50%; transform: translateX(-50%) translateY(-50%);">
+                                        <img src="{{ item.image12.url }}" alt >
+                                    </div>
+{% endif %}
+{% if item.image13 %}
+                                    <div no="13" style="position: relative; top:50%; left:50%; transform: translateX(-50%) translateY(-50%);">
+                                        <img src="{{ item.image13.url }}" alt >
+                                    </div>
+{% endif %}
+{% if item.image14 %}
+                                    
+                                    <div no="14" style="position: relative; top:50%; left:50%; transform: translateX(-50%) translateY(-50%);">
+                                        <img src="{{ item.image14.url }}" alt >
+                                    </div>
+{% endif %}
+{% if item.image15 %}
+                                    <div no="15" style="position: relative; top:50%; left:50%; transform: translateX(-50%) translateY(-50%);">
+                                        <img src="{{ item.image15.url }}" alt >
+                                    </div>
+{% endif %}
+{% if item.image16 %}
+                                    <div no="16" style="position: relative; top:50%; left:50%; transform: translateX(-50%) translateY(-50%);">
+                                        <img src="{{ item.image16.url }}" alt >
+                                    </div>
+{% endif %}
+{% if item.image17 %}
+                                    <div no="17" style="position: relative; top:50%; left:50%; transform: translateX(-50%) translateY(-50%);">
+                                        <img src="{{ item.image17.url }}" alt >
+                                    </div>
+{% endif %}
+{% if item.image18 %}
+                                    <div no="18" style="position: relative; top:50%; left:50%; transform: translateX(-50%) translateY(-50%);">
+                                        <img src="{{ item.image18.url }}" alt >
+                                    </div>
+{% endif %}
+{% if item.image19 %}
+                                    <div no="19" style="position: relative; top:50%; left:50%; transform: translateX(-50%) translateY(-50%);">
+                                        <img src="{{ item.image19.url }}" alt >
+                                    </div>
+{% endif %}
+{% if item.image20 %}
+                                    <div no="20" style="position: relative; top:50%; left:50%; transform: translateX(-50%) translateY(-50%);">
+                                        <img src="{{ item.image20.url }}" alt >
+                                    </div>
+{% endif %}
+
+                                    <div id="itm_zoom_pre" open style="position:absolute; top:0;  width:420px; height:420px;">
+                                        <div style="position: absolute; top:0; width:100%; left:0; height:15px; font-size:15px; line-height:15px; text-align:center; font-family: 'Montserrat';">
+                                            <span style="padding:5px 15px; color:#fff; text-shadow: 0 0 3px #000; background:rgba(0,0,0,0.2); border-radius: 20px; letter-spacing: 1px;"><b>Tap on image to Full-Zoom</b></span>
+                                        </div>
+                                    </div>
+                                    <div id="itm_zoom_pst" style="cursor:zoom-out;position:absolute; top:0; width:420px; height:420px;">                                    </div>
+                                </div>
+                                <div id="mnubar_itm6"  >
+                                    <div  id="mnubar_itm7" ><h2 style="margin:0;">
+                                        Other Images
+                                    </h2></div>
+                                    <div>
+                                        <div  class="mnubar_itm1" >
+                                            {% if item.image1 %}
+                                            <div class="mnubar_itm2"  onclick="fjk(1)" open>
+                                                <img src="{{ item.image1.url }}" >
+                                            </div>
+                                            {% endif %}
+                                            {% if item.image2 %}
+                                            <div  class="mnubar_itm2" onclick="fjk(2)">
+                                                <img src="{{ item.image2.url }}">
+                                            </div>
+                                            {% endif %}
+                                            {% if item.image3 %}
+                                            <div  class="mnubar_itm2" onclick="fjk(3)">
+                                                <img src="{{ item.image3.url }}">
+                                            </div>
+                                            {% endif %}
+                                            {% if item.image4 %}
+                                            <div  class="mnubar_itm2" onclick="fjk(4)">
+                                                <img src="{{ item.image4.url }}">
+                                            </div>
+                                            {% endif %}
+                                            {% if item.image5 %}
+                                            <div  class="mnubar_itm2" onclick="fjk(5)">
+                                                <img src="{{ item.image5.url }}">
+                                            </div>
+                                            {% endif %}
+                                        </div>
+                                        <div  class="mnubar_itm1">
+                                            {% if item.image6 %}
+                                            <div  class="mnubar_itm2"  onclick="fjk(6)">
+                                                <img src="{{ item.image6.url }}">
+                                            </div>
+                                            {% endif %}
+                                            {% if item.image7 %}
+                                            <div  class="mnubar_itm2"  onclick="fjk(7)">
+                                                <img src="{{ item.image7.url }}">
+                                            </div>
+                                            {% endif %}
+                                            {% if item.image8 %}
+                                            <div  class="mnubar_itm2"  onclick="fjk(8)">
+                                                <img src="{{ item.image8.url }}">
+                                            </div>
+                                            {% endif %}
+                                            {% if item.image9 %}
+                                            <div  class="mnubar_itm2"  onclick="fjk(9)">
+                                                <img src="{{ item.image9.url }}">
+                                            </div>
+                                            {% endif %}
+                                            {% if item.image10 %}
+                                            <div  class="mnubar_itm2"  onclick="fjk(10)">
+                                                <img src="{{ item.image10.url }}">
+                                            </div>
+                                            {% endif %}
+                                        </div>
+                                        <div  class="mnubar_itm1">
+                                            {% if item.image11 %}
+                                            <div  class="mnubar_itm2"  onclick="fjk(11)">
+                                                <img src="{{ item.image11.url }}">
+                                            </div>
+                                            {% endif %}
+                                            {% if item.image12 %}
+                                            <div  class="mnubar_itm2"  onclick="fjk(12)">
+                                                <img src="{{ item.image12.url }}">
+                                            </div>
+                                            {% endif %}
+                                            {% if item.image13 %}
+                                            <div  class="mnubar_itm2"  onclick="fjk(13)">
+                                                <img src="{{ item.image13.url }}">
+                                            </div>
+                                            {% endif %}
+                                            {% if item.image14 %}
+                                            <div  class="mnubar_itm2"  onclick="fjk(14)">
+                                                <img src="{{ item.image14.url }}">
+                                            </div>
+                                            {% endif %}
+                                            {% if item.image15 %}
+                                            <div  class="mnubar_itm2"  onclick="fjk(15)">
+                                                <img src="{{ item.image15.url }}">
+                                            </div>
+                                            {% endif %}
+                                        </div>
+                                        <div  class="mnubar_itm1">
+                                            {% if item.image16 %}
+                                            <div  class="mnubar_itm2"  onclick="fjk(16)">
+                                                <img src="{{ item.image16.url }}">
+                                            </div>
+                                            {% endif %}
+                                            {% if item.image17 %}
+                                            <div  class="mnubar_itm2"  onclick="fjk(17)">
+                                                <img src="{{ item.image17.url }}">
+                                            </div>
+                                            {% endif %}
+                                            {% if item.image18 %}
+                                            <div  class="mnubar_itm2"  onclick="fjk(18)">
+                                                <img src="{{ item.image18.url }}">
+                                            </div>
+                                            {% endif %}
+                                            {% if item.image19 %}
+                                            <div  class="mnubar_itm2"  onclick="fjk(19)">
+                                                <img src="{{ item.image19.url }}">
+                                            </div>
+                                            {% endif %}
+                                            {% if item.image20 %}
+                                            <div  class="mnubar_itm2"  onclick="fjk(20)">
+                                                <img src="{{ item.image20.url }}">
+                                            </div>
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div  id="mnubar_itm8"  >
+                                <div id="mnubar_itm9"  onclick="document.getElementById('item_menubar').style='display:none;'; document.body.style='';">
+                                    <div id="mnubar_itm10" ><b>Cancel</b></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="atert" style="display: none;">
+                <div id="crt_div">
+                <div class="crt loader"></div>
+                <div class="crt nme"> 
+                    <h3 style="margin:0; padding:0;">
+                        Adding to your Cart
+                    </h3>
+                    <div style="font-size:15px; height:20px; color:#eef; text-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.5); width:250px; padding-top:15px; white-space: nowrap; overflow:hidden; text-overflow:ellipsis;" id='crt_nme'>{{ item.name }}</div>
+                </div>
+                </div>
+                <div id="wish_div">
+                <div class="crt loader"></div>
+                <div class="crt nme">
+                    <h3 style="margin:0; padding:0;">
+                        Adding to your Wishlist
+                    </h3>
+                    <div style="font-size:15px; height:20px; color:#eef; text-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.5); width:250px; padding-top:15px; white-space: nowrap; overflow:hidden; text-overflow:ellipsis;" id='wish_nme'>{{ item.name }}</div>
+                </div>
+                </div>
+            </div>
+            <style>
+                #atert{
+                    position:absolute; bottom:20px; right:20px; background:rgba(76, 175, 80, 0.95); box-shadow:0 0 6px 0 rgba(76, 175, 80, 0.6); width:400px; height:100px; z-index:200; border-radius:10px; overflow:hidden;
+                }
+                #atert>#crt_div,#atert>#wish_div{
+                    margin:10px;padding: 15px 0;
+                    display:flex;
+                    flex-direction: row;
+                    -ms-flex-direction: row;
+                    font-size:15px;
+                    line-height: 20px;
+                    font-family: 'Montserrat',sans-serif;
+                }
+        @keyframes rot{ 
+                0%{transform: rotateZ(0deg);} 
+                40%{transform: rotateZ(90deg);}
+                100%{transform: rotateZ(360deg);}
+                 
+            }
+            .crt.loader{
+                margin-left:20px;
+                animation:0.5s rot infinite linear;
+                width: 40px;
+                height: 40px;
+                flex: 0 0 40px;
+                background: transparent;
+                border-radius: 50%;
+                border: solid 5px transparent;
+                border-top-color: rgb(44, 102, 46);
+                border-bottom-color: rgb(44, 102, 46);
+            }
+            .crt.nme{
+                color:#fff;
+                padding-left:30px;
+            }
+            
+            #atert>div{display:none !important;}
+            #atert[c]>#crt_div{
+                display:flex !important;
+            }
+            #atert[w]>#wish_div{
+                display:flex !important;
+            }
+            .inimg{
+                border-bottom:solid 1px #eee;
+            }
+            </style>
+    </div>
+        <script src="{% static 'utils/script_buyItem.js' %}"></script>
+        <style>
+            body{
+                overflow-x:hidden;
+            }
+            html{
+                overflow-x: auto;
+            }
+            #order{
+                width:440px;
+            }
+            .itm_qnt{
+                width:420px;
+            }
+            .itm_req_form{
+                padding-left:30px;
+            }
+            #item_menubar{
+                height:calc(100% - 74px);
+                top:74px;
+/*                min-height:550px;*/
+                overflow:auto;
+            }
+        </style>
+
+        <script>
+            let min_val;
+            min_val=1;
+            document.getElementById('quantity').addEventListener('input', function(){
+                if(!!this.value){
+                    if(this.value < min_val && this.value <= 0){
+                        this.value = min_val;      
+                    }
+                    else if(this.value > 50){
+                        this.value = 50;
+                    }
+                }
+                document.getElementById('id_quantity').value=this.value;
+            });
+            document.getElementById('quantity').addEventListener('blur', function(){
+                if(!!this.value){
+                    if(!(this.value>=min_val && this.value<=50)) this.value = min_val;
+                }else{
+                    if(!(this.value>=min_val && this.value<=50)) this.value = min_val;
+                }
+                document.getElementById('id_quantity').value=this.value;
+            });
+
+            document.getElementById('place_order').onclick = function () {
+                try{
+                    document.getElementById('atert').removeAttribute("c",'');
+                    document.getElementById('atert').removeAttribute("w",'');
+                }catch(e){}
+                document.getElementById('atert').setAttribute("w",'');
+                document.getElementById('atert').style="";
+            }
+            
+            document.getElementById('add_to_cart').onclick = function () {
+                try{
+                    document.getElementById('atert').removeAttribute("c",'');
+                    document.getElementById('atert').removeAttribute("w",'');
+                }catch(e){}
+                document.getElementById('atert').setAttribute("c",'');
+                document.getElementById('atert').style="";
+            }
+        </script>
+
+
+        
+{% endblock %}

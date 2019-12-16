@@ -1,0 +1,14 @@
+Supplier Code,Product Code,Picture,Name,SubName,Description,Price USD,Delivery,Discount,Minimum Order,Sort
+arthur,"1,6",,GPS (UBLOX NEO-M8N for PX4 2.4.6),GPS,"Net Weight : 33g
+Gross Weight : 58g
+Packing Size : 170*90mm",66,,,,1
+arthur,"1,7",,micro M8N,GPS,"Net Weight : 21g
+Gross Weight : 28g
+Packing Size : 120*80mm",55,,,,2
+arthur,"4,11",,"GPS (UBLOX NEO-M8N for
+Pixhawk 4)",GPS,"Net Weight : 33g
+Gross Weight : 58g
+Packing Size : 170*90mm",66,,,,3
+arthur,"4,12",,GPS (Pixhawk4 2nd GPS),GPS,"Net Weight : 33g
+Gross Weight : 58g
+Packing Size : 170*90mm",66,,,,4

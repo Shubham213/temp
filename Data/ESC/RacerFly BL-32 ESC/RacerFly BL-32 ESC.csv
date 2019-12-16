@@ -1,0 +1,194 @@
+Supplier Code,Product Code,Picture,Name,SubName,Description,Price USD,Delivery,Discount,Minimum Order,Sort
+jane v,1,,7A ESC,HOGH GRADE ESC,"BL-32  7A
+Con.Current:7A
+Peak Current(10s):10A
+LBEC:NO
+SBEC:NO
+Lipo:1-2s
+Programming :YES
+Weight:0.8g
+Size(PCB):16*10mm",14.5,,,,7
+jane v,2,,11A ESC,HOGH GRADE ESC,"BL-32  11A  SB
+Con.Current:11A
+Peak Current(10s):15A
+LBEC:NO
+SBEC:YES  2A
+Lipo:2-3s
+Programming :YES
+Weight:0.9g
+Size(PCB):25*10mm",17,,,,11
+jane v,3,,11A ESC,HOGH GRADE ESC,"BL-32 11A
+Con.Current:11A
+Peak Current(10s):15A
+LBEC:NO
+SBEC:NO
+Lipo:2-3s
+Programming :YES
+Weight:0.8g
+Size(PCB):25*10mm",15.75,,,,11
+jane v,4,,21A ESC,HOGH GRADE ESC,"BL-32   21A
+Con.Current:21A
+Peak Current(10s):26A
+LBEC:NO
+SBEC:NO
+Lipo:2-4s
+Programming :YES
+Weight:2g
+Size(PCB):25*12mm",20.25,,,,21
+jane v,5,,31A ESC,HOGH GRADE ESC,"BL-32   31A
+Con.Current:31A
+Peak Current(10s):36A
+LBEC:NO
+SBEC:NO
+Lipo:2-4s
+Programming :YES
+Weight:2.8g
+Size(PCB):26*14mm",26.25,,,,31
+jane v,6,,33A ESC,HOGH GRADE ESC,"BL-32  33A
+Con.Current:33A
+Peak Current(10s):43A
+LBEC:NO
+SBEC:NO
+Lipo:2-5s
+Programming :YES
+Weight:3g
+Size(PCB):27*16mm",24.75,,,,33
+jane v,7,,26A ESC,HOGH GRADE ESC,"BL-32 26A
+Con.Current:26A
+Peak Current(10s):31A
+LBEC:NO
+SBEC:NO
+Lipo:2-6s
+Programming :YES
+Weight:4g
+Size(PCB):31*16mm",25.75,,,,26
+jane v,8,,36A ESC,HOGH GRADE ESC,"BL-32 36A
+Con.Current:36A
+Peak Current(10s):41A
+LBEC:NO
+SBEC:NO
+Lipo:2-6s
+Programming :YES
+Weight:5g
+Size(PCB):33*18mm",29.25,,,,36
+jane v,9,,41A ESC,HOGH GRADE ESC,"BL-32  41A
+Con.Current:41A
+Peak Current(10s):50A
+LBEC:NO
+SBEC:NO
+Lipo:2-5s
+Programming :YES
+Weight:5g
+Size(PCB):31*19mm",31,,,,41
+jane v,10,,51A ESC,HOGH GRADE ESC,"BL-32 51A
+Con.Current:51A
+Peak Current(10s):58A
+LBEC:NO
+SBEC:NO
+Lipo:2-6s
+Programming :YES
+Weight:6g
+Size(PCB):36*21mm",36.75,,,,51
+jane v,11,,4 in 1 11A ESC,HOGH GRADE ESC,"BL-32  4 IN 1  11A
+Con.Current:11A
+Peak Current(10s):16A
+Lipo:2-3s
+Programming :YES
+Weight:6g
+Size(PCB):30*30mm",69,,,,400
+jane v,12,,4 in 1 21A ESC,HOGH GRADE ESC,"BL-32  4 IN 1  21A
+Con.Current:21A
+Peak Current(10s):31A
+SBEC:3A/5V
+Lipo:2-4s
+Programming :YES
+Weight:11g
+Size(PCB):36*36mm
+30.5mm mounting holes",77.5,,,,401
+jane v,13,,4 in 1 25A ESC,HOGH GRADE ESC,"BL-32  4 IN 1  25A
+Con.Current:25A
+Peak Current(10s):30A
+LBEC:NO
+Lipo:2-4s
+Programming :YES
+Weight:11g
+Size(PCB):33*30mm",73.25,,,,402
+jane v,14,,4 in 1 31A ESC,HOGH GRADE ESC,"BL-32 4 IN 1  31A
+Con.Current:31A
+Peak Current(10s):41A
+LBEC:1A/5V
+SBEC:3A/12V
+Lipo:2-4s
+Programming :YES
+Weight:13g
+Size(PCB):36*36mm
+30.5mm mounting holes",91.25,,,,404
+jane v,15,,4 in 1 30A ESC + F4 + OSD,HOGH GRADE ESC,"BLHELI-32  4 IN 1  30A +F4+OSD
+Con.Current:30A
+Peak Current(10s):35A
+SBEC:3A/5V
+Lipo:2-4s
+Programming :YES
+ F4 +OSD+BEC+CURRENT
+ Input: 2-4S LIPO
+Output Voltage:   5V/2A 
+STM32F4 CPU
+ICM-MPU6000  Accelerometers and Gyroscopes   SPI
+MicroUSB socket.
+Weight:22g
+Size(PCB):36*36mm",136.5,,,,403
+jane v,16,,100A ESC,HOGH GRADE ESC,"BL-32  100A
+Con.Current:100A
+Peak Current(10s):120A
+LBEC:NO
+SBEC:NO
+Lipo:6-12s
+Programming :YES
+Weight:140g
+Size:75*42*22mm",122.5,,,,100
+jane v,17,,22A ESC,HOGH GRADE ESC,"BL-32   22A
+Con.Current:22A
+Peak Current(10s):26A
+LBEC:NO
+SBEC:NO
+Lipo:3-4s
+Programming :YES
+Weight:2g
+Size(PCB):25*12mm",17.75,,,,22
+jane v,18,,4 in 1 40A ESC,HOGH GRADE ESC,"BL-32 4 IN 1  40A
+Con.Current:    40A
+Peak Current(10s): 55A
+SBEC:2A/5V
+Lipo:2-6s
+Programming :YES
+Weight:13g
+Size(PCB):36*36mm
+30.5mm mounting holes",99,,,,405
+jane v,19,,40A ESC,HOGH GRADE ESC,"BL32 40A 6SN
+Con.Current:40A
+Peak Current(10s):45A
+LBEC:NO
+SBEC:NO
+Lipo:2-6s
+Programming :YES
+Weight:5g
+Size(PCB):43*13.5mm",26.5,,,,40
+jane v,20,,30A ESC,HOGH GRADE ESC,"BL32 30A 4SN
+Con.Current:30A
+Peak Current(10s):35A
+LBEC:NO
+SBEC:NO
+Lipo:2-4s
+Programming :YES
+Weight:3g
+Size(PCB):36*10mm",23.75,,,,30
+jane v,21,,60A ESC,HOGH GRADE ESC,"BL32 60A 8S4IN1
+Con.Current:60A (6S)
+Peak Current(10s):80A
+LBEC:NO
+SBEC:NO
+Lipo:3-8s
+Programming :YES
+Weight:16.8g
+Size(PCB):36*36mm
+PCB?BL32_SUPPER4IN1",128.175,,,,60

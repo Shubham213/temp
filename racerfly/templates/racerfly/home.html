@@ -1,0 +1,134 @@
+
+
+
+{% extends auth|yesno:'baseIn.html,baseOut.html' %}
+
+{% block body %}
+
+{% load static %}
+           <div class="go">
+                   <div style="width:100%; font-size:16px; height:0; text-align: center; padding:23px 0; background: #f5f5f5;  font-family: montserrat; color:rgb(108, 148, 172); text-shadow:0 0 6px rgba(0,0,0,0.01); display:none;"><h3 style="margin:0; "> Special Offers </h3></div>
+                <div class="frame" style="height:300px;">
+                        <div class="now" val zero style="height:300px;">
+                            <img src="{%static 'images/banner1.png' %}" alt="">
+                            <div class="img_text">
+	                            <b><div class="name" val="Product name"></div></b>
+	                            <a href="#">
+	                                <div class="specifications" val="specifications"></div>
+	                            </a>
+                        	</div>
+                        </div>
+                        <div class="now"  val="hid" zero="0" style="height:300px;">
+                            <img src="{%static 'images/banner2.png' %}" alt=""  >
+                            <div class="img_text">
+                                <b><div class="name" val="Product name"></div></b>
+                                <a href="#">
+                                    <div class="specifications" val="specifications"></div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- <div class="now" val="hid" zero="0"  style="height:230px;" >
+                                <img src="{%static 'images/long.jpg' %}"  alt="">
+                                <div class="img_text">
+                                    <b><div class="name" val="Product name"></div></b>
+                                    <a href="">
+                                        <div class="specifications" val="specifications"></div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="now"  val="hid" zero="0"  style="height:230px;" >
+                                    <img src="{%static 'images/long.jpg' %}" alt="">
+                                    <div class="img_text">
+                                        <b><div class="name" val="Product name"></div></b>
+                                        <a href="">
+                                            <div class="specifications" val="specifications"></div>
+                                        </a>
+                                    </div>
+                                </div> -->
+                                    <div class="movement">
+                            <div class="product">
+                                <a id="product" href="#">
+                                    <div></div>
+                                </a>
+                            </div>
+                            <div class="pre">
+                                    <svg width="30" height="30" viewBox="0 0 95 95">
+                                            <g>
+                                                <line x1="18" y1="50" x2="43" y2="30" stroke="#555" stroke-width="5" stroke-linecap="round"></line>
+                                                <line x1="18" y1="50" x2="43" y2="70" stroke="#555" stroke-width="5" stroke-linecap="round"></line>
+                                                <line x1="18" y1="50" x2="75" y2="50" stroke="#555" stroke-width="5" stroke-linecap="round"></line>
+                                            </g>
+                                    </svg>
+                            </div>
+                            <div class="next">
+                                    <svg width="30" height="30" viewBox="0 0 95 95">
+                                            <g style="transform:rotateZ(180deg); transform-origin:center;">
+                                                <line x1="18" y1="50" x2="43" y2="30" stroke="#555" stroke-width="5" stroke-linecap="round"></line>
+                                                <line x1="18" y1="50" x2="43" y2="70" stroke="#555" stroke-width="5" stroke-linecap="round"></line>
+                                                <line x1="18" y1="50" x2="75" y2="50" stroke="#555" stroke-width="5" stroke-linecap="round"></line>
+                                            </g>
+                                    </svg>
+                            </div>
+
+                        </div>
+                        <diV class="dir">
+                            <div onclick="roll(1)"><div is="1"></div></div>
+                            <div onclick="roll(2)"><div is="0"></div></div>
+                            <!-- <div onclick="roll(3)"><div is="0"></div></div>
+                            <div onclick="roll(4)"><div is="0"></div></div> -->
+                        </diV>
+                </div>
+                <div class="specs">
+                    <div class="data">
+                            <h2 val="Categories" style="margin:0;"> </h2>
+                            <hr style="max-width:300px; margin-bottom:20px;">
+                            <div class="main_div">
+                            	{% for category in categories %}
+                                <div class="subdiv">
+                                        <div class="subbdiv">
+                                                <a href="{% url 'racerfly:series' category.id %}">
+                                                    <div>
+                                                    	{% if category.image %}
+                                                        <img src="{{category.image.url}}" alt="">
+                                                        {% else %}
+                                                        <img src="{% static 'images/image.jpg' %}" alt="">
+                                                        {% endif %}
+                                                        <div specs="{{category.name}}" style="box-shadow:inset 0 0 10px 0 rgba(0,0,0,0.2),0 0 1px 0 rgba(0,0,0,0.2); border-radius:5px;"></div>
+                                                    </div>
+                                                </a>
+                                            </div>                           
+                                </div>
+                                {% endfor %}
+                    </div>
+                </div>
+           </div>
+           <div class="specs">
+               <div class="data">
+                   <div style="color:#444; font-size:22px; font-weight: 600; font-family:'Montserrat',sans-serif; text-align: center;">
+                        <p style="margin:5px 0;">Looking for any ITEM other than these or Bulk Order or Advance orders?</p>
+                        <p style="margin:5px 0;">We can fullfil your special needs.</p>
+                        <p style="margin:5px 0;">Please, let us know " <a href="{% url 'racerfly:cont_us' %}">HERE</a> ". </p>
+                    </div>
+               </div>
+           </div>
+
+       <script>
+        function f (){
+                if(!!document.getElementsByClassName("now")[0]){
+                    var a = 0;
+                    for(var i in document.getElementsByClassName("now")){
+                        if(!document.getElementsByClassName("now")[i].getAttribute("val")){
+                            a = document.getElementsByClassName("now")[i].getElementsByTagName("img")[0].height;
+                            break;
+                    }
+                }
+                    document.getElementsByClassName("frame")[0].style="height:"+(a+80)+"px";
+                    document.getElementsByClassName("movement")[0].style="height:"+(a+40)+"px";
+                    for(var i in document.getElementsByClassName("now")){
+                        document.getElementsByClassName("now")[i].style="height:"+(a+40)+"px";
+                    }
+                }
+        }
+        try{f();}catch(e){};
+    </script>
+{% endblock %}

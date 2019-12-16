@@ -1,0 +1,348 @@
+
+{% extends 'baseIn.html' %}
+
+{% block body %}
+{% load static %}
+{% load tags %}
+<link rel="stylesheet" href="{% static 'utils/cart.css' %}">
+<link rel="stylesheet" href="{% static 'utils/style.css' %}">
+<link rel="stylesheet" href="{% static 'utils/style2.css' %}">
+
+
+
+<style>
+    button[name='delete']{
+        cursor: pointer;
+        width: auto;
+        margin:10px;
+        padding:10px;
+        background: rgb(82, 82, 82);
+        border-radius: 3px;
+        color:#ddd;
+        overflow:hidden;
+    }
+    button[name='delete']>div{
+        width:130px;
+        display: inline-block;
+        text-align: center;
+        margin: auto;
+    }
+    button[name='delete']{
+        background: rgb(230, 24, 24);
+        color:#fff;
+    }
+    button[name='delete']:hover{
+        background:rgb(197, 9, 9);
+    }
+    .razorpay-payment-button{
+        margin:20px 20px 0 auto;
+        padding:10px;
+        font-size:16px !important;
+        background:linear-gradient(#44f, #048);
+        color:#fff;
+        border-radius: 5px;
+        width:200px;
+        text-align: center;
+        cursor: pointer;
+        font-family: "Montserrat",Arial, Helvetica, sans-serif;
+    }
+    .razorpay-payment-button:active{
+        background:#048;
+    }
+    @media (max-width:650px){
+        .razorpay-payment-button{
+            margin: 20px auto !important;
+            margin-bottom:0 !important;
+        }
+    }
+</style>
+
+            <div class="go">
+
+            <!-- Main content -->
+                <style>                
+                        button[name="delete"],input{
+                            border:0 !important;
+                            outline:none !important;
+                        }
+                </style>
+                <div class="cart menu_section">
+                    
+                    <!-- Empty Cart -->
+                    {% if not user.cart or user.cart.items.all.count == 0 %}
+                    <div class="_container">
+                        <div class="name_cart">
+                            <b>Your Cart</b>
+                        </div>
+                        <div class="_none">
+                            <div>
+                                Your Cart is Empty
+                            </div>
+                        </div>
+                    </div>
+                    {% else %}
+                    <!-- Empty cart end -->
+
+                    <!-- Cart with some elements -->
+                    <div class="_container">
+                        <div class="name_cart">
+                            <b>Your Cart</b>
+                        </div>
+                        <!-- Total Price Section -->
+                        <div class="_totalPrice">
+                            <div>Subtotal ( {{user.cart.items.all.count}} Items ) : <span><b>₹​ {{user.cart.totPrice|multiply:dollarToRs|roundTo2 }} </b><span><a href="#_des"><div></div></a></span></span>
+                                <form action="{% url 'racerfly:verify_payment' %}" method="POST">
+                                    {% csrf_token %}
+                                    <textarea id='id_delivery_address' name="delivery_address" style="display: none;" required="">{% if user.last_address %}{{user.last_address}}{% endif %}</textarea>
+                                    
+                                    <script
+                                        src="https://checkout.razorpay.com/v1/checkout.js"
+                                        data-key="rzp_live_46KNgnEVu2I48A"
+                                        data-amount="{{user.cart.totPrice|grandTotal|multiply:100|toInt}}"
+                                        data-name="Racerfly"
+                                        data-description=""
+                                        data-image="{% static 'images/final_logo.png' %}"
+                                        data-netbanking="true"
+                                        data-description="Tron Legacy"
+                                        data-prefill.name="{{ user.name }}"
+                                        data-prefill.email="{{ user.email }}"
+                                        data-prefill.contact="{{ user.phone_no }}"
+                                        data-notes.shopping_order_id="{{ razorpay_order_id }}">
+                                    </script>
+                                    <input type="hidden" name="shopping_order_id" value="21">
+                                    <!-- <input type="button" id="_order">
+                                    <label for="_order">
+                                        <div id="__order">
+                                            Proceed to Buy
+                                        </div>
+                                    </label> -->
+                                </form>
+                            </div>
+                            <div class="_des">
+                                By proceeding to payment you agree <a href="{% url 'racerfly:tnc' %}" target="_blank">Terms and Conditions</a> <wbr>of&nbsp;<b style="color:#000;">©RacerFly</b>
+                                <div style="padding-top:10px;"></div>Check more details <a href="#_des"><strong>here</strong></a>
+                            </div>
+                        </div>
+
+                        <form method="POST" id='deleteForm'>
+                        {% csrf_token %}
+                        <h3 style="margin: 20px 0; font-size: 22px; color: #444;">Please enter Delivery Address <span style="padding: 10px 0; color: rgb(240,77,77);">(Must include pincode)</span></h3>
+                        <textarea style="width: 90%; height:60px; border-radius: 12px; padding: 5px;" placeholder="Delivery address" oninput="updateText(this)">{% if user.last_address %}{{user.last_address}}{% endif %}</textarea>
+                        <script>
+                            function updateText(e){
+                                document.getElementById('id_delivery_address').value = e.value;
+                            }
+                        </script>
+                        {% for item_cart in user.cart.items.all reversed %}
+                        <!-- Each Item -->
+                        
+                        <div class="_div">
+                            <div class="__div">
+                                <div class="_img">
+                                    <img src="{{item_cart.item.image1.url}}" alt="">
+                                </div>
+                                <div class="_data">
+                                    <div><b><!-- Name of the Product Name --> {{ item_cart.item.name }} </b></div>
+                                    <div><span> {{ item_cart.item.subname }} <!-- Subname of the Product Subname of the Product Subname of the Product Subname of the Product Subname of the Product Subname of the Product Subname of the Product --> </span></div>
+                                    <div><span><sup>by Comapany</sup></span></div>
+                                    <div><span>Quantity : <b>{{ item_cart.quantity }}</b></span></div>
+                                    <div class="_price_log"><span>PRICE : <b>₹​ {{ item_cart.item.priceDollar|multiply:dollarToRs|multiply:item_cart.quantity|makediscount:item_cart.item.discount }}</b></span></div>
+                                </div>
+                            </div>
+                            <a href="{% url 'racerfly:buyItem' item_cart.item.series.category.id item_cart.item.series.id item_cart.item.id %}">
+                                <div class="_full"></div>
+                            </a>
+                            
+                            <div class="some">      
+                                    <!-- <input id="_dec" type="button" name="delete"> -->
+                                    <input type="radio" style="display: none;" value="{{item_cart.id}}" name='item_no' id='ip{{item_cart.id}}'>
+                                    <label for="_dec" style="visibility: hidden;">
+                                        <div>
+                                            Change Quantity
+                                        </div>
+                                    </label>
+                                    <input id="_del" type="button" name="delete" value='delete'>
+                                    <button name='delete' onmouseover="selectRadio('{{item_cart.id}}')" onmouseout="deselectRadio('{{item_cart.id}}')" onclick="submitForm('{{ item_cart.item.name }}', this)">
+                                        <div>
+                                            Delete
+                                        </div>        
+                                    </button>
+                                
+                            </div>
+                        </div>
+
+                        <!-- Item end -->
+                        {% endfor %}
+</form>
+
+<div id="atert" style="display: none;">
+    <div id="crt_div">
+    <div class="crt loader"></div>
+    <div class="crt nme"> 
+        <h3 style="margin:0; padding:0;">
+            Deleting from your Cart
+        </h3>
+        <div style="font-size:15px; height:20px; color:#eef; text-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.5); width:250px; padding-top:15px; white-space: nowrap; overflow:hidden; text-overflow:ellipsis;" id='crt_nme'></div>
+    </div>
+    </div>
+</div>
+<style>
+    #atert{
+        position:absolute; bottom:20px; right:20px; background:rgba(255, 60, 60, 0.9); box-shadow:0 0 6px 0 rgba(76, 175, 80, 0.6); width:400px; height:100px; z-index:200; border-radius:10px; overflow:hidden;
+    }
+    #atert>#crt_div,#atert>#wish_div{
+        margin:10px;padding: 15px 0;
+        display:flex;
+        flex-direction: row;
+        -ms-flex-direction: row;
+        font-size:15px;
+        line-height: 20px;
+        font-family: 'Montserrat',sans-serif;
+    }
+@keyframes rot{ 
+    0%{transform: rotateZ(0deg);} 
+    40%{transform: rotateZ(90deg);}
+    100%{transform: rotateZ(360deg);}
+     
+}
+.crt.loader{
+    margin-left:20px;
+    animation:0.5s rot infinite linear;
+    width: 40px;
+    height: 40px;
+    flex: 0 0 40px;
+    background: transparent;
+    border-radius: 50%;
+    border: solid 5px transparent;
+    border-top-color: rgb(102, 44, 44);
+    border-bottom-color: rgb(102, 44, 44);
+}
+.crt.nme{
+    color:#fff;
+    padding-left:30px;
+}
+</style>
+                        <script>
+                            var elem = document.getElementsByClassName('razorpay-payment-button')[0];
+                            elem.value = 'Proceed To Buy';
+
+                            function selectRadio(x){
+                                document.getElementById('ip'+x.toString()).checked = true;
+                            }
+                            function deselectRadio(x){
+                                document.getElementById('ip'+x.toString()).checked = false;
+                            }
+                            function submitForm(x, e){
+                                e.style.display = "none";
+                                document.getElementById('deleteForm').submit();
+                                document.getElementById('crt_nme').innerHTML=x;
+                                document.getElementById('atert').style="";
+                            }
+                        </script>
+                        <!-- Each Item -->
+                        
+                        <!-- <div class="_div">
+                            <div class="__div">
+                                <div class="_img">
+                                    <img src="img4.jpg" alt="">
+                                </div>
+                                <div class="_data">
+                                    <div><b>Name of the Product Name of the Product Name of the Product</b></div>
+                                    <div><span>Subname of the Product Subname of the Product Subname of the Product Subname of the Product Subname of the Product Subname of the Product Subname of the Product </span></div>
+                                    <div><span><sup>by Comapany</sup></span></div>
+                                    <div><span>Quantity : <b>01</b></span></div>
+                                    <div class="_price_log"><span>PRICE : <b>$ 59</b></span></div>
+                                </div>
+                            </div>
+                            <a href="">
+                                <div class="_full"></div>
+                            </a>
+                            
+                            <div class="some">      
+                                <form  method="POST">
+                                    <input id="_dec" type="button" name="delete">
+                                    <label for="_dec">
+                                        <div>
+                                            Change Quantity
+                                        </div>
+                                    </label>
+                                    <input id="_del" type="button" name="delete">
+                                    <label for="_del">
+                                        <div>
+                                            Delete
+                                        </div>        
+                                    </label>
+                                </form>
+                            </div>
+                        </div> -->
+
+                        <!-- Item end -->
+
+    
+                        <!-- Total Price and total Description -->
+                        <div id='_des'>
+                            <table>
+                                <tr>
+                                    <th colspan="2"  style="border-bottom:solid 1px #444; ">
+                                        <h2 style="margin-bottom:0px;">Grant cart price</h2>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Cart price »
+                                    </td>
+                                    <th>
+                                        ₹​ {{user.cart.totPrice|multiply:dollarToRs|roundTo2}} (Added {{gst}}% GST)
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Delivery charges »
+                                    </td>
+                                    <th>
+                                        &#x20b9 {{ user.cart.totPrice|deliveryCharge|roundTo2 }}
+                                    </th>
+                                </tr>
+                                <!-- <tr>
+                                    <td>
+                                        Quick delivery »
+                                    </td>
+                                    <th>
+                                        $ 11
+                                    </th>
+                                </tr> -->
+                                <tr>
+                                    <th>
+                                        Grand total &nbsp;»
+                                    </th>
+                                    <th>
+                                        &#x20b9 {{ user.cart.totPrice|grandTotal|roundTo2 }}
+                                    </th>
+                                </tr>
+
+                            </table>
+                            <form>
+                                <input type="button" id="_order2">
+                                <label for="_order2">
+                                    <div id="__order" style='margin: 20px auto !important;' onclick="buy()">
+                                        Proceed to Buy
+                                    </div>
+                                    <script>
+                                        function buy(){
+                                            document.getElementsByClassName('razorpay-payment-button')[0].click();
+                                        }
+                                    </script>
+                                </label>
+                            </form>
+                            <div class="_des">
+                                By proceeding to payment you agree <a target="_blank" href="{% url 'racerfly:tnc' %}">Terms and Conditions</a> <wbr>of&nbsp;<b style="color:#000;">©RacerFly</b>
+                            </div>
+                        </div>
+                    </div>
+                    {% endif %}
+                </div>
+                
+            <!-- </div> -->
+            <!-- End of MAIN content -->
+
+{% endblock %}

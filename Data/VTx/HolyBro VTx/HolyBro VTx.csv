@@ -1,0 +1,28 @@
+Supplier Code,Product Code,Picture,Name,SubName,Description,Price USD,Delivery,Discount,Minimum Order,Sort
+arthur,"2,5",,Atlatl HV micro,VTx,"Net Weight : 11g
+Gross Weight : 27g
+Packing Size : 65*65*20mm",33,,,,1
+arthur,"2,24",,"Atlatl mini
+",VTx,"Specifications
+? Output Power: 0.5 mW (pit mode), 25 mW, 100 mW
+? Antenna Connector: MMCX
+? Input Voltage: 4.5 to 5.5 volts (nominal 5v power)
+? Dimensions: 19x16x4.5mm
+? Weight: 1.6g (without antenna)
+
+Net Weight : 3.5g
+Gross Weight : 9g
+Packing Size : 130*100mm",24.2,,,,2
+arthur,"2,25",,"Atlatl HV V2
+",VTx,"Specifications
+? Output Power: 0.5 mW (pit mode), 25 mW, 200 mW, 500 mW, 800 mW
+? Audio: 6.5 MHz Mono
+? Antenna Connector: MMCX
+? Input Voltage: 7 to 28 volts (2-6S LiPo) with absolute maximum 42 volts
+? Dimensions: 35x25x7mm (Includes USB height)
+? Mounting Holes: Standard 30.5mm square to center of holes
+? Weight: 9.3g
+
+Net Weight : 11g
+Gross Weight : 27g
+Packing Size : 65*65*20mm",37.4,,,,3

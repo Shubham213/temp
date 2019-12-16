@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">       
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="{% static 'utils/register.css' %}">
+</head>
+<body w="" e="" s="">
+    <div class="container">
+        <div class="content">
+            <div class="width" id="logo" b="h" style="z-index:1;">
+              <div class="img">
+                <a class="logo" href="{% url 'racerfly:home' %}">
+                  <img src="{% static 'images/final_logo.png' %}" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="width" style="padding-top:0;">
+                <div class="main">
+                    {% if error %}
+                    <div class="error"> {{ error }} </div>
+                    {% endif %}
+                  <form method="post">
+                    {% csrf_token %}
+                    <div class="width maintext"><h3>Create Account  »</h3></div>
+                    <div class="width text2">
+                        <div class="label">
+                            <label><b>Your name</b></label>
+                        </div>
+                        <div class="input">
+                            <input type="text" autofill="off" placeholder="Name" name='name' required>
+                        </div>
+                        <div class="name">
+                            <div class="error"   m="You kept this field empty"><div></div></div>
+                            <div class="warning" m="You kept this field empty"><div></div></div>
+                            <div class="suggest" m="You kept this field empty"><div></div></div>
+                        </div>
+                    </div>
+                    <div class="width text2">
+                        <div class="label">
+                            <label><b>Mobile number</b></label>
+                        </div>
+                        <div class="input mobile">
+                            <select autocomplete="off" data="2">
+                              <option data="1">IN +91</option>
+                            </select>
+                        <diV class="vr"><div></div></diV>
+
+                            <input type="tel" maxlength="10" autofill="off" placeholder="Mobile Number" name='phone_no'>
+                        </div>
+                        <div class="mob">
+                            <div class="error"   m="You kept this field empty"><div></div></div>
+                            <div class="warning" m="You kept this field empty"><div></div></div>
+                            <div class="suggest" m="Now give mobile no."><div></div></div>
+                        </div>
+                    </div>
+                    <div class="width text2">
+                        <div class="label">
+                            <label><b>City</b></label>
+                        </div>
+                        <div class="input">
+                            <input type="text" autofill="off" placeholder="City" name='city' required>
+                        </div>
+                    </div>
+                    <div class="width text2">
+                        <div class="label">
+                            <label><b>Email</b></label>
+                        </div>
+                        <div class="input">
+                            <input type="email" id="id_email" autofill="off" placeholder="Email" name='email' required>
+                        </div>
+                        <div class="email">
+                            <div class="error"   m="You kept this field empty"><div></div></div>
+                            <div class="warning" m="You kept this field empty"><div></div></div>
+                            <div class="suggest" m="Now give mobile no."><div></div></div>
+                        </div>
+                    </div>
+                    <div class="width text2">
+                        <div class="label">
+                            <label><b>Password</b></label>
+                        </div>
+                        <div class="input">
+                            <input type="password" autofill="off" placeholder="must contain more than 6 characters" name='password' required>
+                        </div>
+                        <div class="password">
+                            <div class="error"   m="You kept this field empty"><div></div></div>
+                            <div class="warning" m="You kept this field empty"><div></div></div>
+                            <div class="suggest" m="You kept this field empty"><div></div></div>
+                        </div>
+                    </div>
+                    <div class="width text2">
+                            <div class="label">
+                                <label><b>Confirm Password</b></label>
+                            </div>
+                            <div class="input">
+                                <input type="password" autofill="off" placeholder="Confirm Password" name="confirm_password" required>
+                            </div>
+                            <div class="username">
+                                <div class="error"   m="You kept this field empty"><div></div></div>
+                                <div class="warning" m="You kept this field empty"><div></div></div>
+                                <div class="suggest" m="You kept this field empty"><div></div></div>
+                            </div>
+                        </div>
+                    <div class="width text">
+                      <p class="message">It is necessary to link Email to your account.</p>
+                      <p class="message">We will confirm your Email via Verification code sent to your Email address.</p>
+                    </div>
+                    <div id="verification" style="display:none;">
+                    
+                        <div class="input" style="margin:0; width: 300px; position: absolute; transform:translateY(-50%) translateX(-50%); top:50%; left:50%;">
+                            <div style="color:#fff; width:300px; text-align:center;">
+                                <h3>Enter Verification Code <br/><b style="color:#bbb;">sent to your Email</b></h3>
+                            </div>
+                                <input type="text" name="code" id="id_code" placeholder="Enter Verification Code">
+                         <!--       <div class="width text2">
+                                  <div class="input submit">
+                                    <input type="submit" value="Continue" id="regBtn">
+                                  </div>
+                                </div>
+                      -->
+                        </div>
+
+                    </div>
+                    
+                      <style>
+                          
+                          #verification{
+                              width:100%;
+                              height:100%;
+                              position: absolute;
+                              top:0;
+                              left:0;
+                              z-index: 3;
+                              background:rgba(0,0,0,0.75);
+                          }
+                          #id_code{
+                              padding:20px;
+                              width:258px;
+                          }
+                          #verification_submit{
+                              height:50px;
+                              margin:0 50px;
+                              width:200px;
+                              border:0;
+                          }
+			.lvl_up{
+    				position: fixed;
+    				bottom: 0;
+    				left: 50%;
+    				transform: translateX(-50%);
+    				z-index: 3;
+			}
+                      </style>
+                      
+                      <div class="width text2">
+                      <div class="input submit" id="level_up">
+                        <input type="submit" value="Sign Up" id="regBtn">
+                      </div>
+                  </div>
+
+<script>
+    $('#regBtn').on('click', function(e){
+        console.log('oho');
+        if($("#verification").css('display')=='none'){
+            e.preventDefault();
+            var dataToGo = $('#id_email').val();
+            console.log(dataToGo);
+            $.ajax({
+              url: "{% url 'racerfly:ajax_generate_code' %}",
+              type: 'GET',
+              data: dataToGo,
+              success: function (data) {
+                  $('#verification').css('display', 'block');
+		  document.getElementById("id_code").focus();
+		  document.getElementById("level_up").className+=" lvl_up";
+              },
+              cache: false,
+              contentType: false,
+              processData: false
+            });
+        }
+    })
+</script>
+
+                  </form>
+                  
+                  <div class="spot">
+                    <div></div>
+                  </div>
+
+                  <div class="link">
+                    Already have an Account ? <a href="{% url 'racerfly:login' %}">Login here</a>
+                  </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="{% static 'utils/register.js' %}"></script>
+</body>
+</html>

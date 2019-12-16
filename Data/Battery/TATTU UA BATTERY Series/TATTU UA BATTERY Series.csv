@@ -1,0 +1,75 @@
+Supplier Code,Product Code,Picture,Name,SubName,Description,Price USD,Delivery,Discount,Minimum Order,Sort
+cassia,1,,LIPO 6600mah 4S2P 14.8V 35C ,TATTU UA series,"Voltage : 16.8V
+SIZE : 29*85*136mm
+Weight : 713g",40.0,10 - 15,,,"6600,4"
+cassia,2,,LIPO 8000mAh 25C 22.2V 6S1P,TATTU UA series,"Voltage : 25.2V
+SIZE : 53*65*167mm
+Weight : 1200g",59.1,10 - 15,,,"8000,6"
+cassia,3,,LIPO 10000mAh 25C 14.8V 4S1P,TATTU UA series,"Voltage : 16.8V
+SIZE : 44*65*172mm
+Weight : 921g",49.3,10 - 15,,,"10000,4"
+cassia,4,,LIPO 16000mAh 15C 14.8V 4S1P,TATTU UA series,"Voltage : 14.8V
+SIZE : 45*76*185mm
+Weight : 1320g",68.4,10 - 15,,,"16000,4"
+cassia,5,,LIPO 10000mAh 25C 22.2V 6S1P,TATTU UA series,"Voltage : 25.2V
+SIZE : 65*65*172 mm       
+Weight : 1382g",76.3,10 - 15,,,"10000,6"
+cassia,6,,LIPO 12000mAh 15C 22.2V 6S1P,TATTU UA series,"Voltage : 25.2V
+SIZE : 61*71*185mm
+Weight : 1576g",85.6,10 - 15,,,"12000,6"
+cassia,7,,LIPO 12000mAh 15C 22.2V 6S1P Extended Version,TATTU UA series,"Voltage : 25.2V
+SIZE : 44*73.5*218*mm
+Weight : 1450g",85.6,10 - 15,,,"12000,6"
+cassia,8,,LIPO 16000mAh 15C 22.2V 6S1P,TATTU UA series,"Voltage : 25.2V
+SIZE : 67*76*185mm
+Weight : 1931g",102.5,10 - 15,,,"16000,6"
+cassia,9,,LIPO 18000mAh 15C 22.2V 6S1P,TATTU UA series,"Voltage : 25.2V
+SIZE : 75*62*190mm
+Weight : 2030g",115.3,10 - 15,,,"18000,6"
+cassia,10,,LIPO 22000mAh 25C 22.2V 6S1P,TATTU UA series,"Voltage : 25.2V
+SIZE : 65*91*200mm
+Weight : 2544g",156.1,10 - 15,,,"22000,6"
+cassia,11,,LIPO 22000mAh 25C 22.2V 6S1P Extended Edition,TATTU UA series,"Voltage : 25.2V
+SIZE : 55*83.5*280mm
+Weight : 2800g",156.1,10 - 15,,,"22000,6"
+cassia,12,,LIPO 24000mAh 15C 22.2V 6S1P,TATTU UA series,"Voltage : 25.2V
+SIZE : 68*92.5*208mm
+Weight : 2725g",170.3,10 - 15,,,"24000,6"
+cassia,13,,LIPO 26000mAh 25C 22.2V 6S1P ,TATTU UA series,"Voltage : 25.2V
+SIZE : 65*115*204mm
+Weight : 3180g",185.8,10 - 15,,,"26000,6"
+cassia,14,,LIPO 28000mAh 25C 22.2V 6S1P ,TATTU UA series,"Voltage : 25.2V
+SIZE : 65*122*200mm
+Weight : 3400g",200.4,10 - 15,,,"28000,6"
+cassia,15,,LIPO 30000mAh 25C 22.2V 6S1P ,TATTU UA series,"Voltage : 25.2V
+SIZE : 67*122*210mm
+Weight : 3400g",214.9,10 - 15,,,"30000,6"
+cassia,16,,TATTU PLUS 10000mAh 25C 22.2V 6S1P,"TATTU PLUS UA series, 
+HARD CASE","Voltage : 25.2V
+SIZE : 63*70*185 mm 
+Weight : 1466g",407.1,10 - 15,,,"10000,6"
+cassia,17,,TATTU PLUS 12000mAh 15C 22.2V 6S1P,"TATTU PLUS UA series, 
+HARD CASE","Voltage : 25.2V
+SIZE : 62*76*202mm
+Weight : 1640g",468.3,10 - 15,,,"12000,6"
+cassia,18,,TATTU PLUS 16000mAh 15C 22.2V 6S1P,"TATTU PLUS UA series, 
+HARD CASE","Voltage : 25.2V
+SIZE : 70*88*202mm
+Weight : 2063g",554.4,10 - 15,,,"16000,6"
+cassia,19,,TATTU PLUS 22000mAh 25C 22.2V 6S1P,"TATTU PLUS UA series, 
+HARD CASE","Voltage : 25.2V
+SIZE : 68*96*213mm
+Weight : 2640g",830.2,10 - 15,,,"22000,6"
+cassia,20,,TATTU  PLUS  2.0  18000mAh  15C  22.2V ,"TATTU PLUS UA series, 
+HARD CASE","Voltage : 25.2V
+SIZE : 79.5*94.2*205.5mm
+Weight : 2270g",764.7,10 - 15,,,"18000,1"
+cassia,21,,LIPO 12000mAh 15C 22.8V 6S1P,TATTU UA HV Series,"Voltage : 26.1V
+SIZE : 53*72*190mm
+Weight : 1500g",462.7,10 - 15,,,"12000,6"
+cassia,22,,LIPO 16000mAh 15C 22.8V 6S1P,TATTU UA HV Series,"Voltage : 26.1V
+SIZE : 63.5*77*190mm
+Weight : 1900g",554.0,10 - 15,,,"16000,6"
+cassia,23,,LIPO 22000mAh 25C 22.8V 6S1P,TATTU UA HV Series,"Voltage : 26.1V
+SIZE : 62*92*205mm
+Weight : 2400g",843.2,10 - 15,,,"22000,6"

@@ -1,0 +1,298 @@
+{% extends auth|yesno:'baseIn.html,baseOut.html' %}
+
+{% block body %}
+{% load static %}
+{% load tags %}
+    <link rel="stylesheet" href="{% static 'utils/style3.css' %}">
+    <link rel="stylesheet" href="{% static 'utils/style4.css' %}">
+
+           <div class="go">
+                <div></div>
+                <div class="frame">
+                        <div class="now" val zero>
+                            {% if item.image1 %}
+                            <img src="{{ item.image1.url }}" alt="">
+                            {% else %}
+                            <img src="{% static 'images/no_image.png' %}" alt="">
+                            {% endif %}
+                        </div>
+                        <div class="now"  val="hid" zero="0">
+                            {% if item.image2 %}
+                            <img src="{{ item.image2.url }}" alt="">
+                            {% else %}
+                            <img src="{% static 'images/no_image.png' %}" alt="">
+                            {% endif %}
+                            
+                        </div>
+                        <div class="now" val="hid" zero="0">
+                            {% if item.image3 %}
+                            <img src="{{ item.image3.url }}" alt="">
+                            {% else %}
+                            <img src="{% static 'images/no_image.png' %}" alt="">
+                            {% endif %}
+                                
+                            </div>
+                            <div class="now"  val="hid" zero="0">
+                                    {% if item.image4 %}
+                            <img src="{{ item.image4.url }}" alt="">
+                            {% else %}
+                            <img src="{% static 'images/no_image.png' %}" alt="">
+                            {% endif %}
+                                </div>
+                                <div class="now"  val="hid" zero="0">
+                                        {% if item.image5 %}
+                            <img src="{{ item.image5.url }}" alt="">
+                            {% else %}
+                            <img src="{% static 'images/no_image.png' %}" alt="">
+                            {% endif %}
+                                    </div>
+                                    <div class="now"  val="hid" zero="0">
+                                            {% if item.image6 %}
+                            <img src="{{ item.image6.url }}" alt="">
+                            {% else %}
+                            <img src="{% static 'images/no_image.png' %}" alt="">
+                            {% endif %}
+                                        </div>
+
+                                    <div class="movement">
+                            <div class="product">
+                                <a id="product" href="#">
+                                    <div></div>
+                                </a>
+                            </div>
+                            <div class="pre" style="display:none !important;">
+                                    <svg width="30" height="30" viewBox="0 0 95 95">
+                                            <g>
+                                                <line x1="18" y1="50" x2="43" y2="30" stroke="#555" stroke-width="5" stroke-linecap="round"></line>
+                                                <line x1="18" y1="50" x2="43" y2="70" stroke="#555" stroke-width="5" stroke-linecap="round"></line>
+                                                <line x1="18" y1="50" x2="75" y2="50" stroke="#555" stroke-width="5" stroke-linecap="round"></line>
+                                            </g>
+                                    </svg>
+                            </div>
+                            <div class="next" style="display:none !important;">
+                                    <svg width="30" height="30" viewBox="0 0 95 95">
+                                            <g style="transform:rotateZ(180deg); transform-origin:center;">
+                                                <line x1="18" y1="50" x2="43" y2="30" stroke="#555" stroke-width="5" stroke-linecap="round"></line>
+                                                <line x1="18" y1="50" x2="43" y2="70" stroke="#555" stroke-width="5" stroke-linecap="round"></line>
+                                                <line x1="18" y1="50" x2="75" y2="50" stroke="#555" stroke-width="5" stroke-linecap="round"></line>
+                                            </g>
+                                    </svg>
+                            </div>
+
+                        </div>
+                        <diV class="dir">
+                            <div onclick="roll(1)"><div is="1"></div></div>
+                            <div onclick="roll(2)"><div is="0"></div></div>
+                            <div onclick="roll(3)"><div is="0"></div></div>
+                            <div onclick="roll(4)"><div is="0"></div></div>
+                            <div onclick="roll(5)"><div is="0"></div></div>
+                            <div onclick="roll(6)"><div is="0"></div></div>
+                        </diV>
+                </div>
+                <div class="ratecard">
+                    
+                        <div id="table">
+                            <div id="path">
+                                <a href="{% url 'racerfly:home' %}">Home</a>><a href="{% url 'racerfly:series' category.id %}">{{category.name}}</a>><a href="{% url 'racerfly:items' category.id ser.id %}">{{ser.name}}</a>><b>{{item.name}}</b>
+                            </div>
+                            <div id="name">
+                                <h2> {{ item.name }} </h2>
+                            </div>
+                            <div id="d_name">
+                                <b>{{ item.name }}uiyfd</b>
+                            </div>
+                            <!-- <div id="company">
+                                <a href="#">&nbsp;Godrej&nbsp;</a>
+                            </div> -->
+                            <hr style="width:auto; margin:10px 20px; border:0px; height:0px; box-shadow:0 0 0.5px 0.5px rgb(197, 197, 197);">
+                                <div id="price">
+                                    <div id="quant"><div><label for="quantity" style="color:#333; padding:0 20px;">Quantity</label><input id="quantity" type="number" min="1" max="20" value="{{item.min_quantity}}" maxlength="2" ></div></div>
+                                    <div class="pre_price">
+                                        <span>Price</span>
+                                        <!-- <span cur="$">&nbsp;{{ item.priceDollar }}&nbsp;</span> -->
+                                        <span cur=""> ₹​&nbsp;{{ item.priceDollar|multiply:dollarToRs }}&nbsp;</span>
+                                    </div>
+                                    <div class="post_price">
+                                            <span>Price</span>
+                                            <span cur="₹​" id="actualPrice"> {{ item.priceDollar|multiply:dollarToRs|makediscount:item.discount }} </span>
+                                            <!-- <script type="text/javascript">
+                                                var actualPrice = parseInt("{{item.priceDollar}}")*(100-parseInt("{{item.discount}}"))/100)*({{dollarToRs}});
+                                                console.log(actualPrice);
+                                                document.getElementById("actualPrice").innerHTML = "₹​&nbsp;" + (actualPrice).toString() + "&nbsp;";
+                                            </script> -->
+                                            <div class="query discount">( <span style="color:#222;">{{item.discount}}%</span> Discount applied )</div>
+                                    </div>
+                                </div>
+
+                                    <form method="post">
+
+                                <div id="order">
+                                        {% csrf_token %}
+                                        <input type="number" style="display: none;" min="{{item.min_quantity}}" max="50" value="{{item.min_quantity}}" id="id_quantity" name='quantity'>
+                                        <script>
+                                            document.getElementById('quantity').addEventListener('input', function(){
+                                                if(!!this.value){
+                                                    if(this.value < parseInt("{{item.min_quantity}}")){
+                                                        this.value = parseInt("{{item.min_quantity}}");
+                                                    }
+                                                    else if(this.value > 50){
+                                                        this.value = 50;
+                                                    }
+                                                }
+                                                document.getElementById('id_quantity').value=this.value;
+                                            })
+                                        </script>
+                                    <button name='add_cart' style="-webkit-appearance:initial !important; border:0; background:none;"><div class="imp_but" id="add_to_cart"><div><svg xmlns="http://www.w3.org/2000/svg"  width="20" height="20" viewBox="0 0 128 128"><path fill="#fff" stroke="#fff" stroke-width="4" d="M76,107c-5.5,0-10,4.5-10,10s4.5,10,10,10s10-4.5,10-10S81.5,107,76,107z M76,121c-2.2,0-4-1.8-4-4s1.8-4,4-4 s4,1.8,4,4S78.2,121,76,121z"></path><path fill="#fff" stroke="#fff" stroke-width="4" d="M117.4,25.2c-1.9-2.6-4.9-4.2-8.1-4.2H22v-7c0-1.7-1.3-3-3-3H9c-1.7,0-3,1.3-3,3s1.3,3,3,3h7v74 c0,5.5,4.5,10,10,10h50c1.7,0,3-1.3,3-3s-1.3-3-3-3H26c-2.2,0-4-1.8-4-4V27h87.3c1.3,0,2.5,0.6,3.2,1.7c0.8,1.1,1,2.4,0.5,3.6 L99.3,73.5C97.8,78,93.7,81,88.9,81H33c-1.7,0-3,1.3-3,3s1.3,3,3,3h55.9c7.3,0,13.8-4.7,16.1-11.6l13.7-41.2 C119.8,31.1,119.3,27.8,117.4,25.2z"></path><path fill="#fff" stroke="#fff" stroke-width="2" d="M26,107c-5.5,0-10,4.5-10,10s4.5,10,10,10s10-4.5,10-10S31.5,107,26,107z M26,121c-2.2,0-4-1.8-4-4s1.8-4,4-4 s4,1.8,4,4S28.2,121,26,121z"></path></svg><span style="position: relative; top:-3.5px; padding:0 0 0 10px;">Add to Cart</span></div></div></button>
+                                    
+                                    <button name='fav' style="-webkit-appearance:initial !important; border:0; background:none;"><div class="imp_but" id="place_order"><div><svg xmlns="http://www.w3.org/2000/svg" style="margin-top:-5px;" height="24" viewBox="0 0 1024 1024"><path fill="#fff" stroke="#fff" stroke-width="30" d="M300.515758 457.418405H722.527299V497.609981H300.515758zM300.515758 618.184707H722.527299v40.191575H300.515758zM304.343527 779.90795h211.484242v40.191576H304.343527zM802.91045 829.668948c9.569423-9.569423 25.837441-9.569423 35.406864 0s9.569423 24.880499 0 35.406864l-152.153821 150.239937c-7.655538 10.526365-22.966614 11.483307-32.536037 2.870827l-54.545709-50.717941c-9.569423-8.61248-10.526365-24.880499-2.870827-35.406864s22.966614-11.483307 32.536037-2.870826l39.234633 36.363806 134.92886-135.885803zM615.349765 296.652104H409.607177c-11.483307 0-20.095788-8.61248-20.095788-20.095788s8.61248-20.095788 20.095788-20.095788h205.742588c11.483307 0 20.095788 8.61248 20.095788 20.095788S626.833072 296.652104 615.349765 296.652104zM717.742588 296.652104c-11.483307 0-20.095788-8.61248-20.095788-20.095788s8.61248-20.095788 20.095788-20.095788h45.933229c55.502652 0 100.478938 44.976287 100.478939 100.478939V717.706703c0 11.483307-8.61248 20.095788-20.095788 20.095787s-20.095788-8.61248-20.095788-20.095787V355.982525c0-33.492979-26.794384-60.287363-60.287363-60.287363l-45.933229 0.956942zM512 1020.10046H260.324183c-55.502652 0-100.478938-44.976287-100.478939-100.478938V355.982525c0-55.502652 44.976287-100.478938 100.478939-100.478939h46.890171c11.483307 0 20.095788 8.61248 20.095788 20.095788s-8.61248 21.05273-20.095788 21.05273h-46.890171c-33.492979 0-60.287363 26.794384-60.287363 60.287363v563.638997c0 33.492979 26.794384 60.287363 60.287363 60.287363H512c11.483307 0 20.095788 8.61248 20.095788 20.095788s-8.61248 19.138845-20.095788 19.138845z"/></svg><span style="position: relative; top:-3.5px; padding:0 0 0 10px;">Favourite</span></div></div></button>
+                                </div>
+                                                                </form>
+
+                            <hr style="width:auto; margin:10px 20px; border:0px; height:0px; box-shadow:0 0 0.5px 0.5px rgb(197, 197, 197);">
+
+                            </div>
+                </div>
+                
+                    <div id="describe">
+                            <div class="query">
+                                    For any other help / query press on " <b style="color:#777">Special Requirement</b> " 
+                                </div>
+    
+                                <div class="req" onclick="this.firstElementChild.getAttribute('style')=='background:rgba(212, 212, 212, 0.6);' ? this.firstElementChild.setAttribute('style','') : this.firstElementChild.setAttribute('style','background:rgba(212, 212, 212, 0.6);') ; var i = +document.getElementsByClassName('float')[0].getAttribute('hid'); i == 0 ? document.getElementsByClassName('float')[0].setAttribute('hid','1') : document.getElementsByClassName('float')[0].setAttribute('hid','0');" ><span style="background:rgba(212, 212, 212, 0.6);">Special Requirement</span></div>
+                                <div class="float" hid="1">
+                                    <form onsubmit="">
+                                        <textarea rows="4" cols="40" id="clear" autocomplete="off" placeholder="Your response" maxlength="255"></textarea>                                    
+                                        <!-- <input id="clear" autocomplete="off" type="text" placeholder="Your response"> -->
+                                        <input id="respo" type="submit" name="submit">
+                                        <label  id="label_respo" for="respo">
+                                            Submit
+                                        </label>
+                                    </form>
+                                </div>
+                            <h2>Description : {{item.description}}</h2>
+                            <div val="1">
+                                <div class="left">   
+                                </div>
+                                <div class="right"></div>
+                            </div>
+                    </div>
+                <div class="specs">
+                    <div class="data">
+                            <h2>Similar Items</h2>
+                            <div class="main_div">
+                                <div class="subdiv">
+                                        <div class="subbdiv">
+                                                <a href="#">
+                                                    <div>
+                                                        <img src="img.png" alt="">
+                                                        <div specs="Category"></div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="subdiv">
+                                                <div class="subbdiv">
+                                                        <a href="#">
+                                                            <div>
+                                                                <img src="img.png" alt="">
+                                                                <div specs="Category"></div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div><div class="subdiv">
+                                                        <div class="subbdiv">
+                                                                <a href="#">
+                                                                    <div>
+                                                                        <img src="img.png" alt="">
+                                                                        <div specs="Category"></div>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </div><div class="subdiv">
+                                                                <div class="subbdiv">
+                                                                        <a href="#">
+                                                                            <div>
+                                                                                <img src="img.png" alt="">
+                                                                                <div specs="Category"></div>
+                                                                            </div>
+                                                                        </a>
+                                                                    </div>
+                                                                </div><div class="subdiv">
+                                                                        <div class="subbdiv">
+                                                                                <a href="#">
+                                                                                    <div>
+                                                                                        <img src="img.png" alt="">
+                                                                                        <div specs="Category"></div>
+                                                                                    </div>
+                                                                                </a>
+                                                                            </div>
+                                                                        </div><div class="subdiv">
+                                                                                <div class="subbdiv">
+                                                                                        <a href="#">
+                                                                                            <div>
+                                                                                                <img src="img.png" alt="">
+                                                                                                <div specs="Category"></div>
+                                                                                            </div>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div><div class="subdiv">
+                                                                                        <div class="subbdiv">
+                                                                                                <a href="#">
+                                                                                                    <div>
+                                                                                                        <img src="img.png" alt="">
+                                                                                                        <div specs="Category"></div>
+                                                                                                    </div>
+                                                                                                </a>
+                                                                                            </div>
+                                                                                        </div><div class="subdiv">
+                                                                                                <div class="subbdiv">
+                                                                                                        <a href="#">
+                                                                                                            <div>
+                                                                                                                <img src="img.png" alt="">
+                                                                                                                <div specs="Category"></div>
+                                                                                                            </div>
+                                                                                                        </a>
+                                                                                                    </div>
+                                                                                                </div><div class="subdiv">
+                                                                                                        <div class="subbdiv">
+                                                                                                                <a href="#">
+                                                                                                                    <div>
+                                                                                                                        <img src="img.png" alt="">
+                                                                                                                        <div specs="Category"></div>
+                                                                                                                    </div>
+                                                                                                                </a>
+                                                                                                            </div>
+                                                                                                        </div><div class="subdiv">
+                                                                                                                <div class="subbdiv">
+                                                                                                                        <a href="#">
+                                                                                                                            <div>
+                                                                                                                                <img src="img.png" alt="">
+                                                                                                                                <div specs="Category"></div>
+                                                                                                                            </div>
+                                                                                                                        </a>
+                                                                                                                    </div>
+                                                                                                                </div><div class="subdiv">
+                                                                                                                        <div class="subbdiv">
+                                                                                                                                <a href="#">
+                                                                                                                                    <div>
+                                                                                                                                        <img src="img.png" alt="">
+                                                                                                                                        <div specs="Category"></div>
+                                                                                                                                    </div>
+                                                                                                                                </a>
+                                                                                                                            </div>
+                                                                                                                        </div>
+                                                                                                                        <div class="subdiv">
+                                                                                                                                <div class="subbdiv">
+                                                                                                                                        <a href="#">
+                                                                                                                                            <div>
+                                                                                                                                                <img src="img.png" alt="">
+                                                                                                                                                <div specs="Category"></div>
+                                                                                                                                            </div>
+                                                                                                                                        </a>
+                                                                                                                                    </div>
+                                                                                                                                </div>
+                    </div>
+                </div>
+           </div>
+        
+{% endblock %}

@@ -1,0 +1,159 @@
+Supplier Code,Product Code,Picture,Name,SubName,Description,Price USD,Delivery,Discount,Minimum Order,Sort
+arthur,"1,5",,PX4 2.4.6 ?pixhawk? Set,FC,"Net Weight : 36g
+Gross Weight : 145g
+Packing Size : 125*85*50mm",195.8,,,,1
+arthur,"2,6",,Kakute F7 AIO V1.5,FC,"The Holybro Kakute F7All-In-One flight controller makes it easy to build your multirotor. It integrates flight controller (FC), power distribution board (PDB), and on-screen display (OSD) in one. The Kakute F7 AIO?s layout makes it easy to wire up the other components of the multirotor while keeping the build neat and tidy. IMU updated to MPU6000,Re-designed and more reliable damping structure
+
+Net Weight : 12g
+Gross Weight : 28g
+Packing Size : 65*65*20mm",72.6,,,,2
+arthur,"2,16",,"Kakute F7 V1.5
+",FC,"The Holybro Kakute F7 flight controller makes it easy to build your multirotor. It integrates flight controller (FC) and on- screen display (OSD) in one. The Kakute F7?s layout makes it easy to wire up the other components of the multirotor while keeping the build neat and tidy. IMU updated to MPU6000,Re-designed and more reliable damping structure
+
+Net Weight : 8g
+Gross Weight : 26g
+Packing Size : 65*65*20mm",68.2,,,,3
+arthur,"2,17",,"Kakute F7 HDV
+",FC,"HolyBro Kakute F7 HDV is designed to work with the DJI FPV VTx module.
+
+Net Weight : 
+Gross Weight : 
+Packing Size : ",59.4,,,,4
+arthur,"2,20",,Kakute F7 mini,FC,"Net Weight : 4g
+Gross Weight : 20g
+Packing Size : 65*65*20mm",66,,,,5
+arthur,"2,26",,"Kakute F4 AIO V2
+",FC,"The Holybro Kakute F4 AIO All-In-One flight controller makes it easy to build your multirotor. It
+integrates flight controller (FC), power distribution board (PDB), and on-screen display (OSD) in one. The Kakute F4 AIO V2?s layout makes it easy to wire up the other components of the multirotor while
+keeping the build neat and tidy.
+
+Net Weight : 10g
+Gross Weight : 26g
+Packing Size : 65*65*20mm",61.6,,,,6
+arthur,"2,27",,"Kakute F4 V2
+",FC,"The Holybro Kakute F4 flight controller supports important features of Betaflight/Cleanflight, such as OSD and Dshot. The faster F4 processor gives room for future feature development: run all features at the fast 8 kHz PID loop rate, at single-digit CPU utilization! Because of issues with serial inversion, other F4 boards struggle to support protocols  such as FrSky SBUS and SmartPort at the same time. The Kakute F4 is designed to support all serial protocols at once.
+
+Net Weight : 7g
+Gross Weight : 24g
+Packing Size : 65*65*20mm",50.6,,,,7
+arthur,"2,45",,NEW Rice32 (Naze32 F3 with baro),FC,"Net Weight : 10g
+Gross Weight : 29g
+Packing Size : 120*80mm",50.6,,,,8
+arthur,"2,46",,Openpilot CC3D Flight controller,FC,"Net Weight : 6.5g
+Gross Weight : 15g
+Packing Size : 120*80mm",26.4,,,,9
+arthur,"4,6",,Pixhawk4 mini(aluminum case) PM06 V2,FC,"Net Weight : 56g
+Gross Weight : 140g
+Packing Size : 150*105*45mm",202.4,,,,10
+arthur,"4,9",,Pixhawk 4(plastic case) PM07,FC,"Net Weight : 63g
+Gross Weight : 168g
+Packing Size : 125*85*50mm",261.8,,,,11
+arthur,"4,10",,Pixhawk 4(aluminum case) PM07,FC,"Net Weight : 77g
+Gross Weight : 182g
+Packing Size : 125*85*50mm",330,,,,12
+arthur,"1,2",,"PX4 2.4.6 ?pixhawk? , M8N GPS, PM,100mW FPV
+telemetry V3",Combo,"Net Weight : 115g
+Gross Weight : 260g
+Packing Size : 155*150*50mm",277.2,,,,13
+arthur,"1,3",,Pixhawk mini micro M8N PM06,Combo,"Net Weight : 43g
+Gross Weight : 142g
+Packing Size : 130*85*50mm",171.6,,,,14
+arthur,"1,4",,"Pixhawk mini micro M8N PM06
+MicroTelemetry",Combo,"Net Weight : 56g
+Gross Weight : 170g
+Packing Size : 130*85*50mm",209,,,,15
+arthur,"2,7",,"Kakute F7 AIO V1.5 Atlalt HV V2
+Stack",Combo,"Net Weight : 24g
+Gross Weight : 49g
+Packing Size : 90*65*25mm",107.8,,,,16
+arthur,"2,8",,Kakute F7 AIO V1.5 Tekko32 F3 Metal ESC * 4 Combo,Combo,"Net Weight : 32g
+Gross Weight : 95g
+Packing Size : 95*65*46mm",200.2,,,,17
+arthur,"2,9",,"Kakute F7 AIO V1.5 ATLATL HV V2
+Tekko32 F3 Metal ESC * 4 Combo",Combo,"Net Weight : 43g
+Gross Weight : 118g
+Packing Size : 95*65*52mm",233.2,,,,18
+arthur,"2,11",,"Kakute F7 V1.5
+Tekko32 F3 Metal 4in1 ESC Combo",Combo,"Net Weight : 18g
+Gross Weight : 50g
+Packing Size : 95*65*26mm",176,,,,19
+arthur,"2,12",,"Kakute F7 V1.5 Atlalt HV V2
+Tekko32 F3 Metal 4in1 ESC Combo",Combo,"Net Weight : 29g
+Gross Weight : 88g
+Packing Size : 95*65*52mm",209,,,,20
+arthur,"2,13",,"Kakute F7 V1.5
+Tekko 32 F3 4in1 40A esc Combo",Combo,"Net Weight : 25g
+Gross Weight : 55g
+Packing Size : 90*65*25mm",154,,,,21
+arthur,"2,14",,"Kakute F7 V1.5 Atlalt HV V2
+Tekko 32 F3 4in1 40A esc Combo",Combo,"Net Weight : 40g
+Gross Weight : 88g
+Packing Size : 90*65*25mm",189.2,,,,22
+arthur,"2,15",,Kakute F7 V1.5 Atlalt HV V2 Stack,Combo,"Net Weight : 21g
+Gross Weight : 47g
+Packing Size : 90*65*25mm",105.6,,,,23
+arthur,"2,19",,"Kakute F7 HDV Tekko32 F3 4in1 40A Combo
+",Combo,"HolyBro Kakute F7 HDV is designed to work with the DJI FPV VTx module.
+
+Net Weight : 
+Gross Weight : 
+Packing Size : ",143,,,,24
+arthur,"2,21",,Kakute F7 mini Tekko32 F3 45A mini Combo,Combo,"Net Weight : 15g
+Gross Weight : 35g
+Packing Size : 95*65*26mm",151.8,,,,25
+arthur,"2,22",,"Kakute F7 mini Tekko32 F3 45A mini Atlatl mini
+Combo",Combo,"Net Weight : 19g
+Gross Weight : 40g
+Packing Size : 95*65*26mm",171.6,,,,26
+arthur,"2,30",,Holybro Tekko32 F3 Metal ESC * 4,Combo,"Net Weight : 17g
+Gross Weight : 60g
+Packing Size : 90*65*25mm",145.2,,,,27
+arthur,"2,33",,Holybro Tekko32 F3 ESC * 4,Combo,"Net Weight : 16g
+Gross Weight : 38g
+Packing Size : 100*130mm",92.4,,,,28
+arthur,"2,35",,Holybro Tekko32 35A ESC * 4,Combo,"Net Weight : 24g
+Gross Weight : 37g
+Packing Size : 90*65*25mm",99,,,,29
+arthur,"2,36",,"Kakute F4 V2
+Tekko 32 4in1 esc (BLHeli 32) Combo",Combo,"Net Weight : 23g
+Gross Weight : 53g
+Packing Size : 90*65*25mm",129.8,,,,30
+arthur,"2,37",,"Kakute F4 V2 Atlalt HV V2
+Tekko 32 4in1 esc (BLHeli 32) Combo",Combo,"Net Weight : 38g
+Gross Weight : 86g
+Packing Size : 90*65*25mm",162.8,,,,31
+arthur,"2,38",,Kakute F4 AIO V2 Tekko32 35A ESC * 4 Combo,Combo,"Net Weight : 34g
+Gross Weight : 63g
+Packing Size : 90*65*25mm",160.6,,,,32
+arthur,"2,39",,"Kakute F4 AIO V2 ATLATL HV V2
+Tekko32 35A ESC * 4 Combo",Combo,"Net Weight : 57g
+Gross Weight : 109g
+Packing Size : 90*65*25mm",187,,,,33
+arthur,"2,40",,Kakute F4 AIO V2 Atlalt HV V2 Stack,Combo,"Net Weight : 22g
+Gross Weight : 47g
+Packing Size : 90*65*25mm",88,,,,34
+arthur,"2,41",,Kakute F4 V2 Atlalt HV V2 Stack,Combo,"Net Weight : 19g
+Gross Weight : 45g
+Packing Size : 90*65*25mm",77,,,,35
+arthur,"4,2",,"Kotleta20*4
+",Combo,"Kotleta 20 is an advanced sensorless BLDC propeller drive controller with CAN bus interface. It runs the Sapog* Firmware.
+Kotleta 20 has one CAN bus with two sockets onboard.
+
+Net Weight : 62g
+Gross Weight : 107g
+Packing Size : 120*72*36mm",204.6,,,,36
+arthur,"4,3",,Pixhawk 4(plastic case) GPS (UBLOX NEO-M8N) PM02,Combo,"Net Weight : 81g
+Gross Weight : 205g
+Packing Size : 150*110*45mm",301.4,,,,37
+arthur,"4,4",,Pixhawk 4(aluminum case) GPS (UBLOX NEO-M8N) PM02,Combo,"Net Weight : 95g
+Gross Weight : 219g
+Packing Size : 150*110*45mm",371.8,,,,38
+arthur,"4,5",,Pixhawk4 mini(aluminum case) GPS (UBLOX NEO-M8N) PM06 V2,Combo,"Net Weight : 88g
+Gross Weight : 201g
+Packing Size : 150*105*45mm",261.8,,,,39
+arthur,"4,7",,Pixhawk 4(plastic case) GPS (UBLOX NEO-M8N) PM07,Combo,"Net Weight : 96g
+Gross Weight : 220g
+Packing Size : 150*110*45mm",325.6,,,,40
+arthur,"4,8",,Pixhawk 4(aluminum case) GPS (UBLOX NEO-M8N) PM07,Combo,"Net Weight : 110g
+Gross Weight : 234g
+Packing Size : 150*110*45mm",393.8,,,,41
