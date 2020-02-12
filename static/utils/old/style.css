@@ -1,0 +1,357 @@
+html,body{
+    width:100%;
+    height:100%;
+    background:#fff;
+    border:0;
+    padding:0;
+    margin:0;
+    font-size: 15px;
+    font-family: sans-serif,Arial, Helvetica;
+    overflow-X:hidden;
+    overflow-Y:hidden;
+    min-width:350px;
+    cursor:default;
+}
+
+.container{
+    width:100%;
+    height:calc(100% - 74px);
+    min-height:100%;
+    margin-top:74px;
+}
+
+.content{
+    width:100%;
+    height:fit-content;    
+    min-height:100%;
+}
+
+.header{
+    width:100%;
+    height:52px;
+    min-height:52px;
+    max-height:52px;
+    /* overflow:hidden; */
+    background:#eeeeee;
+    box-shadow: 0 1px 6px 2px rgba(0,0,0,0.13);
+    border-bottom:solid 2px rgba(0,0,0,0.5);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: fixed;
+    top:0;
+    min-width:350px;
+}
+
+.mid_header{
+    width:fit-content;
+    display:flex;
+    position:relative;
+    top:0;
+    left:50%;
+    transform: translate(-50%,0%);
+}
+
+.logo{
+    width:100px;
+    height:40px;
+    padding:6px;
+    overflow:hidden;
+}
+
+.logo_img{
+    height:100%;
+    position:relative;
+    top:0;
+    left:50%;
+    transform: translate(-50%,0%);
+    /* border-radius:50%; */
+}
+
+.search_bar{
+    width: 363px;
+    height:30px;
+    padding:11px 0;
+    font-size:20px;
+    margin-right:40px;
+    padding-right: 10px;
+}
+
+.search{
+    width:485px;
+    height:25px;
+    display: flex;
+}
+
+.input_text{
+    width:fit-content;
+    height:20px;
+    padding:4px 5px;
+    overflow:hidden;
+    background:#f6f6f6;
+    border-radius: 5px 0 0 5px;
+    border:solid 1px #999;
+    transition: 0.25s ease-out;
+    min-width:200px;
+}
+
+.mid_header input[type="text"]{
+    width:100%;
+    height:100%;
+    padding:6px;
+    /* margin-right: 5px; */
+    position: relative;
+    top:-6px;
+    left:-6px;
+    background:#f6f6f6;
+    border:0;
+    min-width:200px;
+    font-size:16px;
+    color:#000;
+    letter-spacing: 0.5px;
+    word-spacing: 2px;
+    font-family: "Montserrat";
+    transition: 0.25s ease-out;
+
+}
+
+.mid_header input[type="submit"]{
+    width:60px;
+    height:30px;
+    background:#999;
+    border:0;
+    padding:3px 10px;
+    border-radius: 0 5px 5px 0;
+    font-size:16px;
+    font-family: "Montserrat";
+    transition: 0.25s ease-out;
+    cursor: pointer;
+    color:#eee;
+}
+.suggest{
+    position: relative;
+    top:30px;
+    left:-352.5px;
+    width:auto;
+    min-width:100px;
+    max-width:272.5px;
+    height:fit-content;
+    padding:0 10px;
+    background:#e2e2e2;
+    display:grid;
+    border-radius:0 0 10px 10px;
+    border:solid 1px #000;
+    border-top:0;
+    font-size:15px;
+}
+.hide{
+    display:none;
+}
+.suggest>div{
+    color:#444;
+    padding:5px; 
+    grid-column: 1fr;
+    border-bottom:solid 1px #999;
+    border-radius:3px;
+}
+.suggest>div:last-child{
+    margin-bottom:10px;
+    border-bottom: 0;
+}
+.suggest>div::after{
+    content: attr(val);
+}
+
+.suggest>div:focus{
+    color:#000;
+    border:solid 1px #000;
+}
+
+.right_header{
+    display: inline-flex;
+    position: absolute;
+    right:0;
+    top:0;
+    padding:13px 10px;
+    padding-right:0;
+}
+
+.sign{
+    width:auto;
+    height:18px;
+    padding:10px 15px;
+    margin:2px;
+    border-radius: 10px;
+    border: solid 2px rgb(148, 198, 238);
+    /* color:#000; */
+    transition: 0.1s;
+    font-size:15px;
+    cursor:pointer;
+    color:rgb(68, 137, 206);
+}
+
+.sign:active{
+    color:#8cc;
+    transition: 0s;
+}
+
+
+#submit:focus{
+    border:solid 2px #333;
+}
+
+.mini_search:active,#menu:active{
+    /* visibility: hidden; */
+    opacity:1;
+    transition: 0s;
+}
+
+.mini_search{
+    display:none;
+    margin-top:3px;
+}
+
+.menu_check{
+    opacity:0;
+    position: absolute;
+    top:-200px;
+    left:-20px;
+    z-index: -1;
+}
+.info{
+    display:none;
+    width:100%;
+    height:calc(100% - 72px);
+    background:rgba(0,0,0,0);
+    transition: 0.25s;
+    max-height:100%;
+    overflow: hidden;
+
+}
+.info>div{
+    width:100%;
+    height: 100%;
+    overflow: auto;
+}
+.inner_info{
+    display:none;
+    width:250px;
+    max-width:250px;
+    min-width:250px;
+    height: fit-content;
+    min-height:calc(100% - 40px);
+    background:#fafafa;
+    padding:5px 15px 15px 15px;
+    transition:0.25s ease-out;
+    transform:translate(-100%,0);
+    border-radius:0;
+    box-shadow:0 0  16px 3px rgba(0, 0, 0, 0.507);
+    /* margin-bottom: 30px; */
+}
+
+label[for="menu_check"]:active,label[for="menu_check2"]:active{
+    opacity: 1;
+}
+
+.left_header{
+    position: absolute;
+    float:left;
+    z-index: 1;
+}
+
+#menu{    
+    padding:4px 8px;
+    margin:2px 10px 0 10px;
+    border-radius:50%;
+    cursor: pointer;
+}
+
+#menu svg{
+    padding:2px;
+    padding-top:6px;
+}
+
+/* Media Query for responsiveness */
+
+@media screen and (max-width:650px){
+    
+    
+    .mid_header{
+        position:relative;
+        top:0;
+        left:0;
+        transform: translate(0,0);    
+        padding-left:50px;
+    }
+    
+    .mid_header input[type="text"]{
+        width:140px;
+        min-width: 140px;
+    }
+
+}
+
+
+
+@media screen and (max-width:600px){
+    .mid_header{
+        position:relative;
+        top:0;
+        left:0;
+        transform: translate(0,0);
+    }
+    .search{
+        width:calc(100% - 150px);
+    }
+    .mid_header input[type="text"]{
+        width:180px;
+        min-width: 180px;
+    }
+    .input_text{
+        width:100px;
+    }
+    
+    .mid_header{
+        padding-left:50px;
+    }
+
+    .search{
+        display:none;
+    }
+    
+    .mini_search{
+        display: block;
+        margin:0;
+        margin-right:10px;
+        border-radius:50%;
+        cursor: pointer;
+        margin-top:3px !important; 
+    }
+    .mid_header{
+        padding-left:50px;
+    }
+
+
+}
+
+.collap,.collap2{
+    width:24px;
+    height:24px;
+    padding:9px;
+    border-radius:30px;
+    border:0;
+    margin-right:10px;
+}
+.collap:hover,.collap2{
+    background: #f8f8f8;
+    transition:0.25s;
+    box-shadow: 0 0 6px 0px rgba(0, 0, 0, 0.15);
+}
+.collap2{
+    padding:8px 10px 10px 10px;
+}
+
+@media (max-width:350px){
+    body{
+        overflow-x: auto;
+    }
+}

@@ -306,7 +306,7 @@
                                     <h1><span id="itm_cur">₹</span><span>{{ item.priceDollar|multiply:dollarToRs|makediscount:item.discount }}</span></h1>
                                 </div>
                                 <div id="itm_prt">
-                                    &nbsp;<span>₹{{ item.priceDollar|multiply:dollarToRs }}</span>&nbsp;
+                                    &nbsp;<span>₹{{ item.priceDollar|multiply:dollarToRs|roundTo2 }}</span>&nbsp;
                                 </div>
                                 <div id="itm_dis">
                                     <span><span>{{ item.discount }}</span>% off</span>

@@ -1,10 +1,10 @@
 from django import template
 from racerfly.models import Util
 
-(Util.objects.get(name='DollarToRs').float_value) = Util.objects.get(name='DollarToRs').float_value
+#(Util.objects.get(name='DollarToRs').float_value) = Util.objects.get(name='DollarToRs').float_value
 register = template.Library()
 
-(Util.objects.get(name='DollarToRs').float_value) = 70
+#(Util.objects.get(name='DollarToRs').float_value) = 70
 
 @register.filter
 def multiply(price, quantity):

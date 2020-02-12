@@ -1080,3 +1080,407 @@ ConnectionResetError: [Errno 104] Connection reset by peer
 [29/Nov/2019 16:00:48] "GET / HTTP/1.0" 200 30537
 [29/Nov/2019 16:16:03] "GET / HTTP/1.0" 200 30537
 [29/Nov/2019 16:21:26] "GET / HTTP/1.1" 200 30537
+System check identified some issues:
+
+WARNINGS:
+racerfly.Cart.items: (fields.W340) null has no effect on ManyToManyField.
+racerfly.Customer.favourites: (fields.W340) null has no effect on ManyToManyField.
+racerfly.Customer.orders: (fields.W340) null has no effect on ManyToManyField.
+racerfly.ItemToBuy.order_time: (fields.W161) Fixed default value provided.
+	HINT: It seems you set a fixed date / time / datetime value as default for this field. This may not be what you want. If you want to have the current date as default, use `django.utils.timezone.now`
+racerfly.Order.items: (fields.W340) null has no effect on ManyToManyField.
+racerfly.Suggestion.suggested_on: (fields.W161) Fixed default value provided.
+	HINT: It seems you set a fixed date / time / datetime value as default for this field. This may not be what you want. If you want to have the current date as default, use `django.utils.timezone.now`
+
+System check identified 6 issues (0 silenced).
+[16/Dec/2019 18:53:15] "GET / HTTP/1.0" 200 82386
+[16/Dec/2019 18:53:46] "GET /category/33/ HTTP/1.0" 200 80611
+[16/Dec/2019 18:53:52] "GET /category/33/39/ HTTP/1.0" 200 89173
+[16/Dec/2019 18:53:57] "GET /category/33/39/480/ HTTP/1.0" 200 91962
+[16/Dec/2019 18:54:12] "GET /category/33/39/480/ HTTP/1.0" 200 91962
+Not Found: /admin/
+[16/Dec/2019 18:54:56] "GET /admin/ HTTP/1.0" 404 6066
+Not Found: /favicon.ico
+[16/Dec/2019 18:54:57] "GET /favicon.ico HTTP/1.0" 404 6081
+System check identified some issues:
+
+WARNINGS:
+racerfly.Cart.items: (fields.W340) null has no effect on ManyToManyField.
+racerfly.Customer.favourites: (fields.W340) null has no effect on ManyToManyField.
+racerfly.Customer.orders: (fields.W340) null has no effect on ManyToManyField.
+racerfly.ItemToBuy.order_time: (fields.W161) Fixed default value provided.
+	HINT: It seems you set a fixed date / time / datetime value as default for this field. This may not be what you want. If you want to have the current date as default, use `django.utils.timezone.now`
+racerfly.Order.items: (fields.W340) null has no effect on ManyToManyField.
+racerfly.Suggestion.suggested_on: (fields.W161) Fixed default value provided.
+	HINT: It seems you set a fixed date / time / datetime value as default for this field. This may not be what you want. If you want to have the current date as default, use `django.utils.timezone.now`
+
+System check identified 6 issues (0 silenced).
+[16/Dec/2019 18:56:11] "GET /admin/ HTTP/1.0" 404 80
+[16/Dec/2019 18:56:22] "GET / HTTP/1.0" 200 82386
+[16/Dec/2019 18:57:22] "GET /category/41/ HTTP/1.0" 200 122532
+[16/Dec/2019 18:57:27] "GET /category/41/57/920/ HTTP/1.0" 200 94931
+[16/Dec/2019 18:58:21] "GET / HTTP/1.0" 200 82386
+[16/Dec/2019 18:58:28] "GET / HTTP/1.0" 200 82386
+[16/Dec/2019 18:58:36] "GET /contactus/ HTTP/1.0" 200 3599
+[16/Dec/2019 18:58:38] "GET /favicon.ico HTTP/1.0" 404 85
+[16/Dec/2019 18:58:50] "GET /contactus/ HTTP/1.0" 200 3599
+[16/Dec/2019 18:58:52] "GET /favicon.ico HTTP/1.0" 404 85
+[16/Dec/2019 19:00:14] "GET / HTTP/1.0" 200 82386
+[16/Dec/2019 19:04:13] "GET / HTTP/1.0" 200 82386
+[16/Dec/2019 19:05:38] "GET / HTTP/1.0" 200 82386
+Performing system checks...
+
+
+You have 2 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): auth.
+Run 'python manage.py migrate' to apply them.
+December 16, 2019 - 18:56:05
+Django version 2.0.2, using settings 'Ecommerce.settings'
+Starting development server at http://0.0.0.0:8080/
+Quit the server with CONTROL-C.
+System check identified some issues:
+
+WARNINGS:
+racerfly.Cart.items: (fields.W340) null has no effect on ManyToManyField.
+racerfly.Customer.favourites: (fields.W340) null has no effect on ManyToManyField.
+racerfly.Customer.orders: (fields.W340) null has no effect on ManyToManyField.
+racerfly.ItemToBuy.order_time: (fields.W161) Fixed default value provided.
+	HINT: It seems you set a fixed date / time / datetime value as default for this field. This may not be what you want. If you want to have the current date as default, use `django.utils.timezone.now`
+racerfly.Order.items: (fields.W340) null has no effect on ManyToManyField.
+racerfly.Suggestion.suggested_on: (fields.W161) Fixed default value provided.
+	HINT: It seems you set a fixed date / time / datetime value as default for this field. This may not be what you want. If you want to have the current date as default, use `django.utils.timezone.now`
+
+System check identified 6 issues (0 silenced).
+[16/Dec/2019 19:06:56] "GET /cart/ HTTP/1.0" 302 0
+[16/Dec/2019 19:06:56] "GET /login/ HTTP/1.0" 200 4648
+[16/Dec/2019 19:06:57] "GET /favicon.ico HTTP/1.0" 404 85
+[16/Dec/2019 19:06:59] "GET / HTTP/1.0" 200 82386
+[2019-12-16 19:12:31 +0000] [1890] [INFO] Starting gunicorn 20.0.4
+[2019-12-16 19:12:31 +0000] [1890] [INFO] Listening at: http://0.0.0.0:8080 (1890)
+[2019-12-16 19:12:31 +0000] [1890] [INFO] Using worker: sync
+[2019-12-16 19:12:31 +0000] [1893] [INFO] Booting worker with pid: 1893
+[2019-12-16 19:18:09 +0000] [1947] [INFO] Starting gunicorn 20.0.4
+[2019-12-16 19:18:09 +0000] [1947] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2019-12-16 19:18:09 +0000] [1947] [ERROR] Retrying in 1 second.
+[2019-12-16 19:18:10 +0000] [1947] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2019-12-16 19:18:10 +0000] [1947] [ERROR] Retrying in 1 second.
+[2019-12-16 19:18:11 +0000] [1947] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2019-12-16 19:18:11 +0000] [1947] [ERROR] Retrying in 1 second.
+[2019-12-16 19:18:12 +0000] [1947] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2019-12-16 19:18:12 +0000] [1947] [ERROR] Retrying in 1 second.
+[2019-12-16 19:18:13 +0000] [1947] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2019-12-16 19:18:13 +0000] [1947] [ERROR] Retrying in 1 second.
+[2019-12-16 19:18:14 +0000] [1947] [ERROR] Can't connect to ('0.0.0.0', 8080)
+[2019-12-16 19:19:35 +0000] [1890] [INFO] Handling signal: hup
+[2019-12-16 19:19:35 +0000] [1890] [INFO] Hang up: Master
+[2019-12-16 19:19:35 +0000] [1950] [INFO] Booting worker with pid: 1950
+[2019-12-16 19:46:23 +0000] [2679] [INFO] Starting gunicorn 20.0.4
+[2019-12-16 19:46:23 +0000] [2679] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2019-12-16 19:46:23 +0000] [2679] [ERROR] Retrying in 1 second.
+[2019-12-16 19:46:24 +0000] [2679] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2019-12-16 19:46:24 +0000] [2679] [ERROR] Retrying in 1 second.
+[2019-12-16 19:46:25 +0000] [2679] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2019-12-16 19:46:25 +0000] [2679] [ERROR] Retrying in 1 second.
+[2019-12-16 19:46:26 +0000] [2679] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2019-12-16 19:46:26 +0000] [2679] [ERROR] Retrying in 1 second.
+[2019-12-16 19:46:27 +0000] [2679] [ERROR] Connection in use: ('0.0.0.0', 8080)
+[2019-12-16 19:46:27 +0000] [2679] [ERROR] Retrying in 1 second.
+[2019-12-16 19:46:28 +0000] [2679] [ERROR] Can't connect to ('0.0.0.0', 8080)
+[2019-12-16 19:46:39 +0000] [1890] [INFO] Handling signal: term
+[2019-12-16 19:46:39 +0000] [1950] [INFO] Worker exiting (pid: 1950)
+[2019-12-16 19:46:39 +0000] [1890] [INFO] Shutting down: Master
+Internal Server Error: /dashboard/
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/racerfly/racerfly/racerfly/decorators.py", line 13, in wrapper
+    return function(request, *args, **kwargs)
+  File "/home/ubuntu/racerfly/racerfly/racerfly/views.py", line 289, in dashboard
+    return render(request, 'racerfly/dashboard.html', {'user': user, 'categories': categories})
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/loader_tags.py", line 155, in render
+    return compiled_parent._render(context)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/loader_tags.py", line 67, in render
+    result = block.nodelist.render(context)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/defaulttags.py", line 447, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/urls/base.py", line 88, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/urls/resolvers.py", line 632, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'buyItem' with arguments '('', '', '')' not found. 1 pattern(s) tried: ['category\\/(?P<category_id>[0-9]+)\\/(?P<series_id>[0-9]+)\\/(?P<item_id>[0-9]+)\\/$']
+Internal Server Error: /dashboard/
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/racerfly/racerfly/racerfly/decorators.py", line 13, in wrapper
+    return function(request, *args, **kwargs)
+  File "/home/ubuntu/racerfly/racerfly/racerfly/views.py", line 289, in dashboard
+    return render(request, 'racerfly/dashboard.html', {'user': user, 'categories': categories})
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/loader_tags.py", line 155, in render
+    return compiled_parent._render(context)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/loader_tags.py", line 67, in render
+    result = block.nodelist.render(context)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/defaulttags.py", line 447, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/urls/base.py", line 88, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/urls/resolvers.py", line 632, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'buyItem' with arguments '('', '', '')' not found. 1 pattern(s) tried: ['category\\/(?P<category_id>[0-9]+)\\/(?P<series_id>[0-9]+)\\/(?P<item_id>[0-9]+)\\/$']
+Internal Server Error: /a1**sam**!!**/admin/racerfly/customer/18/delete/
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/contrib/admin/options.py", line 574, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/utils/decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/utils/decorators.py", line 62, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/utils/decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/utils/decorators.py", line 58, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1713, in delete_view
+    return self._delete_view(request, object_id, extra_context)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1737, in _delete_view
+    [obj], opts, request.user, self.admin_site, using)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/contrib/admin/utils.py", line 165, in get_deleted_objects
+    to_delete = collector.nested(format_callback)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/contrib/admin/utils.py", line 225, in nested
+    roots.extend(self._nested(root, seen, format_callback))
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/contrib/admin/utils.py", line 209, in _nested
+    children.extend(self._nested(child, seen, format_callback))
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/contrib/admin/utils.py", line 211, in _nested
+    ret = [format_callback(obj)]
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/contrib/admin/utils.py", line 138, in format_callback
+    no_edit_link = '%s: %s' % (capfirst(opts.verbose_name), obj)
+  File "/home/ubuntu/racerfly/racerfly/racerfly/models.py", line 91, in __str__
+    return self.item.name
+AttributeError: 'NoneType' object has no attribute 'name'
+Internal Server Error: /dashboard/
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/racerfly/racerfly/racerfly/decorators.py", line 13, in wrapper
+    return function(request, *args, **kwargs)
+  File "/home/ubuntu/racerfly/racerfly/racerfly/views.py", line 289, in dashboard
+    return render(request, 'racerfly/dashboard.html', {'user': user, 'categories': categories})
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/loader_tags.py", line 155, in render
+    return compiled_parent._render(context)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/loader_tags.py", line 67, in render
+    result = block.nodelist.render(context)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/defaulttags.py", line 447, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/urls/base.py", line 88, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/urls/resolvers.py", line 632, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'buyItem' with arguments '('', '', '')' not found. 1 pattern(s) tried: ['category\\/(?P<category_id>[0-9]+)\\/(?P<series_id>[0-9]+)\\/(?P<item_id>[0-9]+)\\/$']
+Internal Server Error: /dashboard/
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/racerfly/racerfly/racerfly/decorators.py", line 13, in wrapper
+    return function(request, *args, **kwargs)
+  File "/home/ubuntu/racerfly/racerfly/racerfly/views.py", line 289, in dashboard
+    return render(request, 'racerfly/dashboard.html', {'user': user, 'categories': categories})
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/loader_tags.py", line 155, in render
+    return compiled_parent._render(context)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/loader_tags.py", line 67, in render
+    result = block.nodelist.render(context)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/template/defaulttags.py", line 447, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/urls/base.py", line 88, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/urls/resolvers.py", line 632, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'buyItem' with arguments '('', '', '')' not found. 1 pattern(s) tried: ['category\\/(?P<category_id>[0-9]+)\\/(?P<series_id>[0-9]+)\\/(?P<item_id>[0-9]+)\\/$']
+/home/ubuntu/.local/lib/python3.6/site-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField ItemToBuy.order_time received a naive datetime (2020-01-03 15:04:17.521323) while time zone support is active.
+  RuntimeWarning)
+/home/ubuntu/.local/lib/python3.6/site-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField ItemToBuy.order_time received a naive datetime (2020-01-03 15:04:17.606740) while time zone support is active.
+  RuntimeWarning)
+/home/ubuntu/.local/lib/python3.6/site-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField ItemToBuy.order_time received a naive datetime (2020-01-03 15:04:17.680154) while time zone support is active.
+  RuntimeWarning)
+/home/ubuntu/.local/lib/python3.6/site-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField ItemToBuy.order_time received a naive datetime (2020-01-03 15:04:17.754215) while time zone support is active.
+  RuntimeWarning)
+/home/ubuntu/.local/lib/python3.6/site-packages/django/db/models/fields/__init__.py:1423: RuntimeWarning: DateTimeField ItemToBuy.order_time received a naive datetime (2020-01-03 15:04:17.827131) while time zone support is active.
+  RuntimeWarning)
+System check identified some issues:
+
+WARNINGS:
+racerfly.Cart.items: (fields.W340) null has no effect on ManyToManyField.
+racerfly.Customer.favourites: (fields.W340) null has no effect on ManyToManyField.
+racerfly.Customer.orders: (fields.W340) null has no effect on ManyToManyField.
+racerfly.ItemToBuy.order_time: (fields.W161) Fixed default value provided.
+	HINT: It seems you set a fixed date / time / datetime value as default for this field. This may not be what you want. If you want to have the current date as default, use `django.utils.timezone.now`
+racerfly.Order.items: (fields.W340) null has no effect on ManyToManyField.
+racerfly.Suggestion.suggested_on: (fields.W161) Fixed default value provided.
+	HINT: It seems you set a fixed date / time / datetime value as default for this field. This may not be what you want. If you want to have the current date as default, use `django.utils.timezone.now`
+
+System check identified 6 issues (0 silenced).
+System check identified some issues:
+
+WARNINGS:
+racerfly.Cart.items: (fields.W340) null has no effect on ManyToManyField.
+racerfly.Customer.favourites: (fields.W340) null has no effect on ManyToManyField.
+racerfly.Customer.orders: (fields.W340) null has no effect on ManyToManyField.
+racerfly.ItemToBuy.order_time: (fields.W161) Fixed default value provided.
+	HINT: It seems you set a fixed date / time / datetime value as default for this field. This may not be what you want. If you want to have the current date as default, use `django.utils.timezone.now`
+racerfly.Order.items: (fields.W340) null has no effect on ManyToManyField.
+racerfly.Suggestion.suggested_on: (fields.W161) Fixed default value provided.
+	HINT: It seems you set a fixed date / time / datetime value as default for this field. This may not be what you want. If you want to have the current date as default, use `django.utils.timezone.now`
+
+System check identified 6 issues (0 silenced).
+System check identified some issues:
+
+WARNINGS:
+racerfly.Cart.items: (fields.W340) null has no effect on ManyToManyField.
+racerfly.Customer.favourites: (fields.W340) null has no effect on ManyToManyField.
+racerfly.Customer.orders: (fields.W340) null has no effect on ManyToManyField.
+racerfly.ItemToBuy.order_time: (fields.W161) Fixed default value provided.
+	HINT: It seems you set a fixed date / time / datetime value as default for this field. This may not be what you want. If you want to have the current date as default, use `django.utils.timezone.now`
+racerfly.Order.items: (fields.W340) null has no effect on ManyToManyField.
+racerfly.Suggestion.suggested_on: (fields.W161) Fixed default value provided.
+	HINT: It seems you set a fixed date / time / datetime value as default for this field. This may not be what you want. If you want to have the current date as default, use `django.utils.timezone.now`
+
+System check identified 6 issues (0 silenced).
+[12/Feb/2020 04:45:15] "GET / HTTP/1.0" 200 82385
+[12/Feb/2020 04:45:56] "GET / HTTP/1.0" 200 82385
+[12/Feb/2020 04:48:17] "GET / HTTP/1.0" 200 82385
+[12/Feb/2020 04:48:24] "GET / HTTP/1.0" 200 82385

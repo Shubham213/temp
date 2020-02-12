@@ -1,0 +1,231 @@
+#describe{
+    position: relative;
+    top:-5px;
+    width:calc(100% - 40px);
+    padding:10px 20px;
+    background:rgb(226, 234, 238);
+    border-top:solid 1px #aaa;
+}
+#describe h2{
+    color:#444;
+    font-size: 17px;
+}
+
+#describe>div[val="1"]{
+    width:calc(100% - 20px);
+    padding:10px;
+    /* margin-left: 10px; */
+    /* background:#444; */
+    display: flex;
+}
+
+#describe>div[val="1"]>div{
+    max-width:50%;
+    flex:1 1 45%;
+    padding:2px 0;
+    margin:0px 2.5%;
+    /* background:#e4e4e4; */
+}
+
+
+/* Extra Stuff */
+
+input[type="number"]{
+    box-shadow:0 0 1px 1px rgba(0,0,0,0.2);
+}
+
+#name{
+    width:calc(100% - 20px);
+    padding:10px 10px 0px 10px;
+    text-align: left;
+    color:#3f3f3f;
+    font-family: 'Montserrat','Roboto',sans-serif;
+    max-height:30px;
+    min-height: 30px;
+}
+#name>h2{
+    margin:0;
+    font-size:20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+#d_name{
+    color:#4f4f4f;
+    font-size:15px;
+    padding-left:15px;
+    font-family:'Roboto',sans-serif;
+    display:none;
+}
+#company{
+    padding: 2.5px 15px;
+}
+#company>a{
+    color:cornflowerblue;
+    text-decoration: underline;
+}
+#company::before{
+    content:"by ";
+    color:#5f5f5f;
+}
+#quant{
+    padding:3px 0;
+    width: auto;
+}
+#quant>div{
+    width:fit-content;
+    position: relative;
+    top:0;
+    left:50%;
+    transform: translate(-50%,0);
+}
+#quant>div>input[type="number"]{
+    
+    text-align: center; padding:5px 10px; border:0; border-radius: 8px; font-size:15px; font-family:"Roboto",'Montserrat'; letter-spacing: 2px;
+}
+
+
+.float[hid="1"]{
+    display:none;
+    position: absolute;
+    top:-100px;
+}
+.float[hid="0"]{
+    padding:20px 0;
+    position: absolute;
+    width:100%;
+    max-width: 400px;
+    min-width: 300px;
+    top:-100px;
+    left:50%;
+    transform: translate(-50%,0%);
+    box-shadow: 0 0 10px 2px rgba(0,0,0,0.5);
+    background:#7a7a7a;
+}
+.req{
+    width:100%;
+    height:60px;
+    cursor:pointer;
+    text-align: center;
+}
+.req>span{
+    position: relative;
+    top:20px;
+    text-align: center;
+    color:rgb(94, 94, 94);
+    padding:10px 20px;
+    width:fit-content;  
+    background:rgba(212, 212, 212, 0.264); 
+    box-shadow:0 0 3px 0 rgba(0,0,0,0.5);
+    border-radius: 5px;
+}
+
+.query{
+    margin: auto;
+    width:fit-content;
+    max-width:100%;
+    padding:5px;
+    font-family: "Roboto",sans-serif;
+    font-size: 12px;
+    color:#aaa;
+}
+
+
+
+/* Price tag : class="price" */
+
+#price{
+    padding:10px 0;
+    margin-bottom:10px;
+    width: 380px;
+    max-width:380px;
+    position: relative;
+    left:50%;
+    transform: translate(-50%,0);
+    background:#f4f4f4;
+}
+
+
+
+.pre_price,.post_price{
+    width:100%;
+    text-align: center;
+    padding:5px;
+    color:#222;
+}
+.pre_price>span:nth-child(1){
+    color:rgb(255, 0, 0);
+    font-size: 15px;
+    font-family: "Montserrat","Roboto";
+    letter-spacing: 2px;
+    padding-right:10px;
+}
+.pre_price>span:nth-child(2)[cur="$"]::before{
+    content : '\$';
+    text-decoration: line-through;
+}
+.pre_price>span:nth-child(2){
+    color:rgb(223, 112, 112);
+    text-decoration: line-through;
+}
+.post_price>span:nth-child(2){
+    color:rgb(70, 70, 70);
+    font-size: 20px;
+    font-family: "Montserrat","Roboto";
+    padding:5px 0;
+}
+
+
+.post_price>span:nth-child(1){
+    color:rgb(68, 141, 65);
+    font-size: 25px;
+    font-family: "Montserrat","Roboto";
+    letter-spacing: 2px;
+    padding-right:10px;
+}
+.post_price>span:nth-child(2)[cur="$"]::before{
+    padding:1px 10px;
+    content : '$';
+}
+.post_price>span:nth-child(3){
+    margin:auto;
+    color:rgb(143, 143, 143);
+}
+
+#path{
+    font-family: "Montserrat",'Roboto',sans-serif;
+    font-size:12px;
+    padding:0px 10px;
+    max-height:12px;
+    max-width:100%;
+    color:#999;
+}
+#path>a,#path>b{
+    padding:0 5px;
+}
+b{
+    letter-spacing: 1px;
+}
+
+#describe .query{
+    color:#333;
+}
+
+@media (max-width:799px){
+    #describe>div[val="1"]{
+        display: block;
+    }
+    #describe>div[val="1"]>div{
+        width:95%;
+        min-width: 95%;
+    }
+    .left{
+        margin-bottom:10px !important;
+    }
+
+}
+
+.discount{
+    width: 300px;
+    text-align: end;
+}

@@ -1,0 +1,180 @@
+body,html{
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+    border: 0;
+}
+
+/* Paste from here in "style.css" file*/
+
+#footer{
+    box-shadow:0 0 1px 1px rgb(60, 60, 60);
+    font-family:"Montserrat" , Arial, Helvetica, sans-serif;
+}
+
+.page_footer{
+    width:100%;
+    display:flex;
+    justify-content: space-around;
+    align-content: center;
+    flex-direction: row;
+    color: #58585e;
+    background:#eee;
+    font-size:15px;
+    font-weight:700;
+    line-height:20px;
+    text-align: center;
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+
+.f_l{
+    
+    flex-basis:50% ;
+    align-self:center;
+    justify-self: center;
+    /* background:#aaa; */
+    padding:10px 0;
+    display: flex;
+    flex-direction: row;
+    /* max-width:650px; */
+
+}
+.f_r{
+    flex-basis: 50% ;
+    align-content:center;
+    justify-content: center;
+    /* background:#aaa; */
+    padding:10px 0;
+    display: flex;
+    flex-direction: row;
+    /* max-width:650px; */
+}
+.f_c{
+    flex-basis:50%;
+    padding:10px;
+    margin:5px;
+    /* background: #fff4; */
+    font-size: 12px;
+    justify-self: center;
+}
+
+.green{
+    color:#084;
+}
+
+.f_cp b{
+    letter-spacing: 1.5px;
+    color:#fff;
+}
+
+.f_c>h2{
+    position: relative;
+    font-size:20px !important;
+    margin:10px 0;
+    color:#333;
+}
+.f_c>div{
+    margin-top:10px;
+}
+.f_c p{
+    margin:0  10px;
+    text-align:left;
+    letter-spacing: 0.5px;
+    word-spacing: 3px;
+    /* font-size:16px !important; */
+}
+
+.f_div{
+    width:150px !important;
+    text-align: left;
+    margin:0 auto;
+}
+
+.f_div>span{
+    /* font-size: 17px; */
+    line-height: 24px;
+}
+
+.f_c a{
+    position: relative;
+    color:#58588e;
+    text-decoration: none;
+}
+
+.page_footer hr{
+    margin:0;
+}
+
+.f_c a::after,.f_c>h2::after{
+    content:"";
+    position: absolute;
+    top:18px;
+    left:0;
+    width: 0px;
+    /* height:1px; */
+    /* background: #58585e; */
+    transition: 0.25s;
+    border-bottom:solid 1px #58585e;
+}
+
+.f_c>h2::after{
+    top:25px;
+}
+.f_c a:hover{
+    text-decoration: none;
+}
+.f_c a:hover::after,.f_c:hover>h2::after{
+    /* content:" "; */
+    width:100%;
+}
+.f_hr{
+    margin:10px 0 !important;
+}
+
+@media (max-width:1000px){
+    .page_footer{
+        flex-direction: column;
+    }
+    .f_r{
+        border-top:solid 1px #999 ;
+        margin:0 20px;
+    }
+    .f_hr{
+        display:none;
+    }
+}
+
+
+
+@media (max-width:500px){
+    .page_footer>div{
+        flex-direction: column;
+    }
+    .f_c>h2::after{
+        width:100%;
+    }
+    .f_c{
+        margin:0; 
+        padding:auto 0;
+    }
+    .f_l{
+        margin:0 20px;
+    }
+}
+
+.f_cp{
+    width:100%;
+    background: #666;
+    text-align: center;
+    padding:10px 0;
+    color:#ccc;
+    font-size:16px;
+    line-height: 20px;
+    height:20px;
+    font-family:"Montserrat", "Ubuntu" , Arial, Helvetica, sans-serif;
+}
+
+
+/* Upto here */

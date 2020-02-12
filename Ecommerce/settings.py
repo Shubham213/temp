@@ -24,7 +24,7 @@ SECRET_KEY = 'u0+mjjk9njl)he9lmvt=yq3us8(+a4x9x*#wd5)ix)x#=1-)q^'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = not True
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    
 ]
 
 MIDDLEWARE = [
@@ -121,9 +122,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = '/static/'
+STATIC_ROOT = '/home/ubuntu/racerfly/racerfly/static'
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_ROOT = '/home/ubuntu/racerfly/racerfly/media'
 MEDIA_URL = '/media/'
 
 ## Email
