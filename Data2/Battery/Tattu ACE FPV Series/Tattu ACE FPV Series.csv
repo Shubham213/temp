@@ -1,0 +1,251 @@
+Supplier Code,Product Code,Name,SubName,Description,Price USD,Delivery,Discount,Minimum Order,Sort
+cassia,1,ACE 350mAh 35C 7.4V 2S1P ,Tattu Ace Hot Selling Battery,"ACE 350mAh 35C 7.4V 2S1P 
+Voltage (V) : 8.4V
+Size (mm) : 10*25*52mm
+Weight (g) : 25g
+",8.8,,,1,"350,2"
+cassia,2,ACE 450mAh 25C 7.4V 2S1P,Tattu Ace Hot Selling Battery,"ACE 450mAh 25C 7.4V 2S1P
+Voltage (V) : 8.4V
+Size (mm) : 9.4*30*58mm
+Weight (g) : 25g
+",8.8,,,1,"450,2"
+cassia,3,ACE 520mAh 35C 7.4V 2S1P,Tattu Ace Hot Selling Battery,"ACE 520mAh 35C 7.4V 2S1P
+Voltage (V) : 8.4V
+Size (mm) : 15.6*24*44mm
+Weight (g) : 32g
+",13.2,,,1,"520,2"
+cassia,4,ACE 800mAh 15C  7.4V  2S1P ,Tattu Ace Hot Selling Battery,"ACE 800mAh 15C  7.4V  2S1P 
+Voltage (V) : 8.4V
+Size (mm) : 15*30*53mm
+Weight (g) : 48g
+",11,,,1,"800,2"
+cassia,5,ACE 1050mAh 22.2V 45C 6S1P,Tattu Ace Hot Selling Battery,"ACE 1050mAh 22.2V 45C 6S1P
+Voltage (V) : 25.2V
+Size (mm) : 34*35*73mm
+Weight (g) : 166g
+",39.6,,,1,"1050,6"
+cassia,6,ACE 1300mAh 25C  7.4V  2S1P ,Tattu Ace Hot Selling Battery,"ACE 1300mAh 25C  7.4V  2S1P 
+Voltage (V) : 8.4V
+Size (mm) : 15*35*70mm
+Weight (g) : 79g
+",13.2,,,1,"1300,2"
+cassia,7,ACE 1300mAh 25C  11.1V  3S1P ,Tattu Ace Hot Selling Battery,"ACE 1300mAh 25C  11.1V  3S1P 
+Voltage (V) : 12.6V
+Size (mm) : 22*35*71mm
+Weight (g) : 110g
+",19.8,,,1,"1300,3"
+cassia,8,ACE 1400mAh 45C  22.2V  6S1P ,Tattu Ace Hot Selling Battery,"ACE 1400mAh 45C  22.2V  6S1P 
+Voltage (V) : 25.2V
+Size (mm) : 28*35*117mm
+Weight (g) : 232g
+",48.4,,,1,"1400,6"
+cassia,9,ACE 1800mAh 20C  11.1V  3S1P ,Tattu Ace Hot Selling Battery,"ACE 1800mAh 20C  11.1V  3S1P 
+Voltage (V) : 12.6V
+Size (mm) : 23*30*92mm
+Weight (g) : 135g
+",26.4,,,1,"1800,3"
+cassia,10,ACE 1800mAh 50C  22.2V  6S1P ,Tattu Ace Hot Selling Battery,"ACE 1800mAh 50C  22.2V  6S1P 
+Voltage (V) : 25.2V
+Size (mm) : 37*34*107mm
+Weight (g) : 287g
+",61.6,,,1,"1800,6"
+cassia,11,ACE 2000mAh 5C  7.4V  2S1P ,Tattu Ace Hot Selling Battery,"ACE 2000mAh 5C  7.4V  2S1P 
+Voltage (V) : 8.4V
+Size (mm) : 16*30*94mm
+Weight (g) : 92g
+",19.8,,,1,"2000,2"
+cassia,12,ACE 2000mAh 5C  11.1V  3S1P ,Tattu Ace Hot Selling Battery,"ACE 2000mAh 5C  11.1V  3S1P 
+Voltage (V) : 12.6V
+Size (mm) : 22*30*94mm
+Weight (g) : 128g
+",28.6,,,1,"2000,3"
+cassia,13,ACE 2250mAh 1C  6.6V  2S1P ,Tattu Ace Hot Selling Battery,"ACE 2250mAh 1C  6.6V  2S1P 
+Voltage (V) : 7.2V
+Size (mm) : 16*41*76mm
+Weight (g) : 98g
+",22,,,1,"2250,2"
+cassia,14,ACE 4000mAh 1C 7.4V  2S1P ,Tattu Ace Hot Selling Battery,"ACE 4000mAh 1C 7.4V  2S1P 
+Voltage (V) : 8.4V
+Size (mm) : 19*52*73mm
+Weight (g) : 147g
+",39.6,,,1,"4000,2"
+cassia,15,ACE 2200mAh 20C  7.4V  2S1P,Tattu Ace Hot Selling Battery,"ACE 2200mAh 20C  7.4V  2S1P
+Voltage (V) : 8.4V
+Size (mm) : 15*34*105mm
+Weight (g) : 121g
+",19.8,,,1,"2200,2"
+cassia,16,ACE 2200mAh 20C  11.1V  3S1P ,Tattu Ace Hot Selling Battery,"ACE 2200mAh 20C  11.1V  3S1P 
+Voltage (V) : 12.6V
+Size (mm) : 22*34*105mm
+Weight (g) : 169g
+",28.6,,,1,"2200,3"
+cassia,17,ACE 2200mAh 20C  14.8V  4S1P ,Tattu Ace Hot Selling Battery,"ACE 2200mAh 20C  14.8V  4S1P 
+Voltage (V) : 16.8V
+Size (mm) : 32*33*105mm
+Weight (g) : 242g
+",39.6,,,1,"2200,4"
+cassia,18,ACE 2200mAh 25C  11.1V  3S1P ,Tattu Ace Hot Selling Battery,"ACE 2200mAh 25C  11.1V  3S1P 
+Voltage (V) : 12.6V
+Size (mm) : 22*34*106mm
+Weight (g) : 168g
+",30.8,,,1,"2200,3"
+cassia,19,ACE 2200mAh 25C  14.8V  4S1P ,Tattu Ace Hot Selling Battery,"ACE 2200mAh 25C  14.8V  4S1P 
+Voltage (V) : 16.8V
+Size (mm) : 30*34*106mm
+Weight (g) : 239g
+",41.8,,,1,"2200,4"
+cassia,20,ACE 2200mAh 30C  11.1V  3S1P ,Tattu Ace Hot Selling Battery,"ACE 2200mAh 30C  11.1V  3S1P 
+Voltage (V) : 12.6V
+Size (mm) : 23*34*117mm
+Weight (g) : 186g
+",35.2,,,1,"2200,3"
+cassia,21,ACE 2200mAh 30C  14.8V  4S1P ,Tattu Ace Hot Selling Battery,"ACE 2200mAh 30C  14.8V  4S1P 
+Voltage (V) : 16.8V
+Size (mm) : 29*34*117mm
+Weight (g) : 241g
+",46.2,,,1,"2200,4"
+cassia,22,ACE 2200mAh 40C  11.1V  3S1P ,Tattu Ace Hot Selling Battery,"ACE 2200mAh 40C  11.1V  3S1P 
+Voltage (V) : 12.6V
+Size (mm) : 23*34*107mm
+Weight (g) : 182g
+",39.6,,,1,"2200,3"
+cassia,23,ACE 2600mAh 25C  11.1V  3S1P ,Tattu Ace Hot Selling Battery,"ACE 2600mAh 25C  11.1V  3S1P 
+Voltage (V) : 12.6V
+Size (mm) : 25*34*116mm
+Weight (g) : 208g
+",39.6,,,1,"2600,3"
+cassia,24,ACE 2600mAh 25C  14.8V  4S1P ,Tattu Ace Hot Selling Battery,"ACE 2600mAh 25C  14.8V  4S1P 
+Voltage (V) : 16.8V
+Size (mm) : 33*34*116mm
+Weight (g) : 279g
+",55,,,1,"2600,4"
+cassia,25,ACE 2600mAh 25C  22.2V  6S1P ,Tattu Ace Hot Selling Battery,"ACE 2600mAh 25C  22.2V  6S1P 
+Voltage (V) : 25.2V
+Size (mm) : 48*34*116mm
+Weight (g) : 404g
+",81.4,,,1,"2600,6"
+cassia,26,ACE 3200mAh 35C  22.2V  6S1P ,Tattu Ace Hot Selling Battery,"ACE 3200mAh 35C  22.2V  6S1P 
+Voltage (V) : 25.2V
+Size (mm) : 43*43*138mm
+Weight (g) : 489g
+",112.2,,,1,"3200,6"
+cassia,27,ACE 4000mAh 25C  11.1V  3S1P ,Tattu Ace Hot Selling Battery,"ACE 4000mAh 25C  11.1V  3S1P 
+Voltage (V) : 12.6V
+Size (mm) : 24*42*138mm
+Weight (g) : 302g
+",61.6,,,1,"4000,3"
+cassia,28,ACE 4000mAh 30C  11.1V  3S1P ,Tattu Ace Hot Selling Battery,"ACE 4000mAh 30C  11.1V  3S1P 
+Voltage (V) : 12.6V
+Size (mm) : 27*41*138mm
+Weight (g) : 330g
+",68.2,,,1,"4000,3"
+cassia,29,ACE 5000mAh 40C  11.1V  3S1P ,Tattu Ace Hot Selling Battery,"ACE 5000mAh 40C  11.1V  3S1P 
+Voltage (V) : 12.6V
+Size (mm) : 29*42*138mm
+Weight (g) : 371g
+",88,,,1,"5000,3"
+cassia,30,ACE 5000mAh 45C  22.2V  6S1P ,Tattu Ace Hot Selling Battery,"ACE 5000mAh 45C  22.2V  6S1P 
+Voltage (V) : 25.2V
+Size (mm) : 48*43*157mm
+Weight (g) : 702g
+",189.2,,,1,"5000,6"
+cassia,31,ACE 5300mAh 30C  11.1V 3S1P ,Tattu Ace Hot Selling Battery,"ACE 5300mAh 30C  11.1V 3S1P 
+Voltage (V) : 12.6V
+Size (mm) : 29*42*136mm
+Weight (g) : 367g
+",90.2,,,1,"5300,3"
+cassia,32,ACE 5300mAh 30C  14.8V  4S1P ,Tattu Ace Hot Selling Battery,"ACE 5300mAh 30C  14.8V  4S1P 
+Voltage (V) : 16.8V
+Size (mm) : 38*43*138mm
+Weight (g) : 486g
+",121,,,1,"5300,4"
+cassia,33,ACE 5300mAh 30C  22.2V  6S1P ,Tattu Ace Hot Selling Battery,"ACE 5300mAh 30C  22.2V  6S1P 
+Voltage (V) : 25.2V
+Size (mm) : 57*43*138mm
+Weight (g) : 723g
+",184.8,,,1,"5300,6"
+cassia,34,GENS 4700mah  30C  18.5V  5S1P,Tattu Ace Hot Selling Battery,"GENS 4700mah  30C  18.5V  5S1P
+Voltage (V) : 21V
+Size (mm) : 42*42.5*137mm
+Weight (g) : 555g
+",134.2,,,1,"4700,5"
+cassia,35,ACE 800mAh 15C  11.1V  3S1P ,Tattu Ace Less Stock Battery,"ACE 800mAh 15C  11.1V  3S1P 
+Voltage (V) : 12.6V
+Size (mm) : 23*30*58mm
+Weight (g) : 75g
+",15.4,,,1,"800,3"
+cassia,36,ACE 1000mAh 15C  7.4V  2S1P ,Tattu Ace Less Stock Battery,"ACE 1000mAh 15C  7.4V  2S1P 
+Voltage (V) : 8.4V
+Size (mm) : 16*29*68mm
+Weight (g) : 64g
+",11,,,1,"1000,2"
+cassia,37,ACE 1000mAh 25C  7.4V  2S1P ,Tattu Ace Less Stock Battery,"ACE 1000mAh 25C  7.4V  2S1P 
+Voltage (V) : 8.4V
+Size (mm) : 14*34*70mm
+Weight (g) : 70g
+",13.2,,,1,"1000,2"
+cassia,38,ACE 1000mAh 25C  11.1V  3S1P ,Tattu Ace Less Stock Battery,"ACE 1000mAh 25C  11.1V  3S1P 
+Voltage (V) : 12.6V
+Size (mm) : 17*35*73mm
+Weight (g) : 90g
+",17.6,,,1,"1000,3"
+cassia,39,ACE 1300mAh 15C  7.4V  2S1P ,Tattu Ace Less Stock Battery,"ACE 1300mAh 15C  7.4V  2S1P 
+Voltage (V) : 8.4V
+Size (mm) : 15*34*70mm
+Weight (g) : 79g
+",13.2,,,1,"1300,2"
+cassia,40,ACE 1300mAh 15C  11.1V  3S1P ,Tattu Ace Less Stock Battery,"ACE 1300mAh 15C  11.1V  3S1P 
+Voltage (V) : 12.6V
+Size (mm) : 22*34*70mm
+Weight (g) : 110g
+",19.8,,,1,"1300,3"
+cassia,41,ACE 1550mAh 25C  11.1V  3S1P ,Tattu Ace Less Stock Battery,"ACE 1550mAh 25C  11.1V  3S1P 
+Voltage (V) : 12.6V
+Size (mm) : 23*30*92mm
+Weight (g) : 134g
+",24.2,,,1,"1550,3"
+cassia,42,ACE 1600mAh 15C  11.1V  3S1P ,Tattu Ace Less Stock Battery,"ACE 1600mAh 15C  11.1V  3S1P 
+Voltage (V) : 12.6V
+Size (mm) : 14*45*109
+Weight (g) : 140
+",24.2,,,1,"1600,3"
+cassia,43,ACE 1800mAh 20C  7.4V  2S1P ,Tattu Ace Less Stock Battery,"ACE 1800mAh 20C  7.4V  2S1P 
+Voltage (V) : 8.4V
+Size (mm) : 16*30*90mm
+Weight (g) : 96g
+",17.6,,,1,"1800,2"
+cassia,44,ACE 3300mAh 25C  11.1V  3S1P ,Tattu Ace Less Stock Battery,"ACE 3300mAh 25C  11.1V  3S1P 
+Voltage (V) : 12.6V
+Size (mm) : 20*43*138mm
+Weight (g) : 255g
+",52.8,,,1,"3300,3"
+cassia,45,ACE 3300mAh 25C  14.8V  4S1P ,Tattu Ace Less Stock Battery,"ACE 3300mAh 25C  14.8V  4S1P 
+Voltage (V) : 16.8V
+Size (mm) : 26*43*138mm
+Weight (g) : 327g
+",70.4,,,1,"3300,4"
+cassia,46,ACE 3300mAh 25C  22.2V  6S1P ,Tattu Ace Less Stock Battery,"ACE 3300mAh 25C  22.2V  6S1P 
+Voltage (V) : 22.2V
+Size (mm) : 40*43*138mm
+Weight (g) : 500g
+",105.6,,,1,"3300,6"
+cassia,47,ACE 4000mAh 25C  7.4V  2S1P ,Tattu Ace Less Stock Battery,"ACE 4000mAh 25C  7.4V  2S1P 
+Voltage (V) : 8.4V
+Size (mm) : 17*42*135mm
+Weight (g) : 219g
+",44,,,1,"4000,2"
+cassia,48,ACE 4000mAh 25C  14.8V  4S1P ,Tattu Ace Less Stock Battery,"ACE 4000mAh 25C  14.8V  4S1P 
+Voltage (V) : 16.8V
+Size (mm) : 31*43*140mm
+Weight (g) : 390g
+",85.8,,,1,"4000,4"
+cassia,49,ACE 4000mAh 25C  22.2V  6S1P ,Tattu Ace Less Stock Battery,"ACE 4000mAh 25C  22.2V  6S1P 
+Voltage (V) : 25.2V
+Size (mm) : 45*43*139mm
+Weight (g) : 572g
+",129.8,,,1,"4000,6"
+cassia,50,ACE 5000mAh 40C  7.4V  2S1P ,Tattu Ace Less Stock Battery,"ACE 5000mAh 40C  7.4V  2S1P 
+Voltage (V) : 8.4V
+Size (mm) : 21*43*136mm
+Weight (g) : 260g
+",59.4,,,1,"5000,2"

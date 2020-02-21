@@ -7,7 +7,8 @@ from decimal import Decimal
 from os import walk
 dollarToRs = int(Util.objects.get(name='DollarToRs').float_value)
 
-def add_data(cat_name, filename):
+def add_data(cat_name, filename, thread_no):
+	root = 'Data'+thread_no+'/'
 	cat = None
 	if Category.objects.filter(name=cat_name).exists():
 		cat = Category.objects.get(name=cat_name)
@@ -20,7 +21,7 @@ def add_data(cat_name, filename):
 	else:
 		ser = Series(name=filename, category=cat)
 		ser.save()
-	data = pd.read_csv("Data/"+str(cat_name)+'/'+str(filename)+'/'+filename+'.csv')
+	data = pd.read_csv(root+str(cat_name)+'/'+str(filename)+'/'+filename+'.csv')
 	# print(len(data['Supplier Code']))
 	for i in range(len(data['Supplier Code'])):
 		new_item = Item(
@@ -31,34 +32,37 @@ def add_data(cat_name, filename):
 			subname = data['SubName'][i],
 			priceDollar = Decimal(float(data['Price USD'][i])),
 			priceRs = data['Price USD'][i]*dollarToRs,
-			# image1 = File(open('Data/Images/'+str(i+1)+'.png', 'rb')),
 			description = data['Description'][i],
 			# discount = Decimal(float(data['Discount'][i])),
 			# min_quantity = data['Minimum Order'][i]
 		)
 		new_item.discount = 0.00
-		if (not str(data['Discount'][i]).strip()=="nan") and (not str(data['Discount'][i]).strip()==""):
+		if (not str(data['Discount'][i]).strip()=='nan') and (not str(data['Discount'][i]).strip()==''):
 			new_item.discount = Decimal(float(data['Discount'][i]))
+			new_item.save()
 		new_item.min_quantity = 1
-		if (not str(data['Minimum Order'][i]).strip()=="nan") and (not str(data['Minimum Order'][i]).strip()==""):
+		new_item.save()
+		if (not str(data['Minimum Order'][i]).strip()=='nan') and (not str(data['Minimum Order'][i]).strip()==''):
 			new_item.discount = Decimal(float(data['Minimum Order'][i]))
-		if (not str(data['Sort'][i]).strip()=="nan") and (not str(data['Sort'][i]).strip()==""):
+			new_item.save()
+		if (not str(data['Sort'][i]).strip()=='nan') and (not str(data['Sort'][i]).strip()==''):
 			new_item.sort = str(data['Sort'][i])
+			new_item.save()
 		try:
-			print("trying : " + str('Data/'+str(cat) +'/' + str(filename) +'/images/'+ str(data['Product Code'][i])+'.png'))
+			print('trying : ' + str(root+str(cat) +'/' + str(filename) +'/images/'+ str(data['Product Code'][i])+'.png'))
 			try:
-				new_item.image1.save(filename+'.png', File(open('Data/'+str(cat) +'/' + str(filename) +'/images/'+ str(data['Product Code'][i])+'.png', 'rb')))
+				new_item.image1.save(filename+'.png', File(open(root+str(cat) +'/' + str(filename) +'/images/'+ str(data['Product Code'][i])+'.png', 'rb')))
 			except:
 				try:
-					new_item.image1.save(filename+'.jpg', File(open('Data/'+str(cat) +'/' + str(filename) +'/images/'+ str(data['Product Code'][i])+'.jpg', 'rb')))
+					new_item.image1.save(filename+'.jpg', File(open(root+str(cat) +'/' + str(filename) +'/images/'+ str(data['Product Code'][i])+'.jpg', 'rb')))
 				except:
-					new_item.image1.save(filename+'.svg', File(open('Data/'+str(cat) +'/' + str(filename) +'/images/'+ str(data['Product Code'][i])+'.svg', 'rb')))
+					new_item.image1.save(filename+'.svg', File(open(root+str(cat) +'/' + str(filename) +'/images/'+ str(data['Product Code'][i])+'.svg', 'rb')))
 
 			new_item.save()
-			# print("and done")
+			# print('and done')
 		except:
 			f = []
-			mypath = 'Data/'+str(cat) +'/' + str(filename) +'/images/'+ str(data['Product Code'][i])+'/'
+			mypath = root+str(cat) +'/' + str(filename) +'/images/'+ str(data['Product Code'][i])+'/'
 			print('mypath = ' + str(mypath) + '\n')
 			for (_, _, filenames) in walk(mypath):
 				f.extend(filenames)
@@ -246,8 +250,6 @@ def add_data(cat_name, filename):
 							new_item.image20.save(str(cat_name)+'_'+str(filename)+'_'+str(f_name)+'.svg', File(open(mypath+str(f_name), 'rb')))
 					# new_item.image20.save(str(cat_name)+'_'+str(filename)+'_'+str(f_name)+'.png', File(open(mypath+str(f_name), 'rb')))
 				new_item.save()
-				# new_item.image1.save(filename+'.png', File(open('Data/'+str(cat) +'/' + str(filename) +'/images/'+ data['Product Code'][i]+'.png', 'rb')))
-				# new_item.save()
 		
 
 		print('added ' + str(i+1) + ' item...')
@@ -276,14 +278,13 @@ def add_data_with_file(cat_name, f):
 			subname = data['SubName'][i],
 			priceDollar = Decimal(float(data['Price USD'][i])),
 			priceRs = data['Price USD'][i]*dollarToRs,
-			# image1 = File(open('Data/Images/'+str(i+1)+'.png', 'rb')),
 			description = data['Description'][i],
 			discount = Decimal(float(data['Discount'][i])),
 			min_quantity = data['Minimum Order'][i]
 		)
-		new_item.image1.save(filename+'.png', File(open('Data/Images/'+str(i+1)+'.png', 'rb')))
+		new_item.image1.save(filename+'.png', File(open(root+'Images/'+str(i+1)+'.png', 'rb')))
 		new_item.save()
 		print('added ' + str(i+1) + ' item...')
 	print('\nAll Done\n\n')
 
-# add_data("Battery", "Temp Battery")
+# add_data('Battery', 'Temp Battery')

@@ -1,0 +1,69 @@
+Supplier Code,Product Code,Name,SubName,Description,Price USD,Delivery,Discount,Minimum Order,Sort
+cassia,1,TATTU 6600mah 4S2P 14.8V 35C,Tattu UAV Battery,"TATTU 6600mah 4S2P 14.8V 35C
+Voltage (V) : 16.8V
+Size (mm) : 29*85*136mm
+Weight (g) : 713g +- 15g",140.8,,,1,"6600,4"
+cassia,2,TATTU 8000mAh 25C 14.8V 4S1P,Tattu UAV Battery,"TATTU 8000mAh 25C 14.8V 4S1P
+Voltage (V) : 16.8V
+Size (mm) : 32*66*172mm
+Weight (g) : 760g +- 30g",134.2,,,1,"8000,4"
+cassia,3,TATTU 8000mAh 25C 22.2V 6S1P,Tattu UAV Battery,"TATTU 8000mAh 25C 22.2V 6S1P
+Voltage (V) : 25.2V
+Size (mm) : 48*66*172mm
+Weight (g) : 1140g +- 30g",200.2,,,1,"8000,6"
+cassia,4,TATTU 10000mAh 25C 11.1V 3S1P,Tattu UAV Battery,"TATTU 10000mAh 25C 11.1V 3S1P
+Voltage (V) : 12.6V
+Size (mm) : 29*66*174mm
+Weight (g) : 718g +- 15g",125.4,,,1,"10000,3"
+cassia,5,TATTU 10000mAh 25C 14.8V 4S1P,Tattu UAV Battery,"TATTU 10000mAh 25C 14.8V 4S1P
+Voltage (V) : 16.8V
+Size (mm) : 44*66*174mm
+Weight (g) : 921g +- 15g",169.4,,,1,"10000,4"
+cassia,6,TATTU 10000mAh 25C 22.2V 6S1P,Tattu UAV Battery,"TATTU 10000mAh 25C 22.2V 6S1P
+Voltage (V) : 25.2V
+Size (mm) : 58*66*177mm
+Weight (g) : 1360 +- 30g",187,,,1,"10000,6"
+cassia,7,TATTU 12000mAh 15C 22.2V 6S1P,Tattu UAV Battery,"TATTU 12000mAh 15C 22.2V 6S1P
+Voltage (V) : 25.2V
+Size (mm) : 52*71*191mm
+Weight (g) : 1491 +- 30g",224.4,,,1,"12000,6"
+cassia,8,LIPO 14000mAh 15C 22.2V 6S1P,Tattu UAV Battery,"LIPO 14000mAh 15C 22.2V 6S1P
+Voltage (V) : 25.2V
+Size (mm) : 60*78*190mm
+Weight (g) : 1491 +- 30g",261.8,,,1,"14000,6"
+cassia,9,TATTU 16000mAh 15C 22.2V 6S1P,Tattu UAV Battery,"TATTU 16000mAh 15C 22.2V 6S1P
+Voltage (V) : 25.2V
+Size (mm) : 62*78*190mm
+Weight (g) : 1830g +- 30g",294.8,,,1,"16000,6"
+cassia,10,TATTU 18000mAh 15C 22.2V 6S1P,Tattu UAV Battery,"TATTU 18000mAh 15C 22.2V 6S1P
+Voltage (V) : 25.2V
+Size (mm) : 68.5*78*190mm
+Weight (g) : 2030g +- 30g",336.6,,,1,"18000,6"
+cassia,11,TATTU 22000mAh 25C 22.2V 6S1P,Tattu UAV Battery,"TATTU 22000mAh 25C 22.2V 6S1P
+Voltage (V) : 25.2V
+Size (mm) : 63*91*207mm
+Weight (g) : 2530g +- 30g",413.6,,,1,"22000,6"
+cassia,12,TATTU SWIFT 16000mAh 25C 44.4V 12S1P,Tattu 2.0 UAV Battery,"TATTU SWIFT 16000mAh 25C 44.4V 12S1P
+Voltage (V) : 44.4V
+Size (mm) : 90*163*223.8mm
+Weight (g) : 4800g",677.6,,,1,"16000,12"
+cassia,13,TATTU SWIFT 22000mAh 25C 44.4V 12S1P,Tattu 2.0 UAV Battery,"TATTU SWIFT 22000mAh 25C 44.4V 12S1P
+Voltage (V) : 44.4V
+Size (mm) : 116*172*235.5mm
+Weight (g) : 6900g",904.2,,,1,"22000,12"
+cassia,14,TATTU PLUS 10000mAh 25C 22.2V 6S1P,Tattu Plus UAV Battery,"TATTU PLUS 10000mAh 25C 22.2V 6S1P
+Voltage (V) : 25.2V
+Size (mm) : 63*70*185mm
+Weight (g) : 1466g +- 30g",270.6,,,1,"10000,6"
+cassia,15,TATTU PLUS 12000mAh 15C 22.2V 6S1P,Tattu Plus UAV Battery,"TATTU PLUS 12000mAh 15C 22.2V 6S1P
+Voltage (V) : 25.2V
+Size (mm) : 62*76*202mm
+Weight (g) : 1640g +- 30g",314.6,,,1,"12000,6"
+cassia,16,TATTU PLUS 16000mAh 15C 22.2V 6S1P,Tattu Plus UAV Battery,"TATTU PLUS 16000mAh 15C 22.2V 6S1P
+Voltage (V) : 25.2V
+Size (mm) : 70*88*202mm
+Weight (g) : 2063g +- 30g",400.4,,,1,"16000,6"
+cassia,17,TATTU PLUS 22000mAh 25C 22.2V 6S1P,Tattu Plus UAV Battery,"TATTU PLUS 22000mAh 25C 22.2V 6S1P
+Voltage (V) : 25.2V
+Size (mm) : 68*96*213mm
+Weight (g) : 2640g +- 30g",583,,,1,"22000,6"

@@ -679,7 +679,7 @@ def upload_file(request):
 	if request.method=='POST':
 		if 'upload' in request.POST:
 			from add_data import add_data
-			add_data(request.POST['modelname'], request.POST['seriesname'])
+			add_data(request.POST['modelname'], request.POST['seriesname'], int(request.POST['thread']))
 		elif 'logout' in request.POST:
 			# user = request.user
 			adminLogout(request)

@@ -1,6 +1,7 @@
 <div>
 	<form method="post" enctype="multipart/form-data">
 		{% csrf_token %}
+		<input type="number" name="thread" placeholder="Thread No.." required>
 		<input name="modelname" placeholder="Category..." required>
 		<input name="seriesname" placeholder="Series..." required>
 		<button name='upload'> Upload </button>

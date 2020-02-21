@@ -1,0 +1,25 @@
+Supplier Code,Product Code,Name,SubName,Description,Price USD,Delivery,Discount,Minimum Order,Sort
+Cassia,1,TATTU HV 10000mAh 15C 22.8V 6S1P,TATTU UAV HV Battery,"TATTU HV 10000mAh 15C 22.8V 6S1P
+Voltage (V) : 26.1V
+Size (mm) : 58*66*177mm
+Weight (g) : 1360 +- 30g",297,,,1,"10000,6"
+Cassia,2,TATTU HV 12000mAh 15C 22.8V 6S1P,TATTU UAV HV Battery,"TATTU HV 12000mAh 15C 22.8V 6S1P
+Voltage (V) : 26.1V
+Size (mm) : 54*76*202mm
+Weight (g) : 1460g +- 30g",332.2,,,1,"12000,6"
+Cassia,3,TATTU HV 16000mAh 15C 22.8V 6S1P,TATTU UAV HV Battery,"TATTU HV 16000mAh 15C 22.8V 6S1P
+Voltage (V) : 26.1V
+Size (mm) : 59*77*202mm
+Weight (g) : 1880g +- 30g",398.2,,,1,"16000,6"
+Cassia,4,TATTU HV 22000mAh 25C 22.8V 6S1P,TATTU UAV HV Battery,"TATTU HV 22000mAh 25C 22.8V 6S1P
+Voltage (V) : 26.1V
+Size (mm) : 62*93*213mm
+Weight (g) : 2344g +- 30g",605,,,1,"22000,6"
+Cassia,5,TATTU HV 25000mAh 10C 22.8V 6S1P,TATTU UAV HV Battery,"TATTU HV 25000mAh 10C 22.8V 6S1P
+Voltage (V) : 26.1V
+Size (mm) : 67*92*210mm
+Weight (g) : 2568g +- 30g",660,,,1,"25000,6"
+Cassia,6,TATTU HV 32000mAh 10C 22.8V 6S1P,TATTU UAV HV Battery,"TATTU HV 32000mAh 10C 22.8V 6S1P
+Voltage (V) : 26.1V
+Size (mm) : 61*125*216mm
+Weight (g) : 3494g +- 30g",847,,,1,"32000,6"
