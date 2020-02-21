@@ -8,6 +8,7 @@ from os import walk
 dollarToRs = int(Util.objects.get(name='DollarToRs').float_value)
 
 def add_data(cat_name, filename, thread_no):
+	thread_no = str(thread_no)
 	root = 'Data'+thread_no+'/'
 	cat = None
 	if Category.objects.filter(name=cat_name).exists():
