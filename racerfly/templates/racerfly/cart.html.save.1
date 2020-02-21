@@ -127,21 +127,14 @@
 			<form method="post" id="couponForm">
 			{% csrf_token %}
 				<div class="input">
-					{% if coupon_err %} <div style="background: #f12121;padding:5px 20px;border-radius:3px; color: #fffffe;"> {{ coupon_err }} </div> {% endif %}
+					{% if coupon_err %} <div><span style="background: #f12121;padding:5px 10px;border-radius:3px; color: #fefefe;min-width:300px;"> {{ coupon_err }} </span></div> {% endif %}
 					<input name='coupon' placeholder="Enter Coupon Code" autocomplete="off" style="padding: 13px;"> <button type="button" onclick="submitCouponForm()">Apply coupon</button>
 					<script> function submitCouponForm(){document.getElementById("couponForm").submit();} </script>
 				</div><br/>
 			</form>
-			<style>
-				.input,.input_d{
-					font-family:"Montserrat",sans-serif;
-					font-size:16px;
-					line-height:20px;
-				}
-			</style>
 			{% endif %}
 			{% if coupon_discount %}
-			<div style="background:#43b847;padding:5px 20px;color:#fffffe;border-radius:3px;" class="input_d">Discount coupon successfully applied!<div>
+				<div style="background: #43b847;padding:5px 10px;border-radius:3px;min-width:350px;">Discount Coupon successfully applied!</div>
 			{% endif %}
                         <form method="POST" id='deleteForm'>
                         {% csrf_token %}

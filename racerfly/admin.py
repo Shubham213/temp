@@ -42,3 +42,4 @@ admin.site.register(FeedBack)
 
 
 admin.site.register(Util)
+admin.site.register(Coupon)

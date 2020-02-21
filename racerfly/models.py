@@ -94,6 +94,16 @@ class Order(models.Model):
 	items = models.ManyToManyField(ItemToBuy, related_name='choice_order', null=True, blank=True)
 
 
+class Coupon(models.Model):
+	code = models.CharField(max_length=6, unique=True)
+	#user = models.ForeignKey('Customer', on_delete=models.SET_NULL, related_name='choice_coupons', null=True, blank=True)
+	expiry_date = models.DateTimeField()
+	discount = models.FloatField(default=20.0)
+	maxdiscount = models.FloatField(default=4000.0)
+	expired = models.BooleanField(default=False)
+	def __str__(self):
+		return str(self.code)
+
 class Customer(models.Model):
 	name = models.CharField(max_length=255)
 	email = models.EmailField(max_length=255, unique=True)

@@ -30,10 +30,12 @@
                 <div id="itm_lft">
                     <div id="itm_img">
                         <div>
+			{% if item.image11 %}
                             <div id="itm_pre_scr" track="1">
                                 <div class="itm_pre_div pre"></div>
                                 <div class="itm_nxt_div nxt"></div>
                             </div>
+			{% endif %}
                             <div id="itm_pre" track="1">
                                 <div track="1">
                                     <div class="itm_pre_div" open no="1">
@@ -62,7 +64,9 @@
                                     {% if item.image6 %}
                                     <div class="itm_pre_div" id="more" no="6">
                                         <img src="{{ item.image6.url }}" alt style="width:100%;">
-                                        <div class="itm_pre_div2" more="+ 14 More"></div>
+                                       	{% if item.image7 %}
+					 <div class="itm_pre_div2" more="See More"></div>
+					{% endif %}
                                     </div>
                                     {% endif %}
                                     {% if item.image7 %}
@@ -318,12 +322,11 @@
                             </div>
                         </div>
                         <div class="itm_qnt" style="height:175px; overflow:hidden;">
-                            <div class="itm_quant">
-                                <div><b>Quantity</b>&nbsp;»</div>
+                            <div class="itm_quant"><div><b>Quantity</b>&nbsp;»</div>
                                 <div id="quant">
                                     <input id="quantity" type="number" min="{{ item.min_quantity }}" max="50" value="{{ item.min_quantity }}" maxlength="2">
                                 </div>
-
+			    </div>
                             <div style="margin:10px; box-sizing:border-box; width:calc(100% - 20px); border-bottom:solid 1px #eee;"></div>
                             <div class="itm_req_form">
                                 <!-- <form action="" method="post"> -->
@@ -355,7 +358,7 @@
                                 Special Requirement
                             </div> -->
                         </div>
-                        </div>
+                       
                             <div class="itm_qnt" style=" margin-top:20px;">
                             <div class="itm_quant">
                                 <div><b>Delivery Time</b>&nbsp;»</div>
@@ -375,9 +378,11 @@
                                 </ul>
                             </div>
                         </div>
-                    </div>
-                </div>
+                    	</div>
+                	</div>
+		</div>
                 <div id="item_menubar" style='display:none;'>
+<div style="width:100%;height:100%;position: absolute;top:0;left:0; background: transparent;z-index:-1;" onclick="document.getElementById('item_menubar').style='display:none;'; document.body.style='';" id="x"></div>
                     <div id="mnubar_itm1"  >
                         <div  id="mnubar_itm2"  >
                             <div  id="mnubar_itm3"  >
@@ -756,6 +761,30 @@
                 document.getElementById('atert').setAttribute("c",'');
                 document.getElementById('atert').style="";
             }
+
+
+	document.getElementsByClassName("container")[0].onscroll = function(){try{cw();}catch(e){console.log("Enjoy your stay at Racerfly.com");}};
+        function cw(){
+                var cw = document.getElementsByClassName("container")[0].offsetWidth;
+                if(cw>600){
+                    document.getElementById("itm_lft").style="position:relative;top:0;";
+                    var a = document.getElementById("itm_lft").clientHeight;
+                    var b = document.getElementById("itm_img").clientHeight;
+                    var c = document.getElementsByClassName("container")[0].scrollTop;
+                    if((a-b-c)>0){
+                        document.getElementById("itm_img").style = "position:absolute;top:"+(c)+"px;";
+                     }else{
+                        document.getElementById("itm_img").style = "position:absolute;top:"+(a-b)+"px;";
+                     }
+                }else{
+                    document.getElementById("itm_img").style = "position:relative;top:0px;";
+                 }            
+	}
+	
+	window.resize = function(){
+        	cw();
+        }
+
         </script>
 
 

@@ -123,26 +123,16 @@
                                 <div style="padding-top:10px;"></div>Check more details <a href="#_des"><strong>here</strong></a>
                             </div>
                         </div>
-			{% if not coupon_discount %}
+
 			<form method="post" id="couponForm">
 			{% csrf_token %}
 				<div class="input">
-					{% if coupon_err %} <div style="background: #f12121;padding:5px 20px;border-radius:3px; color: #fffffe;"> {{ coupon_err }} </div> {% endif %}
+					{% if coupon_err %} <div style="background: #f12121;padding:5px 10px;border-radius:3px; color: #fefefe;margin-bottom:5px;"> {{ coupon_err }} </div> {% endif %}
 					<input name='coupon' placeholder="Enter Coupon Code" autocomplete="off" style="padding: 13px;"> <button type="button" onclick="submitCouponForm()">Apply coupon</button>
 					<script> function submitCouponForm(){document.getElementById("couponForm").submit();} </script>
 				</div><br/>
 			</form>
-			<style>
-				.input,.input_d{
-					font-family:"Montserrat",sans-serif;
-					font-size:16px;
-					line-height:20px;
-				}
-			</style>
-			{% endif %}
-			{% if coupon_discount %}
-			<div style="background:#43b847;padding:5px 20px;color:#fffffe;border-radius:3px;" class="input_d">Discount coupon successfully applied!<div>
-			{% endif %}
+
                         <form method="POST" id='deleteForm'>
                         {% csrf_token %}
                         <h3 style="margin: 20px 0; font-size: 18px;font-family:Montserrat;line-height:20px; color: #444;">Please enter Delivery Address <span style="padding: 10px 0; color: rgb(240,77,77);font-size:15px;line-height:20px;">(Must include pincode)</span></h3>
@@ -227,9 +217,7 @@
     100%{transform: rotateZ(360deg);}
      
 }
-#_des>table{    margin : 0px auto 30px auto;    max-width:500px;    width:100%;    font-size:18px;    text-align: left;    border-collapse: collapse;    font-family: "Montserrat", Arial, Helvetica, sans-serif;}
-#_des>table th,#_des>table td{    padding:10px 0 10px 10px;}
-#_des>table td{    width:200px;}
+
 .input>input,.input>button{    width:calc(50% - 45px);    height:20px;    padding:15px;    max-width:300px;    /* padding:5px 10px; */    font-size:14px;    border-radius: 5px 0 0 5px;    outline: none;    height:20px;    font-family: "Montserrat",sans-serif;    letter-spacing: 0.5px;    box-sizing:content-box;    /* text-align: center; */    letter-spacing: 1.2px;    box-shadow:0 3px 6px -3px rgba(0,0,0,0.1),0 0px 6px 0px rgba(0,0,0,0.1);}
 .input{    padding:20px 0  0 10px;    width:100%;    max-width:500px;    /* margin:0 auto; */}
 .input>button{    cursor: pointer;    border-radius: 0 5px 5px 0;    background:#0c7beb;    font-weight: 700;    border:0;    color:#fff;    letter-spacing: 1px;    max-width:150px;    text-shadow:0 0 6px rgba(0,0,0,0.5);    margin-left:-2px;}
@@ -326,8 +314,8 @@
                                         Cart price »
                                     </td>
                                     <th>
-                                        ₹​ {{user.cart.totPrice|multiply:dollarToRs|roundTo2}} <span style="color:#666;font-size: 15px;font-weight:500;">(Added {{gst}}% GST)</span>
-</th>
+                                        ₹​ {{user.cart.totPrice|multiply:dollarToRs|roundTo2}} (Added {{gst}}% GST)
+                                    </th>
                                 </tr>
                                 <tr>
                                     <td>

@@ -403,6 +403,8 @@ def buyItem(request, category_id, series_id, item_id):
 
 @customer_login_required
 def cart(request):
+	coupon_err=None
+	coupon_discount=None
 	categories = Category.objects.all()
 	user = get_user(request)
 	dollarToRs = Util.objects.get(name='DollarToRs').float_value
@@ -413,6 +415,22 @@ def cart(request):
 		request.session['order_amount'] = order_amount
 		# print(order_amount)
 		# print('\n\norder amount : ' + str(order_amount) + '\n\n')
+
+		# Check if any coupon is applied or not
+		if (request.method=='POST') and ('coupon' in request.POST):
+			# print(request.POST)
+			if Coupon.objects.filter(expiry_date__gte=datetime.now(), expired=False, code=str(request.POST['coupon'])).exists():
+				coupon = Coupon.objects.get(code=str(request.POST['coupon']))
+				# order_amount is in paise, while the maxdiscount field is for Rs/-
+				coupon_discount = min(int(order_amount*coupon.discount/100), int(coupon.maxdiscount*100))
+				order_amount -= coupon_discount
+				request.session['coupon_applied'] = coupon.id
+				request.session['order_amount'] = order_amount
+				#coupon.expired = True
+				#coupon.save()
+			else:
+				coupon_err = "Please Enter a valid Coupon!"
+
 		razorpay_order_id = None
 		if order_amount >= 1:
 			order_currency = 'INR'
@@ -455,6 +473,8 @@ def cart(request):
 			request, 
 			'racerfly/cart.html', 
 			{
+				'coupon_err': coupon_err,
+				'coupon_discount': coupon_discount,
 				'user': user, 
 				'gst': gst,
 				'items': items, 
@@ -524,6 +544,13 @@ def payment_success(request):
 	totPrice = t_user.cart.totPrice
 	delivery_charge = deliveryCharge(totPrice)
 	gst_price = round(float(totPrice*int(dollarToRs))*(gst/100), 2)
+
+	# If Coupon was applied, expire it
+	if 'coupon_applied' in request.session:
+		coupon = Coupon.objects.get(id=request.session['coupon_applied'])
+		coupon.expired = True
+		coupon.save()
+		
 
 	itemsToShow = []
 	for item in t_user.cart.items.all():

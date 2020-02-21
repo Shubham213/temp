@@ -82,6 +82,7 @@
                     </div>
                     {% else %}
                     <!-- Empty cart end -->
+
                     <!-- Cart with some elements -->
                     <div class="_container">
                         <div class="name_cart">
@@ -89,7 +90,7 @@
                         </div>
                         <!-- Total Price Section -->
                         <div class="_totalPrice">
-                            <div>Subtotal ( {{user.cart.items.all.count}} Items ) : <span><b>₹​ {{user.cart.totPrice|multiply:dollarToRs|roundTo2 }} </b><span style="position:relative;"><a href="#_des"><div></div></a></span></span>
+                            <div>Subtotal ( {{user.cart.items.all.count}} Items ) : <span><b>₹​ {{user.cart.totPrice|multiply:dollarToRs|roundTo2 }} </b><span><a href="#_des"><div></div></a></span></span>
                                 <form action="{% url 'racerfly:verify_payment' %}" method="POST">
                                     {% csrf_token %}
                                     <textarea id='id_delivery_address' name="delivery_address" style="display: none;" required="">{% if user.last_address %}{{user.last_address}}{% endif %}</textarea>
@@ -97,7 +98,7 @@
                                     <script
                                         src="https://checkout.razorpay.com/v1/checkout.js"
                                         data-key="rzp_live_46KNgnEVu2I48A"
-                                        data-amount="{{order_amount}}"
+                                        data-amount="{{user.cart.totPrice|grandTotal|multiply:100|toInt}}"
                                         data-name="Racerfly"
                                         data-description=""
                                         data-image="{% static 'images/final_logo.png' %}"
@@ -117,45 +118,26 @@
                                     </label> -->
                                 </form>
                             </div>
-
                             <div class="_des">
                                 By proceeding to payment you agree <a href="{% url 'racerfly:tnc' %}" target="_blank">Terms and Conditions</a> <wbr>of&nbsp;<b style="color:#000;">©RacerFly</b>
                                 <div style="padding-top:10px;"></div>Check more details <a href="#_des"><strong>here</strong></a>
                             </div>
                         </div>
-			{% if not coupon_discount %}
-			<form method="post" id="couponForm">
-			{% csrf_token %}
-				<div class="input">
-					{% if coupon_err %} <div style="background: #f12121;padding:5px 20px;border-radius:3px; color: #fffffe;"> {{ coupon_err }} </div> {% endif %}
-					<input name='coupon' placeholder="Enter Coupon Code" autocomplete="off" style="padding: 13px;"> <button type="button" onclick="submitCouponForm()">Apply coupon</button>
-					<script> function submitCouponForm(){document.getElementById("couponForm").submit();} </script>
-				</div><br/>
-			</form>
-			<style>
-				.input,.input_d{
-					font-family:"Montserrat",sans-serif;
-					font-size:16px;
-					line-height:20px;
-				}
-			</style>
-			{% endif %}
-			{% if coupon_discount %}
-			<div style="background:#43b847;padding:5px 20px;color:#fffffe;border-radius:3px;" class="input_d">Discount coupon successfully applied!<div>
-			{% endif %}
+
                         <form method="POST" id='deleteForm'>
                         {% csrf_token %}
-                        <h3 style="margin: 20px 0; font-size: 18px;font-family:Montserrat;line-height:20px; color: #444;">Please enter Delivery Address <span style="padding: 10px 0; color: rgb(240,77,77);font-size:15px;line-height:20px;">(Must include pincode)</span></h3>
-                        <textarea  style="width: 100%;min-width:100%;max-width:100%;height:80px; border-radius: 5px; padding: 10px 20px;font-family:'Montserrat',sans-serif;font-size: 15px;box-sizing:border-box;line-height:20px;"   placeholder="Delivery address" oninput="updateText(this)">{% if user.last_address %}{{user.last_address}}{% endif %}</textarea>
+                        <h3 style="margin: 20px 0; font-size: 22px; color: #444;">Please enter Delivery Address <span style="padding: 10px 0; color: rgb(240,77,77);">(Must include pincode)</span></h3>
+                        <textarea style="width: 90%; height:60px; border-radius: 12px; padding: 5px;" placeholder="Delivery address" oninput="updateText(this)">{% if user.last_address %}{{user.last_address}}{% endif %}</textarea>
                         <script>
                             function updateText(e){
                                 document.getElementById('id_delivery_address').value = e.value;
                             }
                         </script>
 
-			<!--input name="coupon" placeholder="Apply Coupon (Enter Coupon Code)"-->
-			<!--div class="coupontext" style="padding: 2px; background-color:rgb(120, 120, 120); color: rgb(240, 240, 240);"> Coupon Codes will be applicable after 16th February </div-->
-                        {% for item_cart in user.cart.items.all reversed %}
+			
+			<input type="text" placeholder="Apply Coupon(Enter coupon code)" name="coupon">
+                        
+{% for item_cart in user.cart.items.all reversed %}
                         <!-- Each Item -->
                         
                         <div class="_div">
@@ -227,18 +209,6 @@
     100%{transform: rotateZ(360deg);}
      
 }
-#_des>table{    margin : 0px auto 30px auto;    max-width:500px;    width:100%;    font-size:18px;    text-align: left;    border-collapse: collapse;    font-family: "Montserrat", Arial, Helvetica, sans-serif;}
-#_des>table th,#_des>table td{    padding:10px 0 10px 10px;}
-#_des>table td{    width:200px;}
-.input>input,.input>button{    width:calc(50% - 45px);    height:20px;    padding:15px;    max-width:300px;    /* padding:5px 10px; */    font-size:14px;    border-radius: 5px 0 0 5px;    outline: none;    height:20px;    font-family: "Montserrat",sans-serif;    letter-spacing: 0.5px;    box-sizing:content-box;    /* text-align: center; */    letter-spacing: 1.2px;    box-shadow:0 3px 6px -3px rgba(0,0,0,0.1),0 0px 6px 0px rgba(0,0,0,0.1);}
-.input{    padding:20px 0  0 10px;    width:100%;    max-width:500px;    /* margin:0 auto; */}
-.input>button{    cursor: pointer;    border-radius: 0 5px 5px 0;    background:#0c7beb;    font-weight: 700;    border:0;    color:#fff;    letter-spacing: 1px;    max-width:150px;    text-shadow:0 0 6px rgba(0,0,0,0.5);    margin-left:-2px;}
-.input>input:hover,.input>button:hover{    box-shadow:0 3px 12px 0px rgba(0,0,0,0.1),0 0px 6px 0px rgba(0,0,0,0.1);}
-.input>button:hover{    background: #2086ec;}
-.input>input:focus,.input>button:focus{    box-shadow:0 3px 12px -3px rgba(0,0,0,0.1),0 0px 6px 2px rgba(0,0,0,0.1);}
-.input>input{    border:solid 2px #aaf !important;}
-.input>input:focus{    border:solid 2px #2086ec !important;}
-
 .crt.loader{
     margin-left:20px;
     animation:0.5s rot infinite linear;
@@ -326,8 +296,8 @@
                                         Cart price »
                                     </td>
                                     <th>
-                                        ₹​ {{user.cart.totPrice|multiply:dollarToRs|roundTo2}} <span style="color:#666;font-size: 15px;font-weight:500;">(Added {{gst}}% GST)</span>
-</th>
+                                        ₹​ {{user.cart.totPrice|multiply:dollarToRs|roundTo2}} (Added {{gst}}% GST)
+                                    </th>
                                 </tr>
                                 <tr>
                                     <td>
@@ -345,22 +315,12 @@
                                         $ 11
                                     </th>
                                 </tr> -->
-				{% if coupon_discount %}
-				<tr>
-					<td>
-						Coupon Discount »
-					</td>
-					<th> &#x20b9 {{ coupon_discount|multiply:0.01|roundTo2 }} </th>
-				</tr>
-				{% endif %}
-
                                 <tr>
                                     <th>
                                         Grand total &nbsp;»
                                     </th>
                                     <th>
-                                        &#x20b9 <!--{{ user.cart.totPrice|grandTotal|roundTo2 }}--> 
-					{{ order_amount|multiply:0.01|roundTo2 }}
+                                        &#x20b9 {{ user.cart.totPrice|grandTotal|roundTo2 }}
                                     </th>
                                 </tr>
 
