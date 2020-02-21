@@ -44,7 +44,7 @@ def add_data(cat_name, filename, thread_no):
 		new_item.min_quantity = 1
 		new_item.save()
 		if (not str(data['Minimum Order'][i]).strip()=='nan') and (not str(data['Minimum Order'][i]).strip()==''):
-			new_item.discount = Decimal(float(data['Minimum Order'][i]))
+			new_item.min_quantity = Decimal(float(data['Minimum Order'][i]))
 			new_item.save()
 		if (not str(data['Sort'][i]).strip()=='nan') and (not str(data['Sort'][i]).strip()==''):
 			new_item.sort = str(data['Sort'][i])
