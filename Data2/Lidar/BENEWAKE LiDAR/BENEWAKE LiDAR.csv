@@ -5,35 +5,25 @@ Miao,1,TFmini,Benewake,"1. Compact 42mm x 16mm x 15mm module with 12m measuring 
 4. Great for Storage tank, robotics and other demanding applications
 
 Basic introduction:
-TFmini is a milestone for Benewake to promote the process of low cost LiDAR. It can be used as distance sensor,level sensor,range sensor, safety sensor for AGV, rangefinder,obstacle avoidance sensor for robot, tiny LiDAR sensor, etc. With its unique optical, structural, and electronic designs, the product possesses 3 major advantages: low cost, tiny volume and low power consumption. The built-in algorithm adapted to indoor and outdoor environments can guarantee an excellent ranging performance at a low cost and in a tiny volume, which highly expands the application fields andscenarios of LiDAR and lays a solid foundation for future ?eyes? in the smart era.
+TFmini is a milestone for Benewake to promote the process of low cost LiDAR. It can be used as distance sensor,level sensor,range sensor, safety sensor for AGV, rangefinder,obstacle avoidance sensor for robot, tiny LiDAR sensor, etc. With its unique optical, structural, and electronic designs, the product possesses 3 major advantages: low cost, tiny volume and low power consumption. The built-in algorithm adapted to indoor and outdoor environments can guarantee an excellent ranging performance at a low cost and in a tiny volume, which highly expands the application fields andscenarios of LiDAR and lays a solid foundation for future eyes in the smart era.
 
 Specifications:
 
 Performance:
-Operating Range: 0.3m~12m?Range based on a standard whiteboard with reflectivity 90% in indoor condition.?
-Accuracy: ñ4cm?0.3-6m? ñ1%(6m-12m)
 Resolution: 1cm
 Frequency: 100HZ
 
 Optical parameters:
-FOV: 2.3ø
+FOV: 2.3 phi
 Light source: LED
 Operating wavelength: 850nm
 
-Communication and interface:
-Output Data: Distance value(DIST?, signal strength(Strength)
-Communication Interface: UART/IýC
-
 Electrical parameters:
 Supply voltage: 5V
-Power consumption: ó0.7W
 Dimension: 42mm*16mm*15mm
-Weight: 5ñ0.3g
 
 Working characteristics:
 Light sensitivity: 70klux
-Operating temperature: 0 ~ 60?
-Storage temperature: -20? ~ 75?
 Exemption level (EN62471)
 
 Includes:
@@ -41,7 +31,7 @@ Includes:
 1*Data wire",99.75,,,1,1
 Miao,2,TFmini Plus,Benewake,"1. Compact 35mm x 21mm x 18.5mm module with 12m measuring range
 2. Low cost, small size, low power consumption
-3. Blind zone 10cm?frame rate 1000Hz,and IP65
+3. Blind zone 10cm, frame rate 1000Hz,and IP65
 4. Suit for Storage tank, robotics, drone and other demanding applications
 
 Basic introduction:
@@ -51,13 +41,11 @@ TFmini Plus, based on TFmini, is a single-point short-range LiDAR. Inherited low
 Specification:
 
 Performance:
-Operating Range: 0.1m~12m?Range based on a standard whiteboard with reflectivity 90% in indoor condition.?
-Accuracy: ñ5cm?0.1-6m? 1%?6m-12m?
 Resolution: 5mm
-Frame rate:1~1000Hz(Adjustable)
+Frame rate:1 - 1000Hz(Adjustable)
 
 Optical parameters:
-FOV?3.6ø
+FOV : 3.6 phi
 Operating wavelength: 850nm
 
 Communication and interface:
@@ -65,21 +53,18 @@ Output Data: Single point distance value
 Communication Interface: UART, IIC, I/O
 
 Electrical parameters:
-Supply voltage: 5Vñ0.5V
 Power consumption: 550mW
 Dimension: 35mm*21mm*18.5mm
-Enclosure rating?IP65
-Wire length?30cm
-Weight?12g
+Enclosure rating : IP65
+Wire length : 30cm
+Weight : 12g
 
 Working characteristics:
 Ambient light sensitivity: 70klux
-Operating temperature: -20~ 60?
-Storage temperature: -20? ~ 75?
 
 Includes:
 1*TFmini Plus Single-point Ranging Module",112.25,,,1,2
-Miao,3,TF-Luna,,"1. Compact 35mm x 21.5mm x 13.5mm module with 8m measuring range
+Miao,3,TF-Luna,Benewake,"1. Compact 35mm x 21.5mm x 13.5mm module with 8m measuring range
 2. Adopts multiple adjustable configurations for flexible use
 3. With low cost, tiny volume and low power consumption
 4. Great for IoT, drones, robotics and other demanding applications
@@ -93,30 +78,23 @@ It can be used as proximity sensor, range finder, level sensor, distance sensor,
 
 Specifications:
 Performance:
-Operating Range: 0.2m~8m?Range based on a standard whiteboard with reflectivity 90% in indoor condition.?
-Accuracy: ñ6cm?0.2-3m? ñ2%(3m-8m)
 Resolution: 1cm
 Frequency: 100Hz (250Hz adjustable)
 
 Optical parameters:
-FOV: 2ø
+FOV: 2 phi
 Light source: VCSEL
 Operating wavelength: 850nm
 
 Communication and interface:
 Output Data: Distance value(DIST?, signal strength(Strength)
-Communication Interface: UART/IýC
 
 Electrical parameters:
-Supply voltage: 5Vñ0.1V
-Power consumption: ó0.35W
 Dimension: 35mm x 21.25mm x 13.5mm
-Weight: <5g
+Weight: less than 5g
 
 Working characteristics:
 Light sensitivity: 70Klux
-Operating temperature: -10 ?~+ 60?
-Storage temperature: -20? ~ 75?
 Class1 (IEC60825)
 
 Includes:

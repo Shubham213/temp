@@ -2,25 +2,21 @@ Supplier Code,Product Code,Name,SubName,Description,Price USD,Delivery,Discount,
 high,11558,HMDVR-S Subminiature Video Audio Video Recorder FPV Cross Machine,Genuine and Standard,"Characteristics:
 
 Current consumption: max. 260mA
-Operating temperature: -10 ~ + 65 ø C
+Operating temperature: -10  + 65 phi C
 Interface: JST SH1.0 or 1.25 pin heads
 Compress Format: MJPEG
 Registers the frame rate: 30 frames
 Audio input: supports microphone-telephone input
 Touch the button to start / stop the video recorder
-Operating temperature: -10 ~ + 65 ø C (with heat treatment)
-Storage temperature: -30 ~ + 85 ø C
-Ambient temperature / humidity: 25 ø C / 85% RH
+Operating temperature: -10  + 65 phi C (with heat treatment)
+Storage temperature: -30  + 85 phi C
+Ambient temperature / humidity: 25 phi C / 85% RH
 Start mode: start Electrical
 System start time: 5-10 seconds
-Video input impedance: 75ê, type.
-Video output impedance: 75ê, type.
-VGA video output format (640 ? 480PX)
 The video starts to stop: short press Start / stop
 Video time: every 3 minutes to store a section,
 Support for TF card: Max.32G
 Video file format: AVI file
-Interface: 1.0mm ? 4 pins (or 1 , 25x4 pads)
 Compression format: MJPEG
 Video frame rate: 30 frames",16.324,,,5,4
 high,18325,HD Mini 700 Camera 2.1mm (P system),Genuine and Standard,"New and high quality.
@@ -95,15 +91,15 @@ Antenna Length: 59mm
 2.3 dBi gain
 Center Frequency: 5.8 GHz
 Bandwidth: 500 MHz (5.5-6.0 GHz)
-Combination: VSWR <1.2 (at the center frequency)
-Axial Ratio: <1.0
+Combination: VSWR  less than 1.2 (at the center frequency)
+Axial Ratio: less than 1.0
 Radiation Efficiency: 98%
 Polarization: RHCP
 Connector: SMA
 Red color
 Characteristics:
 1. Excellent workmanship, manufactured and tested to the highest standards. The best class range and signal quality
-2. IRoot 360 ø protection reinforcement design
+2. IRoot 360 phi protection reinforcement design
 3. Low feeder loss, easy to install, can be folded at any maintenance angle
 4. Body adopt imported PC + ABS material, can withstand high strength impacts",9.856,,,5,8
 high,13050,90mm antenna extension cable inner hole to inner pin,Genuine and Standard,2pcs 90mm V SMA antenna extension cable female to male SMA antenna antennas,1.54,,,5,9
@@ -156,22 +152,17 @@ Article name: VT5804M V2 5.8G FPV transmitter
 Power : 0mW / 25mW / 100mW /
 200mW
 / 400mW / 600mW Channel: 48CH Format: NTSC / PAL
-Voltage: 7V ~ 24 V + 12 V / 260mA @ 600 mW
-Distance: ò0! 5km @ 25 mW ò0! 8km @ 100mW ò1km @ 200mW
 Size: 36mm x 36mm x 5mm
 Holes: CC3D NAZE32 F3 F4 flight controller
 Weight: ó6g (without attenna)
 
 Characteristics:
-1. Stable output power, long distance transmission : ò0! 5km @ 25mW ò1km @ 200mW ò2km @ 600mW (original antenna)
 2 power transmission 6 Switching speed : 0mW / 25mW / 100mW / 200mW / 400mW / 600mW;
 3. Support OSD interface to adjust the frequency and power of the transmitter
 4. Output 48 frequency points and group E 8 frequency points used simultaneously without interference;
 5 Fast Ed and Ing A blocking frequency do not interfere with Other Partners;
 6. Self test function of self test output power;
 7. Full format video format : NTSC / PAL;
-8. Wide range of input voltage, low power consumption : 7V ~ 24V + 12V / 260mA @ 600mW;
-9. Small size: 36mm x 36mm ? 5mm mounting holes compatible with CC3D NAZE32 F3 F4 flight controller
 10. Light weight: less than 6g (without antenna)
 11 Built-in microphone
 
@@ -188,7 +179,7 @@ No delay / blue screen / anti black screen: the system will not cause any delay 
 Auto / manual channel scan: no DIP switch needed.
 
 Graphite crucible mini furnace gold torch melting metal
-1 x Hawkeye little pilots ? 5.8G 48CH Monitor
+1 x Hawkeye little pilots  5.8G 48CH Monitor
 1 x linear antenna
 1 x clover antenna
 1 x clamp
@@ -196,20 +187,20 @@ Graphite crucible mini furnace gold torch melting metal
 high,11781,LST-S2 3.6g 5.8G 25mw 40-band FPV camera,Genuine and Standard,"LST-S2 product description:
 
 FPV transmission and transmission machine
-Sensor: 1/4 ""CMOS
+Sensor: 1/4 inches CMOS
 Lens: M8 800 TVL lens
-Angle: 150 ø horizontal viewing angle and 170 ø viewing angle
+Angle: 150 phi horizontal viewing angle and 170 phi viewing angle
 Format: NTSC / PAL (switchable)
 Power consumption: 380mA to 3 , 7 v
 Voltage: 3.6--5.5 v
-Lens mirror diameter: 150 ø FOV 2.1mm (horizontal)
+Lens mirror diameter: 150 phi FOV 2.1mm (horizontal)
 Video transmitter
 Supports video formats: NTSC / PAL
 Output impedance: 75 ohms
-Intensity of the output signal: 23 ~ 24 dbm
+Intensity of the output signal: 23 - 24 dbm
 Output power: 25 mw
 Wireless channel: 40 channels
-Operating voltage: 3.6 v ~ 5.5 v
+Operating voltage: 3.6 v - 5.5 v
 Current: 100mA
 Audio carrier: 6.5 mhz
 Button function
@@ -222,28 +213,27 @@ Weight: 3.6g
 Size: 17x13x14.5mm (without antenna)
 Features:
 Figure transmission a machine, ultra small size, ultralight weight.
-The Horizontal viewing angle is 150 ø tilt angle 170 ø
+The Horizontal viewing angle is 150 phi tilt angle 170 phi
 40 channels combined with 5 frequency bands and 8 frequency bands
 
 Packaging includes:
 1 LST-S2 FPV camera
 1 X wire cable",20.02,,,1,13
-high,11782,LST-S2 + 3.6g 5.8G 25mw 40 channel camera image transmission with OSD,Genuine and Standard,"Sensor: 1/4 ""CMOS
+high,11782,LST-S2 + 3.6g 5.8G 25mw 40 channel camera image transmission with OSD,Genuine and Standard,"Sensor: 1/4 inches CMOS
 Lens: M8 800TVL L Ens
-Angle: 150 ø FOV horizontal viewing angle 170 ø DFOV diagonal perspective
+Angle: 150 phi FOV horizontal viewing angle 170 phi DFOV diagonal perspective
 Format: NTSC / PAL (switchable)
-Power consumption: 380mA @ 3 ú 7 V
 Power: 3, 6-5.5V
 Lens mirror diameter: FOV150 (horizontal) with 2.1mm IR coating
 
 Video Transmitter
 Support video format: NTSC / PAL
 Output impedance: 75 Ohm
-Output signal strength: 23 ~ 24dBm
+Output signal strength: 23 - 24dBm
 Output power: 25 mW
 Wireless channel: 40CH
 Antenna: RHCP Circular polarization antenna with clover leaf shape
-Operating voltage: 3.6V ~ 5.5V
+Operating voltage: 3.6V - 5.5V
 Current: 100mA
 Audio carrier: 6.5 MHz
 
@@ -258,7 +248,7 @@ Size: 18x16x16mm (without antenna)
 
 Characteristic:
 AIO FPV Camera, transmitter, antenna all 3 functions in a size and weight limit
-150 ø FOV horizontal viewing angle 170 ø DFOV diagonal perspective
+150 phi FOV horizontal viewing angle 170 phi DFOV diagonal perspective
 Five bands, 40 channels with motherboard
 
 Graphite crucible mini furnace gold torch metal melting:
@@ -266,9 +256,9 @@ Graphite crucible mini furnace gold torch metal melting:
 1 X wiring harness
 1 X User Manual",20.02,,,1,14
 high,11786,LST-S1 with housing 3.6g 5.8G 25mw 40 channels camera image transmission all-in-one,Genuine and Standard,"Parameter camera :
-1 Sensor: 1/3 ""CMOS?
+1 Sensor: 1/3 inches CMOS
 2. Sharpness: M8 800TVL lens
-3. Viewing angle: 148 ø FOV horizontal viewing angle 170 ø DFOV diagonal viewing angle
+3. Viewing angle: 148 phi FOV horizontal viewing angle 170 phi DFOV diagonal viewing angle
 4. System: NTSC / PAL system It can be a key switch
 5. Power consumption: 380mA 3.7V
 6. Power: 3.5-5.5V
@@ -304,10 +294,3 @@ Package includes:
 1 * FREQUENCY OF
 6 * 6 * power cable
 1 * Heat shrink tube",23.1,,,1,16
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
-,,,,,,,,,
