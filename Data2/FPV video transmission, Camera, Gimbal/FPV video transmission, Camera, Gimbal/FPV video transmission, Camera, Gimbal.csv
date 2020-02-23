@@ -61,9 +61,9 @@ Connector: RP-SMA side of the transmitter module, antenna RP-SMA plug
 RC832:
 Brand name : Eachine
 Article name: RC832 receiver
-Antenna Impedance: 50ê
+Antenna Impedance: 50
 Antenna gain: 2db
-Video Impedance: 75ê Video
+Video Impedance: 75 
 format: NTSC / PAL auto
 Power input: 12 V
 Operating current: 200mA max.
@@ -192,7 +192,7 @@ Lens: M8 800 TVL lens
 Angle: 150 phi horizontal viewing angle and 170 phi viewing angle
 Format: NTSC / PAL (switchable)
 Power consumption: 380mA to 3 , 7 v
-Voltage: 3.6--5.5 v
+Voltage: 3.6 -5.5 v
 Lens mirror diameter: 150 phi FOV 2.1mm (horizontal)
 Video transmitter
 Supports video formats: NTSC / PAL
@@ -277,16 +277,16 @@ Transmission frequency of
 4. F band: 5740.5760, 5780.5800, 5820.5840, 5860.5880
 5. R band: 5658.5695, 5732.5769, 5806.5843 , 5880,5917",21.56,,,1,15
 high,12130,Panda Picture Transmission VT5804 MINI X Picture Transmission Launch 25-400MW,Genuine and Standard,"Specification:
-1 The output power is stable and the transmission distance is long:> 0.5km at 25mW,> 1km @ 200mW> 1.5km @ 400mW (original antenna);
+1 The output power is stable and the transmission distance is long:more than  0.5km at 25mW,more than  1km at 200mWmore than  1.5km at 400mW (original antenna);
 2 6-stop power switching transmission: 0mW / 25mW / 50mW / 100mW / 200mW / 400mW;
 3. Supports the OSD interface to adjust the transmission frequency and power;
 4. Output 16 frequency points, including Group A and Group R;
 5. Fast frequency lock and no problems for the peers when turned on.
 6. Function of self-control of the output power;
 7. Full video format: NTSC / PAL;
-8 The input voltage range is wide and the power consumption is low: 6V-26V, + 12V / 240mA @ 400mW;
+8 The input voltage range is wide and the power consumption is low: 6V-26V, + 12V / 240mA at 400mW;
 9 small size: 24mm * 24mm * 3mm, installation hole 20mm * 20MM (4-M2);
-10. Light weight: <3g (without antenna included);
+10. Light weight: less than 3g (without antenna included);
 
 Package includes:
 1 * VT5804 MINIX
